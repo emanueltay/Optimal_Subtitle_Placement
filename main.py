@@ -1,7 +1,8 @@
 import os
 import cv2
 import torch
-
+from optimal_subtitle_placement import SubtitlePlacement
+from render_subtitle import RenderSubtitle
 
 def main_program(video_input_path, final_video_path, srt_file_path, tmp_audio_path, tmp_video_path, pre_position, max_chars_per_line, opacity, batch_size=4):
         """

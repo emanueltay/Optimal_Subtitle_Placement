@@ -1,4 +1,4 @@
-# Optimal Subtitle Placement
+# Optimal Subtitle Positioning through Deep Learning
 
 ## 📌 Project Description
 
@@ -9,7 +9,7 @@ Optimal Subtitle Placement is a project designed to **intelligently overlay subt
 - 🚀 **YOLO-based object detection** to avoid occluding important visual elements (e.g., faces, news tickers, graphs).
 - 🌍 **Multi-language support** including Arabic, CJK (Chinese, Japanese, Korean), Thai, and Latin scripts.
 - 🔄 **Dynamic subtitle rendering**, adjusting text placement and font selection based on frame characteristics.
-- ⚡ **Batch video processing** for improved efficiency.
+- ⚡ **Batch frame processing** for improved efficiency.
 - 🎯 **Ensures subtitle clarity** by avoiding cluttered regions in video frames.
 
 ---
@@ -19,7 +19,7 @@ Optimal Subtitle Placement is a project designed to **intelligently overlay subt
 ### 1️⃣ **Clone the Repository**
 
 ```bash
-git clone https://github.com/your-repo/optimal-subtitle-placement.git
+git clone https://github.com/emanueltay/Optimal_Subtitle_Placement.git
 cd optimal-subtitle-placement
 ```
 
@@ -76,11 +76,3 @@ python main.py --video_input "path/to/video.mp4" \
 | `--max_chars_per_line`     | Maximum number of characters per subtitle line (default: 40)                   |
 | `--opacity` | Transparency level of the subtitle background (0 = fully transparent, 1 = fully opaque, default: 0.8)             |
 | `--batch_size`   | Number of frames processed in a batch (default: 4) |
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**. See `LICENSE` for details.
-
----

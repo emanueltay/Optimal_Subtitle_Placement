@@ -10,7 +10,49 @@ from PIL import ImageFont, ImageDraw, Image
 from collections import defaultdict
     
 class RenderSubtitle:
-    
+    '''
+    RenderSubtitle Class: Optimal Subtitle Placement & Rendering
+
+    The `RenderSubtitle` class is designed to handle **multilingual subtitle rendering** while ensuring 
+    subtitles do not obstruct key visual elements in a video. It achieves this through **language detection, 
+    optimal text positioning, and dynamic font selection**. This class integrates **OpenCV, PIL, and FFmpeg** 
+    to process subtitles efficiently in real-time.
+
+    ### Features:
+
+    ✔ **Universal Font Support**: Uses `GoNotoKurrent-Regular.ttf` to handle multiple languages, 
+    including **Latin, CJK (Chinese, Japanese, Korean), Arabic, Indic, and Thai**.
+
+    ✔ **Language-Aware Rendering**: Automatically detects the script used in the subtitle text and 
+    adjusts **font settings** for improved readability.
+
+    ✔ **Smart Subtitle Placement**: Computes a **safe zone** dynamically to avoid covering faces, 
+    logos, and on-screen text, ensuring **optimal readability** without obstructing important visual elements.
+
+    ✔ **Adaptive Text Wrapping & Styling**: Dynamically wraps subtitle text within the **safe zone**, 
+    adjusts **font size** based on the language, and adds a **semi-transparent background** to enhance readability.
+
+    ✔ **Fast Subtitle Lookup**: Parses `.srt` subtitle files and **pre-indexes** subtitles to enable 
+    quick retrieval and **frame-based rendering**.
+
+    ✔ **Real-Time FPS Synchronization**: Extracts the **frame rate (FPS)** of the video using FFmpeg 
+    to ensure **accurate subtitle timing** and **seamless playback**.
+
+    ### Main Methods:
+
+    - **`get_font(font_size)`** → Loads a **universal multilingual font** to ensure consistent text rendering.
+    - **`detect_language(text)`** → Detects the script type (e.g., Latin, CJK, Arabic) for **language-aware rendering**.
+    - **`render_subtitle_multi_new(frame, subtitle_text, safe_zone, frame_width, frame_height, max_chars_per_line=40, opacity=0.8)`**  
+    → **Overlays subtitles onto the video frame** while ensuring optimal positioning and text clarity.
+    - **`parse_srt_file(srt_file)`** → Reads an `.srt` file and **prepares subtitles** for fast frame-based retrieval.
+    - **`get_subtitles_for_frames(frame_times, subtitle_dict)`** → Retrieves **matching subtitles** based on timestamps.
+    - **`get_video_fps(video_path)`** → Extracts the **frame rate (FPS)** from a video to maintain **synchronization**.
+
+    This class enables **smooth, non-obtrusive subtitle placement** in various languages while preserving 
+    **video clarity and key visual elements**. It is optimized for **news videos, movies, and multilingual 
+    media content** to enhance the viewer's experience.
+    '''
+
     def get_font(font_size):
         """
         Loads the universal OpenSans font.
