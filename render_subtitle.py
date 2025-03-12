@@ -8,9 +8,9 @@ import subprocess
 from bidi.algorithm import get_display
 from PIL import ImageFont, ImageDraw, Image
 from collections import defaultdict
-
+    
 class RenderSubtitle:
-
+    
     def get_font(font_size):
         """
         Loads the universal OpenSans font.

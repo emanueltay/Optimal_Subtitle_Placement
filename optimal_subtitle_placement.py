@@ -123,7 +123,7 @@ class SubtitlePlacement:
 
         return int(subtitle_height), int(margin)
     
-    def process_frames_batch(frames, subtitles):
+    def process_frames_batch(frames, subtitles, pre_position, max_chars_per_line, opacity):
         """
         Process a batch of frames:
         - Detects objects in batch
@@ -145,7 +145,7 @@ class SubtitlePlacement:
         frame_height, frame_width = frames[0].shape[:2]
 
         # Load precomputed safe zone positions (JSON file only loaded once)
-        with open("/content/optimal_subtitle/news_video_subtitle_positions.json", "r") as file:
+        with open(pre_position, "r") as file:
             pre_positions = json.load(file)[f"{frame_width}x{frame_height}"]
 
         # Step 2: ✅ Process Each Frame in the Batch
@@ -166,7 +166,7 @@ class SubtitlePlacement:
             safe_zone = tuple(map(int, safe_zone))  # Convert values to integers
 
             # Render subtitle and save processed frame
-            processed_frame = RenderSubtitle.render_subtitle_multi_new(frame, subtitle_text, safe_zone, frame_width, frame_height)
+            processed_frame = RenderSubtitle.render_subtitle_multi_new(frame, subtitle_text, safe_zone, frame_width, frame_height, max_chars_per_line, opacity)
             processed_frames.append(processed_frame)
 
         return processed_frames  # Return list of processed frames
@@ -351,27 +351,34 @@ class RenderSubtitle:
     
 class Main:
 
-    def main_program(video_input_path, final_video_path, srt_file_path, tmp_audio_path, tmp_video_path, batch_size=4):
+    def main_program(video_input_path, final_video_path, srt_file_path, tmp_audio_path, tmp_video_path, pre_position, max_chars_per_line, opacity, batch_size=4):
         """
-            Parameters:
+        Processes a video by overlaying subtitles optimally and maintaining synchronization with the original audio.
+
+        Parameters:
             video_input_path (str): Path to the input video file.
             final_video_path (str): Path to save the final processed video with subtitles and audio.
             srt_file_path (str): Path to the subtitle file (.srt) to be used.
             tmp_audio_path (str): Temporary path to store extracted audio.
             tmp_video_path (str): Temporary path to store the processed video without audio.
+            pre_position (dict): Predefined safe zones for subtitle placement to avoid overlaying key elements.
+            max_chars_per_line (int): Maximum number of characters per subtitle line for wrapping and readability.
+            opacity (float): Transparency level of the subtitle background (0 = fully transparent, 1 = fully opaque).
             batch_size (int, optional): Number of frames to process in a batch for optimization. Default is 4.
 
         Steps:
-            1. Extracts the FPS from the input video to ensure synchronization.
-            2. Extracts the audio from the original video for later merging.
+            1. Extracts the FPS from the input video to ensure frame synchronization.
+            2. Extracts the audio from the original video for merging after processing.
             3. Loads and parses the subtitle file.
             4. Opens the video file and initializes video writing settings.
             5. Detects and utilizes GPU if available for accelerated processing.
-            6. Reads video frames in batches and overlays subtitles in an optimal position.
-            7. Saves the processed frames to a temporary video file.
-            8. Merges the processed video with the extracted audio while maintaining sync.
-            9. Cleans up temporary files.
-        
+            6. Reads video frames in batches and applies subtitle placement using predefined safe zones.
+            7. Dynamically adjusts subtitle wrapping based on max characters per line.
+            8. Renders subtitles with background opacity settings for better visibility.
+            9. Saves the processed frames to a temporary video file.
+            10. Merges the processed video with the extracted audio while maintaining sync.
+            11. Cleans up temporary files to optimize storage.
+
         Returns:
             Saves the final processed video with embedded subtitles and synchronized audio at the specified output path.
         """
@@ -430,7 +437,7 @@ class Main:
             # ✅ Process in batch when buffer reaches batch_size
             if len(frame_buffer) == batch_size:
                 subtitles = RenderSubtitle.get_subtitles_for_frames(timestamp_buffer, subtitle_data)  # ✅ Batch subtitle lookup
-                processed_frames = SubtitlePlacement.process_frames_batch(frame_buffer, subtitles)  # ✅ Batch processing
+                processed_frames = SubtitlePlacement.process_frames_batch(frame_buffer, subtitles, pre_position, max_chars_per_line, opacity)  # ✅ Batch processing
 
                 for processed_frame in processed_frames:
                     out.write(processed_frame)  # Write frame to temporary video file
