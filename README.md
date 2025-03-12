@@ -53,9 +53,14 @@ wget https://your-model-download-link/yolo_model.pt
 
 ```bash
 python main.py --video_input "path/to/video.mp4" \  
-                --srt_file "path/to/subtitles.srt" \  
-                --output_video "path/to/output.mp4" \  
-                --batch_size 4
+               --srt_file "path/to/subtitles.srt" \  
+               --output_video "path/to/output.mp4" \  
+               --tmp_audio "path/to/temp_audio.aac" \  
+               --tmp_video "path/to/temp_video.mp4" \  
+               --pre_position "path/to/predefined_positions.json" \  
+               --max_chars_per_line 40 \  
+               --opacity 0.8 \  
+               --batch_size 4
 ```
 
 ### Parameters:
@@ -64,7 +69,12 @@ python main.py --video_input "path/to/video.mp4" \
 | ---------------- | -------------------------------------------------- |
 | `--video_input`  | Path to the input video file                       |
 | `--srt_file`     | Path to the subtitle file (.srt)                   |
-| `--output_video` | Path to save the final processed video             |
+| `--output_video`     | Path to save the final processed video with subtitles and audio                   |
+| `--tmp_audio` | Temporary path to store extracted audio             |
+| `-tmp_video`   | Temporary path to store the processed video without audio |
+| `--pre_position`  | JSON file containing predefined safe zones for subtitle placement file                       |
+| `--max_chars_per_line`     | Maximum number of characters per subtitle line (default: 40)                   |
+| `--opacity` | Transparency level of the subtitle background (0 = fully transparent, 1 = fully opaque, default: 0.8)             |
 | `--batch_size`   | Number of frames processed in a batch (default: 4) |
 
 ---
