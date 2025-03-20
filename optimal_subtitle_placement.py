@@ -11,10 +11,27 @@ import torch
 import os
 from bidi.algorithm import get_display
 from PIL import ImageFont, ImageDraw, Image
-from collections import defaultdict
+from collections import Counter, deque, defaultdict
+
+# ✅ Global in-memory cache for dynamic & shifted safe zones
+safe_zone_cache = {}
+used_safe_zones = {}  # Dictionary to store all assigned safe zones
 
 # Load the trained model
 model = YOLO("best.pt")
+
+# ✅ Automatically select GPU if available
+device = "cuda" if torch.cuda.is_available() else "cpu"
+
+# ✅ Move model to the selected device
+model.to(device).float() 
+
+# ✅ Optimize PyTorch settings
+torch.backends.cudnn.benchmark = True  
+torch.backends.cudnn.enabled = True
+torch.set_num_threads(torch.get_num_threads())  # Use optimal number of CPU threads
+
+font_path = "/content/optimal_subtitle/Font/GoNotoKurrent-Regular.ttf"
 
 class SubtitlePlacement:
 
@@ -30,7 +47,7 @@ class SubtitlePlacement:
                 Each element is a NumPy array of detections.
         """
         # ✅ Run the model in batch mode
-        results = model(frames, batch=len(frames))  # Run batch inference
+        results = model(frames, batch=len(frames), imgsz=640, verbose=True)  # Run batch inference
 
         # ✅ Extract detections for each frame
         batch_detections = []
@@ -44,9 +61,10 @@ class SubtitlePlacement:
         """
         Calculate the safe zone for subtitle placement using pre-defined positions.
         If blocked, it attempts to shift left/right before moving vertically.
+        If no predefined position works, falls back to a dynamic safe zone and caches it in memory.
 
         Returns:
-            tuple: Coordinates of the safe zone (x1, y1, x2, y2).
+            tuple: (position_name, coordinates)
         """
 
         def zones_overlap(zone1, zone2):
@@ -55,44 +73,63 @@ class SubtitlePlacement:
             x1b, y1b, x2b, y2b = zone2
             return not (x2a < x1b or x1a > x2b or y2a < y1b or y1a > y2b)
 
-        # Step 1: Try Predefined Positions
+        # ✅ Step 1: Check if we already computed a safe zone for this frame in memory
+        cache_key = (frame_width, frame_height, tuple(tuple(d) for d in detections))  # Unique key per resolution + detections
+        if cache_key in safe_zone_cache:
+            return safe_zone_cache[cache_key]  # Return cached value
+
+        # ✅ Step 2: Try Predefined Positions
         for position_name, position in sorted(pre_positions.items(), key=lambda x: x[1].get("priority", 0), reverse=True):
             x1, y1, x2, y2 = position["coordinates"]
-            # print(position["coordinates"])
-            print(f"Checking {position_name}...")
 
             # Check if the original pre-position is available
             if not any(zones_overlap((x1, y1, x2, y2), detection[:4]) for detection in detections):
-                print(f"✅ Using original {position_name}")
-                return (x1, y1, x2, y2)  # Return if it's available
+                safe_zone_cache[cache_key] = (position_name, (x1, y1, x2, y2))  # ✅ Store in cache
+                
+                # ✅ Store in used safe zones for JSON output
+                used_safe_zones[position_name] = {
+                    "coordinates": [x1, y1, x2, y2]
+                }
+                return (position_name, (x1, y1, x2, y2))
 
-            # min_width = 850  # Minimum width to prevent collapse
             min_width = max(0.6 * frame_width, 600)  # 60% of frame width, but at least 600px
+
+            # ✅ Try shifting left and right before moving to fallback
             for shift_dir in ["left", "right"]:
                 shift_attempts = 0
                 while shift_attempts < 10:  # Try shifting multiple times
                     if shift_dir == "left":
-                        new_x1, new_x2 = max(x1*10, x1 - shift_x), max(min_width, x2 - shift_x)
+                        new_x1, new_x2 = max(0, x1 - shift_x), max(min_width, x2 - shift_x)
                     else:
                         new_x1, new_x2 = min(frame_width - min_width, x1 + shift_x), min(frame_width, x2 + shift_x)
 
                     shifted_zone = (new_x1, y1, new_x2, y2)
 
                     if new_x2 > new_x1 and not any(zones_overlap(shifted_zone, detection[:4]) for detection in detections):
-                        print(f"✅ Shifted {position_name} {shift_dir} and found a free spot.")
-                        return shifted_zone  # Found a valid shifted zone
+                        safe_zone_cache[cache_key] = (f"shifted_{position_name}", shifted_zone)  # ✅ Store shifted result in cache
+                        
+                        # ✅ Store in used safe zones with "shifted_" prefix
+                        used_safe_zones[f"shifted_{position_name}"] = {
+                            "coordinates": [new_x1, y1, new_x2, y2]
+                        }
+                        return (f"shifted_{position_name}", shifted_zone)  # Return valid shifted zone
 
                     shift_attempts += 1
                     shift_x *= 1.5  # Increase shift size if first shift attempt fails
 
-        # Step 2: Fallback to Dynamic Safe Zone Calculation (Starting from Bottom)
-        print("⚠ No predefined positions worked. Trying dynamic safe zone...")
+        # ✅ Step 3: No Predefined Positions Worked, Try Dynamic Safe Zone
+        fallback_position_name = "fallback_bottom"
         proposed_safe_zone = (0, frame_height - subtitle_height - margin, frame_width, frame_height - margin)
 
         while True:
             if all(not zones_overlap(proposed_safe_zone, (int(d[0]), int(d[1]), int(d[2]), int(d[3]))) for d in detections):
-                print("✅ Dynamic safe zone found.")
-                return proposed_safe_zone  # Found a safe area
+                safe_zone_cache[cache_key] = (fallback_position_name, proposed_safe_zone)  # ✅ Store in cache
+                
+                # ✅ Store dynamic position as "fallback_bottom"
+                used_safe_zones[fallback_position_name] = {
+                    "coordinates": list(proposed_safe_zone)
+                }
+                return (fallback_position_name, proposed_safe_zone)
 
             # Try shifting up
             x1, y1, x2, y2 = proposed_safe_zone
@@ -104,10 +141,28 @@ class SubtitlePlacement:
 
             proposed_safe_zone = (x1, new_y1, x2, new_y2)
 
-        # Step 3: Final fallback to the top of the frame
-        print("⚠ No valid spaces found, defaulting to top position.")
-        return (0, margin, frame_width, subtitle_height + margin)
+        # ✅ Step 4: Final Fallback to Top and Cache It
+        fallback_position_name = "fallback_top"
+        final_safe_zone = (0, margin, frame_width, subtitle_height + margin)
+        safe_zone_cache[cache_key] = (fallback_position_name, final_safe_zone)  # ✅ Store fallback result in cache
+
+        # ✅ Store fallback position as "fallback_top"
+        used_safe_zones[fallback_position_name] = {
+            "coordinates": list(final_safe_zone)
+        }
+
+        return (fallback_position_name, final_safe_zone)
     
+    def get_used_safe_zones():
+        """
+        Returns the used safe zones as a dictionary without the "priority" field.
+        This can be directly used for updating the TTML layout.
+        """
+        return {
+            key: {"coordinates": value["coordinates"]}
+            for key, value in used_safe_zones.items()
+        }
+
     def get_subtitle_size(frame_height):
         """
         Dynamically calculate subtitle height and margin based on frame resolution.
@@ -173,7 +228,7 @@ class SubtitlePlacement:
     
 class RenderSubtitle:
     
-    def get_font(font_size):
+    def get_font(font_size, font_path):
         """
         Loads the universal OpenSans font.
 
@@ -183,7 +238,6 @@ class RenderSubtitle:
         Returns:
             PIL.ImageFont: The loaded font.
         """
-        font_path = "/content/optimal_subtitle/Font/GoNotoKurrent-Regular.ttf"
         return ImageFont.truetype(font_path, font_size)
 
     def detect_language(text):
@@ -230,7 +284,7 @@ class RenderSubtitle:
         x1, y1, x2, y2 = safe_zone
         language = RenderSubtitle.detect_language(subtitle_text)  # **Detect language**
         font_size = 28 if language == "cjk" else 26  # Adjust font size for CJK characters
-        font = RenderSubtitle.get_font(font_size)  # Load correct font
+        font = RenderSubtitle.get_font(font_size)
 
         # **Handle Right-to-Left (RTL) text (e.g., Arabic)**
         if language == "arabic":
