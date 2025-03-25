@@ -2,31 +2,37 @@ from ultralytics import YOLO
 import cv2
 import json
 import re
-import textwrap
+# import textwrap
 import numpy as np
-import arabic_reshaper
+# import arabic_reshaper
 import pysrt
 import subprocess
 import torch
 import os
-from bidi.algorithm import get_display
-from PIL import ImageFont, ImageDraw, Image
+import math
+import time
+# from bidi.algorithm import get_display
+# from PIL import ImageFont, ImageDraw, Image
 from collections import Counter, deque, defaultdict
+import xml.etree.ElementTree as ET
 
-# ✅ Global in-memory cache for dynamic & shifted safe zones
+# Global in-memory cache for dynamic & shifted safe zones
 safe_zone_cache = {}
 used_safe_zones = {}  # Dictionary to store all assigned safe zones
+
+safe_zone_history = deque(maxlen=3)  # Stores past safe zones for consistency (4)
+region_json_path = "/content/optimal_subtitle_copied/subtitle_regions_scaled.json"
 
 # Load the trained model
 model = YOLO("best.pt")
 
-# ✅ Automatically select GPU if available
+# Automatically select GPU if available
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
-# ✅ Move model to the selected device
+# Move model to the selected device
 model.to(device).float() 
 
-# ✅ Optimize PyTorch settings
+# Optimize PyTorch settings
 torch.backends.cudnn.benchmark = True  
 torch.backends.cudnn.enabled = True
 torch.set_num_threads(torch.get_num_threads())  # Use optimal number of CPU threads
@@ -47,7 +53,7 @@ class SubtitlePlacement:
                 Each element is a NumPy array of detections.
         """
         # ✅ Run the model in batch mode
-        results = model(frames, batch=len(frames), imgsz=640, verbose=True)  # Run batch inference
+        results = model(frames, batch=len(frames), verbose=True)  # Run batch inference
 
         # ✅ Extract detections for each frame
         batch_detections = []
@@ -178,203 +184,197 @@ class SubtitlePlacement:
 
         return int(subtitle_height), int(margin)
     
-    def process_frames_batch(frames, subtitles, pre_position, max_chars_per_line, opacity):
+    def get_pixel_pre_positions_from_json(json_path, frame_width, frame_height):
         """
-        Process a batch of frames:
-        - Detects objects in batch
-        - Computes safe zones in batch
-        - Overlays subtitles in batch
+        Reads percentage-based layout from a JSON file and converts to pixel coordinates.
+        
+        Args:
+            json_path (str): Path to the JSON file containing percentages.
+            frame_width (int): Width of the video frame.
+            frame_height (int): Height of the video frame.
+        
+        Returns:
+            dict: Dictionary of region names mapped to pixel coordinates and priority.
+        """
+        with open(json_path, 'r') as f:
+            percentage_data = json.load(f)
+        
+        pixel_positions = {}
+        for region, data in percentage_data.items():
+            x1_pct, y1_pct, x2_pct, y2_pct = data["percentages"]
+            pixel_positions[region] = {
+                "coordinates": [
+                    int(x1_pct * frame_width),
+                    int(y1_pct * frame_height),
+                    int(x2_pct * frame_width),
+                    int(y2_pct * frame_height)
+                ],
+                "priority": data["priority"]
+            }
+        
+        return pixel_positions
+
+    def process_frames_batch(frames, process_fps=3, video_fps=30):
+        """
+        Process a batch of frames at 3 FPS:
+        - Detects objects in frames sampled at 3 FPS
+        - Computes one safe zone for the batch
+        - Overlays subtitles using the same safe zone
 
         Parameters:
             frames (list): List of frames (NumPy arrays).
             subtitles (list): List of subtitles corresponding to each frame.
+            video_fps (int): Original FPS of the video.
+            process_fps (int): FPS at which YOLO will run.
 
         Returns:
             list: Processed frames with subtitles.
         """
 
-        # Step 1: ✅ Batch Detect Objects (Faster than per-frame)
-        batch_detections = SubtitlePlacement.detect_objects(frames)  # Runs model on all frames at once
+        # ✅ Step 1: Select Frames at 3 FPS for YOLO Detection
+        frame_interval = video_fps // process_fps  # Process every `frame_interval` frames
+        selected_indices = list(range(0, len(frames), frame_interval))
 
-        processed_frames = []
+        if not selected_indices:  # Prevent empty selection
+            selected_indices = [0]  # Process at least one frame
+
+        selected_frames = [frames[i] for i in selected_indices]  # Sampled frames for YOLO
+
+        # ✅ Step 2: Batch Object Detection on Selected Frames
+        batch_detections = SubtitlePlacement.detect_objects(selected_frames)  # YOLO runs only on sampled frames
         frame_height, frame_width = frames[0].shape[:2]
 
-        # Load precomputed safe zone positions (JSON file only loaded once)
-        with open(pre_position, "r") as file:
-            pre_positions = json.load(file)[f"{frame_width}x{frame_height}"]
+        pre_positions = SubtitlePlacement.get_pixel_pre_positions_from_json(region_json_path, frame_width, frame_height)
 
-        # Step 2: ✅ Process Each Frame in the Batch
-        for i, frame in enumerate(frames):
-            subtitle_text = subtitles[i]  # Get corresponding subtitle
-            detections = batch_detections[i]  # Get detections for the frame
+        # ✅ Step 3: Compute Safe Zone for Each Sampled Frame
+        subtitle_height, margin = SubtitlePlacement.get_subtitle_size(frame_height)
 
-            # Compute subtitle safe zone for the frame
-            subtitle_height, margin = SubtitlePlacement.get_subtitle_size(frame_height)
-            safe_zone = SubtitlePlacement.calculate_safe_zone_with_prepositions(
-                frame_width,
-                frame_height,
-                detections,
-                pre_positions,
-                subtitle_height,
-                margin
-            )
-            safe_zone = tuple(map(int, safe_zone))  # Convert values to integers
+        # ✅ Step 3: Collect Safe Zone Positions for Each Frame in Batch
+        batch_safe_zones = [
+            SubtitlePlacement.calculate_safe_zone_with_prepositions(
+                frame_width, frame_height, batch_detections[i], pre_positions, subtitle_height, margin
+            )[0]  # ✅ Extract only the position name
+            for i in range(len(selected_frames))
+        ]
 
-            # Render subtitle and save processed frame
-            processed_frame = RenderSubtitle.render_subtitle_multi_new(frame, subtitle_text, safe_zone, frame_width, frame_height, max_chars_per_line, opacity)
-            processed_frames.append(processed_frame)
+        # ✅ Step 4: Determine the Most Used Safe Zone
+        combined_safe_zones = batch_safe_zones + list(safe_zone_history)  # Merge with history
+        zone_counts = Counter(combined_safe_zones)  # Count occurrences
 
-        return processed_frames  # Return list of processed frames
+        # ✅ Assign the most frequently used zone
+        if zone_counts:
+            most_common_zones = zone_counts.most_common()  # Get all zones sorted by frequency
+            highest_frequency = most_common_zones[0][1]  # Find the highest occurrence count
+
+            # ✅ Get all zones with the highest frequency
+            top_zones = [zone for zone, count in most_common_zones if count == highest_frequency]
+
+            # ✅ If there's a tie, choose the last used zone from combined_safe_zones
+            final_safe_zone = next((zone for zone in reversed(combined_safe_zones) if zone in top_zones), "bottom")
+        else:
+            final_safe_zone = "bottom"  # ✅ Default fallback
+
+
+        # ✅ Store the final safe zone for future frames
+        safe_zone_history.append(final_safe_zone)
+
+        return final_safe_zone
     
 class RenderSubtitle:
-    
-    def get_font(font_size, font_path):
+
+    def convert_ttml_time_to_seconds(ttml_time):
         """
-        Loads the universal OpenSans font.
+        Converts TTML time format (HH:MM:SS.mmm, MM:SS.mmm, SS.mmm, or SS,mmm) to seconds.
 
         Parameters:
-            font_size (int): The desired font size.
+            ttml_time (str): TTML-formatted time.
 
         Returns:
-            PIL.ImageFont: The loaded font.
-        """
-        return ImageFont.truetype(font_path, font_size)
-
-    def detect_language(text):
-        """
-        Detects if the text contains Latin, CJK, Arabic, or Indic characters.
-
-        Returns:
-            str: "latin", "cjk", "arabic", "indic", "thai" based on detected script.
+            float: Time in seconds (with millisecond precision).
         """
 
-        # Extract the first two words
-        words = re.findall(r'\b\w+\b', text)  # Split text into words
-        text_snippet = " ".join(words[:2])  # Take only the first two words
+        # ✅ Remove trailing 's' if present and replace ',' with '.'
+        ttml_time = ttml_time.rstrip('s').replace(',', '.')
 
-        if any("\u0600" <= ch <= "\u06FF" for ch in text_snippet):  # Arabic script range
-            return "arabic"
-        elif any("\u4E00" <= ch <= "\u9FFF" for ch in text_snippet):  # Chinese script range
-            return "cjk"
-        elif any("\u3040" <= ch <= "\u30FF" for ch in text_snippet):  # Japanese script range
-            return "cjk"
-        elif any("\uAC00" <= ch <= "\uD7AF" for ch in text_snippet):  # Korean script range
-            return "cjk"
-        elif any("\u0900" <= ch <= "\u097F" for ch in text_snippet):  # Devanagari script (Hindi, Marathi, Sanskrit)
-            return "indic"
-        elif any("\u0E00" <= ch <= "\u0E7F" for ch in text_snippet):  # Thai script
-            return "thai"
-        return "latin"  # Default to Latin if nothing is detected
+        # ✅ Use regex to extract time components
+        match = re.match(r"(?:(\d+):)?(?:(\d+):)?(\d+)(?:\.(\d+))?", ttml_time)
 
-    def render_subtitle_multi_new(frame, subtitle_text, safe_zone, frame_width, frame_height, max_chars_per_line=40, opacity=0.8):
+        if not match:
+            raise ValueError(f"Invalid TTML time format: {ttml_time}")
+
+        # ✅ Extract components safely
+        hours = int(match.group(1)) if match.group(1) else 0
+        minutes = int(match.group(2)) if match.group(2) else 0
+        seconds = int(match.group(3)) if match.group(3) else 0
+        milliseconds = int(match.group(4)) if match.group(4) else 0
+
+        return hours * 3600 + minutes * 60 + seconds + milliseconds / 1000.0
+
+    def parse_subtitle_file(file_path):
         """
-        Render multi-line subtitles centered within the safe zone with a semi-transparent background.
+        Parses either an SRT or TTML subtitle file and extracts subtitles.
 
         Parameters:
-            frame (numpy array): The frame on which to render subtitles.
-            subtitle_text (str): The text to display.
-            safe_zone (tuple): (x1, y1, x2, y2) defining subtitle placement.
-            frame_width (int): Width of the frame.
-            frame_height (int): Height of the frame.
-            opacity (float): Background opacity (0 = fully transparent, 1 = fully opaque).
+            file_path (str): Path to the subtitle file.
 
         Returns:
-            numpy array: The frame with subtitles rendered at an optimal position.
+            list: List of subtitles in the format:
+                [
+                    {"start": start_time, "end": end_time, "text": "subtitle text", "region": "region_id"}
+                ]
         """
-        x1, y1, x2, y2 = safe_zone
-        language = RenderSubtitle.detect_language(subtitle_text)  # **Detect language**
-        font_size = 28 if language == "cjk" else 26  # Adjust font size for CJK characters
-        font = RenderSubtitle.get_font(font_size)
+        extension = os.path.splitext(file_path)[-1].lower()
+        subtitle_data = []
 
-        # **Handle Right-to-Left (RTL) text (e.g., Arabic)**
-        if language == "arabic":
-            subtitle_text = get_display(arabic_reshaper.reshape(subtitle_text))
+        if extension == ".srt":
+            subs = pysrt.open(file_path)
+            for sub in subs:
+                start_time = (
+                    sub.start.hours * 3600 + sub.start.minutes * 60 + sub.start.seconds + sub.start.milliseconds / 1000
+                )
+                end_time = (
+                    sub.end.hours * 3600 + sub.end.minutes * 60 + sub.end.seconds + sub.end.milliseconds / 1000
+                )
+                text = sub.text.replace("\n", " ")  # Convert newlines to spaces
 
-        # **Calculate max width available for text**
-        max_text_width = x2 - x1 - 30  # Ensure padding (30)
+                subtitle_data.append({
+                    "start": start_time,
+                    "end": end_time,
+                    "text": text,
+                    "region": None  # SRT doesn't support regions
+                })
 
-        # **Estimate Average Character Width Dynamically Using Subtitle Text**
-        if len(subtitle_text) > 0:
-            char_width = sum(font.getbbox(char)[2] - font.getbbox(char)[0] for char in subtitle_text) / len(subtitle_text)
+        elif extension == ".ttml":
+            # ✅ Register TTML Namespaces
+            ET.register_namespace('', "http://www.w3.org/ns/ttml")  # Default TTML namespace
+            ET.register_namespace('ttp', "http://www.w3.org/ns/ttml#parameter")
+            ET.register_namespace('tts', "http://www.w3.org/ns/ttml#styling")
+            ET.register_namespace('ttm', "http://www.w3.org/ns/ttml#metadata")
+
+            # ✅ Parse TTML File
+            tree = ET.parse(file_path)
+            root = tree.getroot()
+            ns = {'ttml': 'http://www.w3.org/ns/ttml'}
+
+            # ✅ Extract Subtitle Data
+            for p in root.findall('.//ttml:p', ns):
+                start_time = SubtitlePlacement.convert_ttml_time_to_seconds(p.attrib.get("begin", "0.0s"))
+                end_time = SubtitlePlacement.convert_ttml_time_to_seconds(p.attrib.get("end", "0.0s"))
+                text = " ".join(p.itertext()).strip()
+                region = p.attrib.get("region", None)
+
+                subtitle_data.append({
+                    "start": start_time,
+                    "end": end_time,
+                    "text": text,
+                    "region": region
+                })
+
         else:
-            char_width = font_size // 2  # Fallback for empty text
+            raise ValueError("Unsupported subtitle format. Only SRT and TTML are supported.")
 
-        # **Determine Maximum Characters That Fit in Safe Zone**
-        estimated_max_chars = max_text_width // char_width
+        return subtitle_data
 
-        # **Use the Minimum of User-Defined or Estimated Max Chars**
-        final_max_chars_per_line = min(estimated_max_chars, max_chars_per_line)
-
-        # **Dynamically wrap text based on max character limit**
-        wrapped_lines = []
-        for line in subtitle_text.split("\n"):  # Handle existing line breaks
-            new_lines = textwrap.wrap(line, width=int(final_max_chars_per_line))
-            if new_lines:  # Only extend if wrapping produced text
-                wrapped_lines.extend(new_lines)
-
-        # **Fallback to prevent empty wrapped_lines**
-        if not wrapped_lines:
-            wrapped_lines = [" "]  # Ensures at least one blank line
-
-        # **Measure Text Size**
-        text_sizes = [font.getbbox(line) for line in wrapped_lines]
-        text_width = max(size[2] - size[0] for size in text_sizes)  # Width (right - left)
-        text_height = text_sizes[0][3] - text_sizes[0][1]  # Height (bottom - top)
-        total_text_height = sum(size[3] - size[1] for size in text_sizes) + (len(wrapped_lines) - 1) * 10  # Extra spacing
-
-        # **Center Text Within Safe Zone**
-        text_x = x1 + (x2 - x1 - text_width) // 2  # **Horizontally centered**
-        text_y = y1 + (y2 - y1 - total_text_height) // 2 - 20# **Vertically centered**
-
-        # **Define Background Box**
-        bg_x1 = max(text_x - 15, 0)
-        bg_y1 = max(text_y - 5, 0)
-        bg_x2 = min(text_x + text_width + 15, frame_width - 1)
-        bg_y2 = min(text_y + total_text_height + 15, frame_height - 1)
-
-        # **Create Semi-Transparent Background**
-        overlay = frame.copy()
-        cv2.rectangle(overlay, (bg_x1, bg_y1), (bg_x2, bg_y2), (0, 0, 0), -1)  # Black background
-        cv2.addWeighted(overlay, opacity, frame, 1 - opacity, 0, frame)  # Blend overlay with frame
-
-        # **Render Text Using PIL (for better font handling)**
-        frame_pil = Image.fromarray(frame)
-        draw = ImageDraw.Draw(frame_pil)
-
-        y_offset = text_y
-        for line in wrapped_lines:
-            line_width = font.getbbox(line)[2] - font.getbbox(line)[0]  # Measure width
-            line_x = x1 + (x2 - x1 - line_width) // 2  # Center per line
-            draw.text((line_x, y_offset), line, font=font, fill=(255, 255, 255))  # White text
-            y_offset += text_height + 10  # Extra line spacing
-
-        return np.array(frame_pil)  # Convert back to OpenCV format
-
-    def parse_srt_file(srt_file):
-        """
-        Reads and parses an SRT file, pre-indexing subtitles for fast lookup.
-
-        Parameters:
-            srt_file (str): Path to the .srt file.
-
-        Returns:
-            dict: A dictionary where keys are integer timestamps (seconds),
-                and values are subtitle texts.
-        """
-        subs = pysrt.open(srt_file)
-        subtitle_dict = defaultdict(lambda: None)  # Default to None for missing frames
-
-        for sub in subs:
-            start_time = int(sub.start.minutes * 60 + sub.start.seconds)  # Round to nearest second
-            end_time = int(sub.end.minutes * 60 + sub.end.seconds)
-            subtitle_text = sub.text.replace("\n", " ")  # Convert newlines to spaces
-
-            # ✅ Store subtitles for all frames in the time range
-            for t in range(start_time, end_time + 1):
-                subtitle_dict[t] = subtitle_text
-
-        return subtitle_dict  # Faster lookups using a dictionary
-    
     def get_subtitles_for_frames(frame_times, subtitle_dict):
         """
         Retrieves subtitles for a batch of frame timestamps.
@@ -402,122 +402,249 @@ class RenderSubtitle:
                 return fps_value
 
         return 30  # Default to 30 FPS if not found
-    
-class Main:
 
-    def main_program(video_input_path, final_video_path, srt_file_path, tmp_audio_path, tmp_video_path, pre_position, max_chars_per_line, opacity, batch_size=4):
+    def generate_updated_ttml(ttml_file_path, output_ttml_path, json_data, subtitle_data, frame_width, frame_height):
         """
-        Processes a video by overlaying subtitles optimally and maintaining synchronization with the original audio.
+        Generates a new TTML file with updated subtitle styles, layout regions, and assigned regions for subtitles.
 
         Parameters:
-            video_input_path (str): Path to the input video file.
-            final_video_path (str): Path to save the final processed video with subtitles and audio.
-            srt_file_path (str): Path to the subtitle file (.srt) to be used.
-            tmp_audio_path (str): Temporary path to store extracted audio.
-            tmp_video_path (str): Temporary path to store the processed video without audio.
-            pre_position (dict): Predefined safe zones for subtitle placement to avoid overlaying key elements.
-            max_chars_per_line (int): Maximum number of characters per subtitle line for wrapping and readability.
-            opacity (float): Transparency level of the subtitle background (0 = fully transparent, 1 = fully opaque).
-            batch_size (int, optional): Number of frames to process in a batch for optimization. Default is 4.
-
-        Steps:
-            1. Extracts the FPS from the input video to ensure frame synchronization.
-            2. Extracts the audio from the original video for merging after processing.
-            3. Loads and parses the subtitle file.
-            4. Opens the video file and initializes video writing settings.
-            5. Detects and utilizes GPU if available for accelerated processing.
-            6. Reads video frames in batches and applies subtitle placement using predefined safe zones.
-            7. Dynamically adjusts subtitle wrapping based on max characters per line.
-            8. Renders subtitles with background opacity settings for better visibility.
-            9. Saves the processed frames to a temporary video file.
-            10. Merges the processed video with the extracted audio while maintaining sync.
-            11. Cleans up temporary files to optimize storage.
+            ttml_file_path (str): Path to the input TTML file.
+            output_ttml_path (str): Path to save the updated TTML file.
+            json_data (dict): JSON data containing subtitle positions.
+            subtitle_data (list): List of subtitles with timestamps and regions.
+            frame_width (int): Width of the video frame.
+            frame_height (int): Height of the video frame.
 
         Returns:
-            Saves the final processed video with embedded subtitles and synchronized audio at the specified output path.
+            None (Writes updated TTML file to disk)
         """
+
+        # ✅ Load TTML File
+        tree = ET.parse(ttml_file_path)
+        root = tree.getroot()
+
+        # ✅ Load TTML File
+        tree = ET.parse(ttml_file_path)
+        root = tree.getroot()
+
+        # ✅ Preserve All Original Root Attributes (Ensuring All Namespaces Remain)
+        root_attribs = root.attrib.copy()  # Copy attributes before modification
+
+        # ✅ Extract Namespace (from <tt> root tag)
+        namespace_uri = root.tag.split("}")[0].strip("{")  # Extracts URI from "{namespace}tag"
+        ns = {"ttml": namespace_uri} if namespace_uri else {}
+
+        # ✅ Restore All Root Attributes (Explicitly Add Missing Namespaces)
+        root.attrib.clear()
+        root.attrib.update(root_attribs)  # ✅ Restore original attributes
+
+        # ✅ Ensure `xmlns:tts` is Explicitly Set (if missing)
+        if "xmlns:tts" not in root.attrib:
+            root.set("xmlns:tts", "http://www.w3.org/ns/ttml#styling")  # ✅ Add missing styling namespace
+
+        # ✅ Find or Create the <head> Element (Using Preserved Namespace)
+        head_element = root.find(f'.//{{{namespace_uri}}}head', ns)
+        if head_element is None:
+            head_element = ET.Element(f"{{{namespace_uri}}}head")
+            root.insert(0, head_element)  # Insert <head> as the first child
+
+        # ✅ Find or Create the <styling> Element
+        styling_element = head_element.find('.//ttml:styling', ns)
+        if styling_element is None:
+            styling_element = ET.Element("{http://www.w3.org/ns/ttml}styling")
+            head_element.insert(0, styling_element)  # Insert before layout
+
+        # ✅ Remove Any Existing <style> Elements (Always Replacing)
+        for style in styling_element.findall('.//ttml:style', ns):
+            styling_element.remove(style)
+
+        # ✅ Define and Add the New Style Element
+        new_style = ET.Element("{http://www.w3.org/ns/ttml}style", attrib={
+            "xml:id": "s0",
+            "tts:color": "white",
+            "tts:fontSize": "70%",
+            "tts:fontFamily": "sansSerif",
+            "tts:backgroundColor": "black",
+            "tts:displayAlign": "center",
+            "tts:wrapOption": "wrap"
+        })
+        styling_element.append(new_style)
+
+        # ✅ Find or Create the <layout> Element
+        layout_element = head_element.find('.//ttml:layout', ns)
+        if layout_element is None:
+            layout_element = ET.Element("{http://www.w3.org/ns/ttml}layout")
+            head_element.append(layout_element)
+
+        # ✅ Remove ALL existing <region> elements inside <layout>
+        for region in list(layout_element):
+            layout_element.remove(region)
+
+        # ✅ Insert Subtitle Regions from JSON
+        for region_name, region_data in json_data.items():
+            x1, y1, x2, y2 = region_data["coordinates"]
+
+            print(frame_height,frame_width)
+
+            # Convert absolute pixel values to TTML percentages
+            origin_x = (x1 / frame_width) * 100
+            origin_y = (y1 / frame_height) * 100
+            extent_x = ((x2 - x1) / frame_width) * 100
+            extent_y = ((y2 - y1) / frame_height) * 100
+
+            # Construct the region XML element
+            region_element = ET.Element("{http://www.w3.org/ns/ttml}region", attrib={
+                "tts:origin": f"{math.ceil(origin_x)}% {math.ceil(origin_y)}%",
+                "tts:extent": f"{math.ceil(extent_x)}% {math.ceil(extent_y)}%",
+                "tts:displayAlign": "center",
+                "tts:textAlign": "center",
+                "xml:id": region_name
+            })
+
+            # Add to <layout>
+            layout_element.append(region_element)
+
+        # ✅ Find All <p> Elements (Subtitles) and Update Regions
+        for p in root.findall('.//ttml:p', ns):
+            start_time = RenderSubtitle.convert_ttml_time_to_seconds(p.attrib.get("begin", "0.0s"))
+            end_time = RenderSubtitle.convert_ttml_time_to_seconds(p.attrib.get("end", "0.0s"))
+
+            # ✅ Find Matching Subtitle
+            matched_subtitle = next((sub for sub in subtitle_data if sub["start"] <= start_time <= sub["end"]), None)
+
+            if matched_subtitle:
+                if matched_subtitle["region"] is not None:
+                    p.attrib["region"] = matched_subtitle["region"]  # ✅ Assign Correct Region
+                elif "region" in p.attrib:
+                    del p.attrib["region"]  # ✅ Remove `region` if it's None
+
+        # ✅ Save Updated TTML File
+        # tree.write(output_ttml_path, encoding="utf-8", xml_declaration=True)
+        # print(f"✅ Updated TTML file saved: {output_ttml_path}")
+        updated_ttml = ET.tostring(root, encoding="utf-8").decode("utf-8")
+        print(updated_ttml)   
+
+class Main:
+
+    def main(video_input_path, ttml_file, output_path, resize_resolution=None):
         
-        # ✅ Define file paths in /content/
+        # ✅ Start Load Timer
+        start_load_time = time.time()
+
+        # ✅ Define file paths
         video_input_path = video_input_path
-        final_video_path = final_video_path
-        srt_file_path = srt_file_path
+        file_path = ttml_file
+        output_path = output_path
 
-        # ✅ Create temporary paths inside /content/
-        audio_path = tmp_audio_path
-        output_video_path = tmp_video_path
-
-        # ✅ Extract FPS dynamically
+        # ✅ Load Video Metadata
         fps = RenderSubtitle.get_video_fps(video_input_path)
         print(f"✅ Corrected FPS: {fps}")
 
-        # ✅ Extract audio from the original video
-        os.system(f"ffmpeg -i {video_input_path} -q:a 0 -map a {audio_path}")
+        subtitle_data = SubtitlePlacement.parse_subtitle_file(file_path)
+        subtitle_timestamps = SubtitlePlacement.get_subtitle_timestamps(file_path)
 
-        # ✅ Load Pre-indexed Subtitles
-        subtitle_data = RenderSubtitle.parse_srt_file(srt_file_path)
-
-        # ✅ Open Video File
         cap = cv2.VideoCapture(video_input_path)
+
+        # ✅ Original Resolution for TTML generation
         frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
         frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+        print(f"🎞 Frame Dimensions: {frame_width}x{frame_height}")
 
-        # ✅ Initialize Video Writer
-        fourcc = cv2.VideoWriter_fourcc(*"mp4v")
-        out = cv2.VideoWriter(output_video_path, fourcc, fps, (frame_width, frame_height))
+        total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+        video_duration = total_frames / fps
 
-        # ✅ Automatically select GPU if available
-        device = "cuda" if torch.cuda.is_available() else "cpu"
-        print(f"Using device: {device}")
-        model.to(device).half()  # Use FP16 for better performance
-        torch.backends.cudnn.benchmark = True
-        torch.backends.cudnn.enabled = True
-        torch.set_num_threads(8)
+        # ✅ End Load Timer
+        end_load_time = time.time()
+        load_duration = end_load_time - start_load_time
+        print(f"📦 Total Load Time: {load_duration:.2f} seconds")
 
-        # ✅ Process Video with Batching
-        batch_size = batch_size
+        # ✅ Start Run Timer
+        start_run_time = time.time()
+
         frame_buffer = []
         timestamp_buffer = []
+        subtitle_index = 0
         frame_number = 0
+        total_video_read_time = 0
+        total_yolo_time = 0
+        total_region_assign_time = 0
 
         while cap.isOpened():
+            read_start = time.time()
             ret, frame = cap.read()
+            read_end = time.time()
+
+            total_video_read_time += (read_end - read_start)
             if not ret:
-                break  # Exit if no more frames
+                break
 
-            frame_time = frame_number / fps  # Convert frame number to timestamp
-            frame_buffer.append(frame)
-            timestamp_buffer.append(frame_time)
+            # ✅ Resize frame for faster processing
+            if resize_resolution:
+                frame = cv2.resize(frame, resize_resolution)
+                frame_width, frame_height = resize_resolution
 
-            # ✅ Process in batch when buffer reaches batch_size
-            if len(frame_buffer) == batch_size:
-                subtitles = RenderSubtitle.get_subtitles_for_frames(timestamp_buffer, subtitle_data)  # ✅ Batch subtitle lookup
-                processed_frames = SubtitlePlacement.process_frames_batch(frame_buffer, subtitles, pre_position, max_chars_per_line, opacity)  # ✅ Batch processing
+            frame_time = frame_number / fps
 
-                for processed_frame in processed_frames:
-                    out.write(processed_frame)  # Write frame to temporary video file
+            if subtitle_index < len(subtitle_data):
+                current_subtitle = subtitle_data[subtitle_index]
+                current_start = current_subtitle["start"]
+                current_end = current_subtitle["end"]
 
-                frame_buffer.clear()
-                timestamp_buffer.clear()  # Reset batch buffers
+                if current_start <= frame_time <= current_end:
+                    frame_buffer.append(frame)
+                    timestamp_buffer.append(frame_time)
+
+                if frame_time > current_end:
+                    if frame_buffer:
+                        subtitles = [current_subtitle]
+
+                        detect_start = time.time()
+                        processed_frames = SubtitlePlacement.process_frames_batch(frame_buffer)
+                        detect_end = time.time()
+                        total_yolo_time += (detect_end - detect_start)
+
+                        region_start = time.time()
+                        current_subtitle["region"] = processed_frames
+                        region_end = time.time()
+                        total_region_assign_time += (region_end - region_start)
+
+                        frame_buffer.clear()
+                        timestamp_buffer.clear()
+                        subtitle_index += 1
 
             frame_number += 1
 
-        # ✅ Process remaining frames if they exist
-        if frame_buffer:
-            subtitles = RenderSubtitle.get_subtitles_for_frames(timestamp_buffer, subtitle_data)
-            processed_frames = SubtitlePlacement.process_frames_batch(frame_buffer, subtitles)
-            for processed_frame in processed_frames:
-                out.write(processed_frame)
+        # ✅ Final batch
+        if frame_buffer and subtitle_index < len(subtitle_data):
+            subtitles = [subtitle_data[subtitle_index]]
+            detect_start = time.time()
+            processed_frames = SubtitlePlacement.process_frames_batch(frame_buffer)
+            detect_end = time.time()
+            total_yolo_time += (detect_end - detect_start)
+            subtitle_data[subtitle_index]["region"] = processed_frames
 
         cap.release()
-        out.release()
 
-        print(f"✅ Video without audio saved at: {output_video_path}")
+        # ✅ End Run Timer
+        end_run_time = time.time()
+        run_duration = end_run_time - start_run_time
 
-        # ✅ Merge Video & Audio with Correct FPS & Sync Fixes
-        os.system(f"ffmpeg -i {output_video_path} -i {audio_path} -map 0:v:0 -map 1:a:0 -c:v libx264 -preset fast -crf 23 -c:a copy -vsync vfr {final_video_path}")
+        # ✅ Generate TTML Layout using original resolution
+        ttml_gen_start = time.time()
+        layout = SubtitlePlacement.get_used_safe_zones()
+        RenderSubtitle.generate_updated_ttml(file_path, output_path, layout, subtitle_data, frame_width, frame_height)
+        ttml_gen_end = time.time()
+        ttml_generation_time = ttml_gen_end - ttml_gen_start
 
-        # ✅ Clean up the temporary files
-        os.remove(audio_path)
-        os.remove(output_video_path)
+        minutes, seconds = divmod(video_duration, 60)
 
-        print(f"✅ Final video with audio saved at: {final_video_path}")
+        # ✅ Final Timing Summary
+        print("\n📊 PROFILING SUMMARY")
+        print(f"🎬 Video Duration: {int(minutes)}m {int(seconds)}s")
+        print(f"📦 Load Time: {load_duration:.2f}s")
+        print(f"🚀 Run Time: {run_duration:.2f}s")
+        print(f"📥 Video Read Time: {total_video_read_time:.2f}s")
+        print(f"🔍 YOLO Detection Time: {total_yolo_time:.2f}s")
+        print(f"📐 Region Assignment Time: {total_region_assign_time:.2f}s")
+        print(f"📝 TTML Generation Time: {ttml_generation_time:.2f}s")
+        print(f"✅ Output TTML saved to: {output_path}")
