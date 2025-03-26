@@ -1,7 +1,7 @@
 {
-  "middle2":        { "percentages": [0.1, 0.5, 0.9, 0.6], "priority": 3 },
-  "middle2_left":   { "percentages": [0.1, 0.5, 0.7, 0.6], "priority": 3 },
-  "middle2_right":  { "percentages": [0.3, 0.5, 0.9, 0.6], "priority": 3 },
+  "middle2":        { "percentages": [0.1, 0.55, 0.9, 0.65], "priority": 3 },
+  "middle2_left":   { "percentages": [0.1, 0.55, 0.7, 0.65], "priority": 3 },
+  "middle2_right":  { "percentages": [0.3, 0.55, 0.9, 0.65], "priority": 3 },
   "middle3":        { "percentages": [0.1, 0.7, 0.9, 0.8], "priority": 4 },
   "middle3_left":   { "percentages": [0.1, 0.7, 0.7, 0.8], "priority": 4 },
   "middle3_right":  { "percentages": [0.3, 0.7, 0.9, 0.8], "priority": 4 },

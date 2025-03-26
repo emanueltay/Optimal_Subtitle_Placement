@@ -1,0 +1,10 @@
+{
+    "middle3": {
+      "percentages": [0.0, 0.70, 1.0, 0.82],
+      "priority": 3
+    },
+    "bottom": {
+      "percentages": [0.0, 0.88, 1.0, 1.0],
+      "priority": 4
+    }
+}

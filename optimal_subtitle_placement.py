@@ -2,6 +2,7 @@ from ultralytics import YOLO
 import cv2
 import json
 import re
+import argparse
 # import textwrap
 import numpy as np
 # import arabic_reshaper
@@ -21,10 +22,10 @@ safe_zone_cache = {}
 used_safe_zones = {}  # Dictionary to store all assigned safe zones
 
 safe_zone_history = deque(maxlen=3)  # Stores past safe zones for consistency (4)
-region_json_path = "/content/optimal_subtitle_copied/subtitle_regions_scaled.json"
+region_json_path = "subtitle_regions_scaled_test.json"
 
 # Load the trained model
-model = YOLO("best.pt")
+model = YOLO("Model/fine-tuned_model(YOLO12)(100_epochs)/best.pt")
 
 # Automatically select GPU if available
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -37,7 +38,7 @@ torch.backends.cudnn.benchmark = True
 torch.backends.cudnn.enabled = True
 torch.set_num_threads(torch.get_num_threads())  # Use optimal number of CPU threads
 
-font_path = "/content/optimal_subtitle/Font/GoNotoKurrent-Regular.ttf"
+# font_path = "/content/optimal_subtitle/Font/GoNotoKurrent-Regular.ttf"
 
 class SubtitlePlacement:
 
@@ -179,7 +180,7 @@ class SubtitlePlacement:
         Returns:
             tuple: (subtitle_height, margin)
         """
-        subtitle_height = max(0.05 * frame_height, 18)  # Minimum 18px for readability
+        subtitle_height = max(0.12 * frame_height, 30)  # Minimum 18px for readability
         margin = max(0.02 * frame_height, 5)  # Minimum 5px to avoid text touching edges
 
         return int(subtitle_height), int(margin)
@@ -214,7 +215,7 @@ class SubtitlePlacement:
         
         return pixel_positions
 
-    def process_frames_batch(frames, process_fps=3, video_fps=30):
+    def process_frames_batch(frames, process_fps=10, video_fps=30):
         """
         Process a batch of frames at 3 FPS:
         - Detects objects in frames sampled at 3 FPS
@@ -273,7 +274,6 @@ class SubtitlePlacement:
             final_safe_zone = next((zone for zone in reversed(combined_safe_zones) if zone in top_zones), "bottom")
         else:
             final_safe_zone = "bottom"  # ✅ Default fallback
-
 
         # ✅ Store the final safe zone for future frames
         safe_zone_history.append(final_safe_zone)
@@ -358,8 +358,8 @@ class RenderSubtitle:
 
             # ✅ Extract Subtitle Data
             for p in root.findall('.//ttml:p', ns):
-                start_time = SubtitlePlacement.convert_ttml_time_to_seconds(p.attrib.get("begin", "0.0s"))
-                end_time = SubtitlePlacement.convert_ttml_time_to_seconds(p.attrib.get("end", "0.0s"))
+                start_time = RenderSubtitle.convert_ttml_time_to_seconds(p.attrib.get("begin", "0.0s"))
+                end_time = RenderSubtitle.convert_ttml_time_to_seconds(p.attrib.get("end", "0.0s"))
                 text = " ".join(p.itertext()).strip()
                 region = p.attrib.get("region", None)
 
@@ -519,10 +519,7 @@ class RenderSubtitle:
                     del p.attrib["region"]  # ✅ Remove `region` if it's None
 
         # ✅ Save Updated TTML File
-        # tree.write(output_ttml_path, encoding="utf-8", xml_declaration=True)
-        # print(f"✅ Updated TTML file saved: {output_ttml_path}")
-        updated_ttml = ET.tostring(root, encoding="utf-8").decode("utf-8")
-        print(updated_ttml)   
+        tree.write(output_ttml_path, encoding="utf-8", xml_declaration=True)
 
 class Main:
 
@@ -540,8 +537,8 @@ class Main:
         fps = RenderSubtitle.get_video_fps(video_input_path)
         print(f"✅ Corrected FPS: {fps}")
 
-        subtitle_data = SubtitlePlacement.parse_subtitle_file(file_path)
-        subtitle_timestamps = SubtitlePlacement.get_subtitle_timestamps(file_path)
+        subtitle_data = RenderSubtitle.parse_subtitle_file(file_path)
+        # subtitle_timestamps = SubtitlePlacement.get_subtitle_timestamps(file_path)
 
         cap = cv2.VideoCapture(video_input_path)
 
@@ -596,7 +593,6 @@ class Main:
 
                 if frame_time > current_end:
                     if frame_buffer:
-                        subtitles = [current_subtitle]
 
                         detect_start = time.time()
                         processed_frames = SubtitlePlacement.process_frames_batch(frame_buffer)
@@ -616,7 +612,7 @@ class Main:
 
         # ✅ Final batch
         if frame_buffer and subtitle_index < len(subtitle_data):
-            subtitles = [subtitle_data[subtitle_index]]
+            # subtitles = [subtitle_data[subtitle_index]]
             detect_start = time.time()
             processed_frames = SubtitlePlacement.process_frames_batch(frame_buffer)
             detect_end = time.time()
@@ -648,3 +644,24 @@ class Main:
         print(f"📐 Region Assignment Time: {total_region_assign_time:.2f}s")
         print(f"📝 TTML Generation Time: {ttml_generation_time:.2f}s")
         print(f"✅ Output TTML saved to: {output_path}")
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Auto Subtitle Placement")
+
+    parser.add_argument("--video", required=True, help="Path to input video file")
+    parser.add_argument("--ttml", required=True, help="Path to input TTML subtitle file")
+    parser.add_argument("--output", required=True, help="Path to save updated TTML file")
+    parser.add_argument("--resize", nargs=2, type=int, default=None, help="Resize resolution (width height), e.g. --resize 640 360")
+
+    args = parser.parse_args()
+
+    # Handle optional resize argument
+    resize_resolution = tuple(args.resize) if args.resize else None
+
+    # Run main
+    Main.main(
+        video_input_path=args.video,
+        ttml_file=args.ttml,
+        output_path=args.output,
+        resize_resolution=resize_resolution
+    )

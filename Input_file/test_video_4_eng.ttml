@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xmlns="http://www.w3.org/ns/ttml" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" ttp:timeBase="media" xmlns:tts="http://www.w3.org/ns/ttml#styling" xml:lang="en" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title></ttm:title>
+    </metadata>
+    <styling>
+      <style xml:id="s0" tts:backgroundColor="black" tts:fontStyle="normal" tts:fontSize="16px" tts:fontFamily="sansSerif" tts:color="white" />
+    </styling>
+    <layout>
+      <region tts:extent="80% 40%" tts:origin="10% 10%" tts:displayAlign="before" tts:textAlign="start" xml:id="topLeft" />
+      <region tts:extent="80% 40%" tts:origin="10% 30%" tts:displayAlign="center" tts:textAlign="start" xml:id="centerLeft" />
+      <region tts:extent="80% 40%" tts:origin="10% 50%" tts:displayAlign="after" tts:textAlign="start" xml:id="bottomLeft" />
+      <region tts:extent="80% 40%" tts:origin="10% 10%" tts:displayAlign="before" tts:textAlign="center" xml:id="topCenter" />
+      <region tts:extent="80% 40%" tts:origin="10% 30%" tts:displayAlign="center" tts:textAlign="center" xml:id="centerСenter" />
+      <region tts:extent="80% 40%" tts:origin="10% 50%" tts:displayAlign="after" tts:textAlign="center" xml:id="bottomCenter" />
+      <region tts:extent="80% 40%" tts:origin="10% 10%" tts:displayAlign="before" tts:textAlign="end" xml:id="topRight" />
+      <region tts:extent="80% 40%" tts:origin="10% 30%" tts:displayAlign="center" tts:textAlign="end" xml:id="centerRight" />
+      <region tts:extent="80% 40%" tts:origin="10% 50%" tts:displayAlign="after" tts:textAlign="end" xml:id="bottomRight" />
+    </layout>
+  </head>
+  <body style="s0">
+    <div>
+      <p begin="0.15s" xml:id="p0" end="2.97s" region="middle3">Sam Altman.<br />Sam, of course, the headlines right now,</p>
+      <p begin="2.97s" xml:id="p1" end="6.06s" region="middle3">Elon Musk making a bid apparently for<br />Openai.</p>
+      <p begin="6.09s" xml:id="p2" end="8.55s" region="middle3">Your response?<br />You're turning him down for 97 billion.</p>
+      <p begin="9.6s" xml:id="p3" end="11.34s" region="middle3">I mean, look over here.<br />It's not for sale.</p>
+      <p begin="11.34s" xml:id="p4" end="14.67s" region="middle3">The open admission is not for sale.<br />Ellen tries all sorts of things for a</p>
+      <p begin="14.67s" xml:id="p5" end="17.79s" region="middle3">long time.<br />This is the late, you know, this week's</p>
+      <p begin="17.79s" xml:id="p6" end="19.62s" region="shifted_middle3">episode.<br />You take it seriously.</p>
+      <p begin="19.62s" xml:id="p7" end="20.94s" region="shifted_middle3">It's all.<br />What do you think he's trying to drive</p>
+      <p begin="20.94s" xml:id="p8" end="22.92s" region="shifted_middle3">out with this?<br />I think he's probably just trying to</p>
+      <p begin="22.92s" xml:id="p9" end="25.41s" region="shifted_middle3">slow us down.<br />He obviously is a competitor.</p>
+      <p begin="26.49s" xml:id="p10" end="30.27s" region="shifted_middle3">It's, you know, he's working hard and<br />he's raised a lot of money for MCI, and</p>
+      <p begin="30.27s" xml:id="p11" end="35.07s" region="shifted_middle3">they're trying to compete with us from a<br />technological perspective, from, you</p>
+      <p begin="35.07s" xml:id="p12" end="36.63s" region="shifted_middle3">know, getting the product into the<br />market.</p>
+      <p begin="37.14s" xml:id="p13" end="41.52s" region="shifted_middle3">And I wish he would just compete by<br />building better products.</p>
+      <p begin="41.52s" xml:id="p14" end="44.79s" region="shifted_middle3">But I think there's been a lot of<br />tactics, you know, many, many lawsuits,</p>
+      <p begin="44.79s" xml:id="p15" end="46.71s" region="shifted_middle3">all sorts of other crazy stuff out of<br />this.</p>
+      <p begin="47.61s" xml:id="p16" end="49.71s" region="shifted_middle3">And we'll try to just put our head down<br />and keep working.</p>
+      <p begin="49.89s" xml:id="p17" end="53.55s" region="middle3">Does it make it more difficult to move<br />from that non-profit model to that for</p>
+      <p begin="53.55s" xml:id="p18" end="57.47s" region="middle3">profit model for open?<br />We're not moving to a for profit model</p>
+      <p begin="57.47s" xml:id="p19" end="59.63s" region="middle3">where we're not sure we're going to it<br />all.</p>
+      <p begin="59.63s" xml:id="p20" end="62.77s" region="middle3">But no matter what, the nonprofit will<br />continue to be extremely important.</p>
+      <p begin="62.78s" xml:id="p21" end="64.58s" region="shifted_middle3">It will drive.<br />The mission will continue to exist.</p>
+      <p begin="65.269s" xml:id="p22" end="69.41s" region="shifted_middle3">The board is looking at lots of options<br />about how to best structure for this</p>
+      <p begin="69.41s" xml:id="p23" end="72.7s" region="shifted_middle3">next phase.<br />But the nonprofit is not changing at</p>
+      <p begin="72.71s" xml:id="p24" end="74.27s" region="shifted_middle3">anything or going anywhere.<br />Okay.</p>
+      <p begin="74.33s" xml:id="p25" end="77.78s" region="middle3">What is your main mission here at the<br />Paris Action Summit?</p>
+      <p begin="77.78s" xml:id="p26" end="79.91s" region="middle3">Your Stargate?<br />There's question questions about how</p>
+      <p begin="79.91s" xml:id="p27" end="81.17s" region="middle3">much you're actually going to commit to<br />that.</p>
+      <p begin="81.17s" xml:id="p28" end="82.7s" region="middle3">Maybe you can give us some numbers on<br />that, Sam.</p>
+      <p begin="83.03s" xml:id="p29" end="88.16s" region="middle3">What is the messaging here from Unity?<br />So I've been to an earlier version of</p>
+      <p begin="88.16s" xml:id="p30" end="91.67s" region="middle3">this at Bletchley Park, and that one was<br />more focused on safety.</p>
+      <p begin="91.94s" xml:id="p31" end="93.8s" region="shifted_middle3">This one, people are still talking about<br />safety.</p>
+      <p begin="93.8s" xml:id="p32" end="97.4s" region="shifted_middle3">But but really, I think people are now<br />saying, okay, this technology is here.</p>
+      <p begin="97.4s" xml:id="p33" end="99.8s" region="shifted_middle3">It's having an incredible impact.<br />We've got to drive it.</p>
+      <p begin="99.8s" xml:id="p34" end="102.41s" region="shifted_middle3">There is a lot of questions about how<br />people can, you know.</p>
+      <p begin="103.48s" xml:id="p35" end="106.0s" region="middle3">Maybe the most common question I've<br />gotten is can you do a Stargate in my</p>
+      <p begin="106.0s" xml:id="p36" end="108.28s" region="middle3">country?<br />You know, we need infrastructure here.</p>
+      <p begin="108.28s" xml:id="p37" end="109.48s" region="middle3">We want to do this.<br />Can you help?</p>
+      <p begin="109.87s" xml:id="p38" end="113.68s" region="middle3">So that that's been a common one.<br />But a lot of other things about just how</p>
+      <p begin="113.68s" xml:id="p39" end="116.65s" region="middle3">are we going to deploy this technology<br />to make sure people benefit.</p>
+      <p begin="116.74s" xml:id="p40" end="118.96s" region="middle3">Where's it going to go?<br />You know, in what ways the model going</p>
+      <p begin="118.96s" xml:id="p41" end="121.3s" region="middle3">to improve.<br />Last week, we launched this thing called</p>
+      <p begin="121.3s" xml:id="p42" end="123.67s" region="middle3">Deep Research.<br />We've got a ton of questions about that.</p>
+      <p begin="123.67s" xml:id="p43" end="126.61s" region="middle3">You know, how can we use this to really<br />drive economic growth?</p>
+      <p begin="126.61s" xml:id="p44" end="129.3s" region="middle3">But maybe economic growth has been the<br />single biggest theme here.</p>
+      <p begin="129.31s" xml:id="p45" end="132.34s" region="middle3">And having a currency on deep sea can<br />argue you in the seem to me looking into</p>
+      <p begin="132.34s" xml:id="p46" end="135.43s" region="middle3">that whether they distilled whether they<br />inappropriately used your your</p>
+      <p begin="135.43s" xml:id="p47" end="139.39s" region="middle3">inferencing data, have you had more<br />clarity that they did or didn't they get</p>
+      <p begin="139.39s" xml:id="p48" end="141.19s" region="middle3">challenged?<br />They built a good model.</p>
+      <p begin="141.19s" xml:id="p49" end="143.71s" region="middle3">Many people will distill from many other<br />models.</p>
+      <p begin="145.18s" xml:id="p50" end="148.72s" region="shifted_middle3">Again, I feel so confident about our<br />research roadmap and also our product</p>
+      <p begin="148.72s" xml:id="p51" end="152.2s" region="shifted_middle3">roadmap that, you know, deep sea will do<br />whatever it is going to do and people do</p>
+      <p begin="152.2s" xml:id="p52" end="155.86s" region="shifted_middle3">whatever they're going to do, and we're<br />just going to try to like build the best</p>
+      <p begin="155.86s" xml:id="p53" end="157.69s" region="shifted_middle3">technology we can and get it in people's<br />hands.</p>
+      <p begin="157.69s" xml:id="p54" end="159.67s" region="middle3">And I think that's mostly going pretty<br />well.</p>
+      <p begin="159.7s" xml:id="p55" end="162.94s" region="middle3">Do you think Musk's approach then, is<br />from a position of insecurity about</p>
+      <p begin="162.94s" xml:id="p56" end="165.04s" region="middle3">Excel?<br />Probably his whole life is from a</p>
+      <p begin="165.04s" xml:id="p57" end="168.55s" region="middle3">position of insecurity.<br />I feel for the guy who feels that I do,</p>
+      <p begin="168.55s" xml:id="p58" end="170.68s" region="middle3">actually.<br />I don't think he's like a happy person.</p>
+      <p begin="170.68s" xml:id="p59" end="171.85s" region="middle3">I do feel for him.<br />Okay.</p>
+      <p begin="171.97s" xml:id="p60" end="175.45s" region="middle3">Do you worry that he has this proximity<br />to the president and he can influence</p>
+      <p begin="175.45s" xml:id="p61" end="179.24s" region="middle3">the decision making of of the US<br />presidency and policies around this this</p>
+      <p begin="179.29s" xml:id="p62" end="181.45s" region="middle3">agenda on A.I.<br />in particular?</p>
+      <p begin="181.51s" xml:id="p63" end="184.87s" region="middle3">Maybe I should, but not particularly.<br />I mean, I try to just wake up and think</p>
+      <p begin="184.87s" xml:id="p64" end="186.67s" region="middle3">about, like, how we're going to make our<br />technology better.</p>
+      <p begin="187.21s" xml:id="p65" end="189.13s" region="middle3">Sam Altman, thank you.<br />Thank you so much, sir.</p>
+      <p begin="189.13s" xml:id="p66" end="191.32s" region="middle3">You're co-founder, of course, of Open<br />Openai.</p>
+    </div>
+  </body>
+</tt>
