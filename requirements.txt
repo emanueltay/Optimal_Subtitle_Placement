@@ -1,4 +1,4 @@
-ultralytics==8.1.26
+ultralytics==8.3.97
 opencv-python
 numpy
 pysrt
