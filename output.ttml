@@ -7,442 +7,77 @@
     <styling>
       <style xml:id="s0" tts:color="white" tts:fontSize="70%" tts:fontFamily="sansSerif" tts:backgroundColor="black" tts:displayAlign="center" tts:wrapOption="wrap" /></styling>
     <layout>
-      <region tts:origin="0% 17%" tts:extent="100% 12%" tts:displayAlign="center" tts:textAlign="center" xml:id="fallback_bottom" /><region tts:origin="40% 70%" tts:extent="60% 13%" tts:displayAlign="center" tts:textAlign="center" xml:id="shifted_middle3" /><region tts:origin="0% 2%" tts:extent="100% 12%" tts:displayAlign="center" tts:textAlign="center" xml:id="fallback_top" /></layout>
+      <region tts:origin="10% 70%" tts:extent="80% 15%" tts:displayAlign="center" tts:textAlign="center" xml:id="middle3" /><region tts:origin="0% 70%" tts:extent="71% 15%" tts:displayAlign="center" tts:textAlign="center" xml:id="shifted_middle3" /></layout>
   </head>
   <body style="s0">
     <div>
-      <p begin="5.106s" xml:id="p0" end="6.33s" region="fallback_bottom">LARRY: WE WELCOME TO THE SHOW</p>
-      <p begin="6.341s" xml:id="p1" end="7.641s" region="fallback_bottom">LARRY: WE WELCOME TO THE SHOW<br />AND SPECIAL INTERVIEW WITH</p>
-      <p begin="7.675s" xml:id="p2" end="9.199s" region="fallback_bottom">AND SPECIAL INTERVIEW WITH<br />MR. ELON MUSK WHO OF COURSE IS</p>
-      <p begin="9.21s" xml:id="p3" end="12.936s" region="fallback_bottom">MR. ELON MUSK WHO OF COURSE IS<br />FAMED TRUMP ADVISER AND CEO OF</p>
-      <p begin="12.947s" xml:id="p4" end="16.116s" region="shifted_middle3">FAMED TRUMP ADVISER AND CEO OF<br />TESLA AND SPACEX, CHAIR OF X</p>
-      <p begin="16.117s" xml:id="p5" end="17.25s" region="fallback_bottom">TESLA AND SPACEX, CHAIR OF X<br />CORP. AND THANK YOU FOR BEING</p>
-      <p begin="17.285s" xml:id="p6" end="17.908s" region="fallback_bottom">CORP. AND THANK YOU FOR BEING<br />HERE.</p>
-      <p begin="17.919s" xml:id="p7" end="18.942s" region="fallback_bottom">HERE.<br />&gt;&gt; THANKS FOR HAVING ME.</p>
-      <p begin="18.953s" xml:id="p8" end="20.154s" region="fallback_bottom">&gt;&gt; THANKS FOR HAVING ME.<br />LARRY: I WANT TO BEGIN AMONG</p>
-      <p begin="20.188s" xml:id="p9" end="22.322s" region="fallback_bottom">LARRY: I WANT TO BEGIN AMONG<br />OTHER THINGS AND EVERYONE IS</p>
-      <p begin="22.323s" xml:id="p10" end="23.446s" region="fallback_bottom">OTHER THINGS AND EVERYONE IS<br />ATTACKING YOU FOR YOUR POSITION</p>
-      <p begin="23.457s" xml:id="p11" end="24.214s" region="shifted_middle3">ATTACKING YOU FOR YOUR POSITION<br />IN THE GOVERNMENT.</p>
-      <p begin="24.225s" xml:id="p12" end="26.093s" region="shifted_middle3">IN THE GOVERNMENT.<br />THERE WAS A CYBER ATTACK ON X</p>
-      <p begin="26.127s" xml:id="p13" end="28.619s" region="shifted_middle3">THERE WAS A CYBER ATTACK ON X<br />LARRY, WHICH SHUT IT DOWN AND</p>
-      <p begin="28.63s" xml:id="p14" end="30.153s" region="shifted_middle3">LARRY, WHICH SHUT IT DOWN AND<br />MAY HAVE BEEN FOREIGN SOURCED.</p>
-      <p begin="30.164s" xml:id="p15" end="31.198s" region="fallback_bottom">MAY HAVE BEEN FOREIGN SOURCED.<br />THAT’S A BIG STORY.</p>
-      <p begin="31.232s" xml:id="p16" end="32.656s" region="fallback_bottom">THAT’S A BIG STORY.<br />YOU WANT TO GIVE US A MOMENT ON</p>
-      <p begin="32.667s" xml:id="p17" end="33.733s" region="fallback_bottom">YOU WANT TO GIVE US A MOMENT ON<br />THAT?</p>
-      <p begin="33.735s" xml:id="p18" end="35.502s" region="fallback_bottom">THAT?<br />&gt;&gt; WELL, WE DON’T -- WE’RE NOT</p>
-      <p begin="35.536s" xml:id="p19" end="37.427s" region="fallback_bottom">&gt;&gt; WELL, WE DON’T -- WE’RE NOT<br />SURE WHAT HAPPENED BUT THERE WAS</p>
-      <p begin="37.438s" xml:id="p20" end="39.663s" region="fallback_bottom">SURE WHAT HAPPENED BUT THERE WAS<br />A MASSIVE CYBER ATTACK TO TRY</p>
-      <p begin="39.674s" xml:id="p21" end="40.273s" region="fallback_bottom">A MASSIVE CYBER ATTACK TO TRY<br />AND BRING DOWN.</p>
-      <p begin="40.308s" xml:id="p22" end="43.2s" region="fallback_bottom">AND BRING DOWN.<br />X SYSTEM WITH IP ADDRESSES</p>
-      <p begin="43.211s" xml:id="p23" end="44.735s" region="fallback_bottom">X SYSTEM WITH IP ADDRESSES<br />ORIGINATING IN THE UKRAINE</p>
-      <p begin="44.746s" xml:id="p24" end="45.112s" region="fallback_bottom">ORIGINATING IN THE UKRAINE<br />AREA.</p>
-      <p begin="45.113s" xml:id="p25" end="46.77s" region="fallback_bottom">AREA.<br />LARRY: OH, THAT’S YOUR</p>
-      <p begin="46.781s" xml:id="p26" end="47.114s" region="fallback_bottom">LARRY: OH, THAT’S YOUR<br />SUSPICION.</p>
-      <p begin="47.148s" xml:id="p27" end="48.715s" region="fallback_bottom">SUSPICION.<br />IS THE WEBSITE -- IS THE</p>
-      <p begin="48.716s" xml:id="p28" end="50.407s" region="fallback_bottom">IS THE WEBSITE -- IS THE<br />INTERNET UP AND UP YET?</p>
-      <p begin="50.418s" xml:id="p29" end="50.874s" region="fallback_bottom">INTERNET UP AND UP YET?<br />&gt;&gt; IT’S UP.</p>
-      <p begin="50.885s" xml:id="p30" end="51.785s" region="fallback_bottom">&gt;&gt; IT’S UP.<br />LARRY: OKAY, GOOD.</p>
-      <p begin="51.819s" xml:id="p31" end="53.143s" region="fallback_bottom">LARRY: OKAY, GOOD.<br />I WAS JUST LOOKING BACK.</p>
-      <p begin="53.154s" xml:id="p32" end="57.047s" region="fallback_bottom">I WAS JUST LOOKING BACK.<br />LET ME SEE IF I GET THIS RIGHT,</p>
-      <p begin="57.058s" xml:id="p33" end="59.082s" region="fallback_bottom">LET ME SEE IF I GET THIS RIGHT,<br />THEY’RE SETTING FIRE TO VARIOUS</p>
-      <p begin="59.093s" xml:id="p34" end="60.527s" region="fallback_bottom">THEY’RE SETTING FIRE TO VARIOUS<br />TESLA CHARGING STATIONS NEAR</p>
-      <p begin="60.562s" xml:id="p35" end="61.052s" region="fallback_bottom">TESLA CHARGING STATIONS NEAR<br />BOSTON.</p>
-      <p begin="61.063s" xml:id="p36" end="65.732s" region="fallback_bottom">BOSTON.<br />SHOTS WERE FIRED AT A TESLA</p>
-      <p begin="65.733s" xml:id="p37" end="67.767s" region="fallback_bottom">SHOTS WERE FIRED AT A TESLA<br />DEALERSHIP IN OREGON.</p>
-      <p begin="67.769s" xml:id="p38" end="69.293s" region="fallback_bottom">DEALERSHIP IN OREGON.<br />VARIOUS NONVIOLENT --</p>
-      <p begin="69.304s" xml:id="p39" end="70.003s" region="fallback_bottom">VARIOUS NONVIOLENT --<br />&gt;&gt; SHOTS FIRED.</p>
-      <p begin="70.038s" xml:id="p40" end="71.462s" region="fallback_bottom">&gt;&gt; SHOTS FIRED.<br />NOT A METAPHOR.</p>
-      <p begin="71.473s" xml:id="p41" end="74.732s" region="fallback_bottom">NOT A METAPHOR.<br />LARRY: SHOTS FIRES, YES.</p>
-      <p begin="74.743s" xml:id="p42" end="75.7s" region="fallback_bottom">LARRY: SHOTS FIRES, YES.<br />DOWNTOWN NEW YORK MARCHING</p>
-      <p begin="75.711s" xml:id="p43" end="78.746s" region="fallback_bottom">DOWNTOWN NEW YORK MARCHING<br />AGAINST THE TESLA SHOWROOM.</p>
-      <p begin="78.78s" xml:id="p44" end="80.371s" region="fallback_bottom">AGAINST THE TESLA SHOWROOM.<br />YOUR STOCK IS WAY DOWN, YOU’VE</p>
-      <p begin="80.382s" xml:id="p45" end="82.383s" region="fallback_bottom">YOUR STOCK IS WAY DOWN, YOU’VE<br />BEEN CRITICIZED LEFT AND RIGHT.</p>
-      <p begin="82.384s" xml:id="p46" end="84.385s" region="fallback_bottom">BEEN CRITICIZED LEFT AND RIGHT.<br />&gt;&gt; LOOK ON THE BRIGHT SIDE --</p>
-      <p begin="84.386s" xml:id="p47" end="92.316s" region="fallback_bottom">&gt;&gt; LOOK ON THE BRIGHT SIDE --<br />LARRY: WHY ARE YOU DOING THIS</p>
-      <p begin="92.327s" xml:id="p48" end="94.428s" region="fallback_bottom">LARRY: WHY ARE YOU DOING THIS<br />&gt;&gt; ALWAYS LOOK ON THE BRIGHT</p>
-      <p begin="94.462s" xml:id="p49" end="96.787s" region="fallback_bottom">&gt;&gt; ALWAYS LOOK ON THE BRIGHT<br />SIDES OF LIFE.</p>
-      <p begin="96.798s" xml:id="p50" end="99.823s" region="fallback_bottom">SIDES OF LIFE.<br />BESIDES THAT, HOW’SY DAY?</p>
-      <p begin="99.834s" xml:id="p51" end="102.693s" region="fallback_top">BESIDES THAT, HOW’SY DAY?<br />LARRY: WHAT MOTIVATES YOU TO DO</p>
-      <p begin="102.704s" xml:id="p52" end="103.194s" region="fallback_top">LARRY: WHAT MOTIVATES YOU TO DO<br />THIS?</p>
-      <p begin="103.205s" xml:id="p53" end="103.995s" region="fallback_top">THIS?<br />IT’S TOUGH STUFF.</p>
-      <p begin="104.006s" xml:id="p54" end="105.696s" region="fallback_bottom">IT’S TOUGH STUFF.<br />&gt;&gt; YEAH, BUT I THINK WE’RE DOING</p>
-      <p begin="105.707s" xml:id="p55" end="106.44s" region="fallback_bottom">&gt;&gt; YEAH, BUT I THINK WE’RE DOING<br />THE RIGHT THING HERE.</p>
-      <p begin="106.475s" xml:id="p56" end="108.8s" region="fallback_bottom">THE RIGHT THING HERE.<br />THERE’S BEEN A TREMENDOUS AMOUNT</p>
-      <p begin="108.811s" xml:id="p57" end="113.037s" region="fallback_bottom">THERE’S BEEN A TREMENDOUS AMOUNT<br />OF WASTE AND FRAUD IN THE</p>
-      <p begin="113.048s" xml:id="p58" end="113.414s" region="fallback_top">OF WASTE AND FRAUD IN THE<br />GOVERNMENT.</p>
-      <p begin="113.415s" xml:id="p59" end="114.048s" region="fallback_top">GOVERNMENT.<br />WHEN YOU WERE PART OF THE</p>
-      <p begin="114.082s" xml:id="p60" end="116.54s" region="fallback_bottom">WHEN YOU WERE PART OF THE<br />GOVERNMENT, YOU SAW A LOT OF</p>
-      <p begin="116.551s" xml:id="p61" end="116.884s" region="fallback_bottom">GOVERNMENT, YOU SAW A LOT OF<br />THAT.</p>
-      <p begin="116.918s" xml:id="p62" end="118.842s" region="fallback_bottom">THAT.<br />THERE’S BEEN -- IF YOU LOOK AT</p>
-      <p begin="118.853s" xml:id="p63" end="119.787s" region="fallback_top">THERE’S BEEN -- IF YOU LOOK AT<br />INSPECTOR GENERAL REPORTS AND</p>
-      <p begin="119.821s" xml:id="p64" end="127.594s" region="fallback_bottom">INSPECTOR GENERAL REPORTS AND<br />THE GOVERNMENT ACCOUNTABILITY</p>
-      <p begin="127.596s" xml:id="p65" end="129.897s" region="fallback_bottom">THE GOVERNMENT ACCOUNTABILITY<br />OFFICE, THERE’S BEEN MANY AUDITS</p>
-      <p begin="129.898s" xml:id="p66" end="131.455s" region="fallback_bottom">OFFICE, THERE’S BEEN MANY AUDITS<br />POINTED OUT WITH WASTE AND FRAUD</p>
-      <p begin="131.466s" xml:id="p67" end="134.602s" region="fallback_top">POINTED OUT WITH WASTE AND FRAUD<br />AND REPORT BY THE GAO,</p>
-      <p begin="134.636s" xml:id="p68" end="135.493s" region="fallback_top">AND REPORT BY THE GAO,<br />GOVERNMENT ACTABILITY OFFICE</p>
-      <p begin="135.504s" xml:id="p69" end="136.761s" region="fallback_top">GOVERNMENT ACTABILITY OFFICE<br />LAST YEAR.</p>
-      <p begin="136.772s" xml:id="p70" end="138.005s" region="fallback_top">LAST YEAR.<br />ACCOUNTABILITY OFFICE, DURING</p>
-      <p begin="138.04s" xml:id="p71" end="140.832s" region="fallback_top">ACCOUNTABILITY OFFICE, DURING<br />THE BIDEN ADMINISTRATION</p>
-      <p begin="140.843s" xml:id="p72" end="141.866s" region="fallback_bottom">THE BIDEN ADMINISTRATION<br />ESTIMATED GOVERNMENT FRAUD TO BE</p>
-      <p begin="141.877s" xml:id="p73" end="144.536s" region="fallback_top">ESTIMATED GOVERNMENT FRAUD TO BE<br />HALF A TRILLION.</p>
-      <p begin="144.547s" xml:id="p74" end="146.48s" region="fallback_bottom">HALF A TRILLION.<br />SO JUST BECAUSE IT’S NOT A TRUMP</p>
-      <p begin="146.515s" xml:id="p75" end="147.772s" region="fallback_top">SO JUST BECAUSE IT’S NOT A TRUMP<br />ADMINISTRATION, THAT’S A BIDEN</p>
-      <p begin="147.783s" xml:id="p76" end="148.683s" region="fallback_top">ADMINISTRATION, THAT’S A BIDEN<br />ADMINISTRATION THING.</p>
-      <p begin="148.717s" xml:id="p77" end="151.375s" region="fallback_bottom">ADMINISTRATION THING.<br />SO ALL WE’RE TRYING TO DO IS GET</p>
-      <p begin="151.386s" xml:id="p78" end="154.555s" region="fallback_bottom">SO ALL WE’RE TRYING TO DO IS GET<br />THAT NUMBER DOWN TO MUCH SMALLER</p>
-      <p begin="154.556s" xml:id="p79" end="156.69s" region="fallback_bottom">THAT NUMBER DOWN TO MUCH SMALLER<br />FIGURE, SAVE MONEY FOR THE</p>
-      <p begin="156.725s" xml:id="p80" end="158.182s" region="fallback_bottom">FIGURE, SAVE MONEY FOR THE<br />AMERICAN TAXPAYER AND STOP MONEY</p>
-      <p begin="158.193s" xml:id="p81" end="161.295s" region="fallback_bottom">AMERICAN TAXPAYER AND STOP MONEY<br />BEING SPENT ON THINGS THAT ARE</p>
-      <p begin="161.33s" xml:id="p82" end="163.788s" region="fallback_bottom">BEING SPENT ON THINGS THAT ARE<br />VERY FEW TAXPAYERS WOULD AGREE</p>
-      <p begin="163.799s" xml:id="p83" end="165.233s" region="fallback_bottom">VERY FEW TAXPAYERS WOULD AGREE<br />MAKE SENSE AND TRANSGENDER</p>
-      <p begin="165.267s" xml:id="p84" end="169.694s" region="fallback_top">MAKE SENSE AND TRANSGENDER<br />ANIMAL SURGERIES.</p>
-      <p begin="169.705s" xml:id="p85" end="171.139s" region="fallback_top">ANIMAL SURGERIES.<br />WHY ARE AMERICAN TAX DOLLARS</p>
-      <p begin="171.173s" xml:id="p86" end="176.401s" region="fallback_top">WHY ARE AMERICAN TAX DOLLARS<br />BEING SPENT ON THOSE?</p>
-      <p begin="176.412s" xml:id="p87" end="178.846s" region="fallback_top">BEING SPENT ON THOSE?<br />AND L PRESIDENT HAS DONE THROUGH</p>
-      <p begin="178.881s" xml:id="p88" end="181.706s" region="fallback_bottom">AND L PRESIDENT HAS DONE THROUGH<br />A LONG LIST OF ABSURD THINGS AND</p>
-      <p begin="181.717s" xml:id="p89" end="183.752s" region="fallback_top">A LONG LIST OF ABSURD THINGS AND<br />20 MILLION PEOPLE DEAD MARKED AS</p>
-      <p begin="183.786s" xml:id="p90" end="186.521s" region="fallback_top">20 MILLION PEOPLE DEAD MARKED AS<br />ALIVE IN SOCIAL SECURITY DATA</p>
-      <p begin="186.522s" xml:id="p91" end="198.099s" region="fallback_bottom">ALIVE IN SOCIAL SECURITY DATA<br />BASE.</p>
-      <p begin="198.1s" xml:id="p92" end="199.958s" region="fallback_bottom">BASE.<br />100MILLION IN LOANS GIVEN TO</p>
-      <p begin="199.969s" xml:id="p93" end="201.169s" region="fallback_top">100MILLION IN LOANS GIVEN TO<br />PEOPLE 11 AND UNDER.</p>
-      <p begin="201.17s" xml:id="p94" end="207.699s" region="fallback_top">PEOPLE 11 AND UNDER.<br />THESE MUST BE VERY SURPRISING</p>
-      <p begin="207.71s" xml:id="p95" end="209.734s" region="fallback_bottom">THESE MUST BE VERY SURPRISING<br />ENTREPRENEURIAL 8 YEAR-OLDS.</p>
-      <p begin="209.745s" xml:id="p96" end="211.203s" region="fallback_bottom">ENTREPRENEURIAL 8 YEAR-OLDS.<br />LARRY: VERY SMART ONES.</p>
-      <p begin="211.214s" xml:id="p97" end="212.681s" region="fallback_bottom">LARRY: VERY SMART ONES.<br />&gt;&gt; YES, ENORMOUS NUMBER OF</p>
-      <p begin="212.715s" xml:id="p98" end="214.306s" region="fallback_bottom">&gt;&gt; YES, ENORMOUS NUMBER OF<br />PEOPLE MARKED ALIVE THAT ARE</p>
-      <p begin="214.317s" xml:id="p99" end="214.683s" region="fallback_top">PEOPLE MARKED ALIVE THAT ARE<br />160.</p>
-      <p begin="214.684s" xml:id="p100" end="215.941s" region="fallback_bottom">160.<br />HE DIDN’T KNOW THE COUNTRY WAS</p>
-      <p begin="215.952s" xml:id="p101" end="216.351s" region="fallback_bottom">HE DIDN’T KNOW THE COUNTRY WAS<br />THAT HEALTHY.</p>
-      <p begin="216.385s" xml:id="p102" end="216.941s" region="fallback_bottom">THAT HEALTHY.<br />LARRY: YES.</p>
-      <p begin="216.952s" xml:id="p103" end="217.952s" region="fallback_bottom">LARRY: YES.<br />&gt;&gt; YOU KNOW.</p>
-      <p begin="217.987s" xml:id="p104" end="219.144s" region="fallback_bottom">&gt;&gt; YOU KNOW.<br />LARRY: SO DEMYSTIFY THIS.</p>
-      <p begin="219.155s" xml:id="p105" end="220.389s" region="fallback_bottom">LARRY: SO DEMYSTIFY THIS.<br />HOW DO YOU DO THIS?</p>
-      <p begin="220.423s" xml:id="p106" end="224.149s" region="fallback_bottom">HOW DO YOU DO THIS?<br />HOW BIG IS YOUR TEAM?</p>
-      <p begin="224.16s" xml:id="p107" end="225.718s" region="fallback_bottom">HOW BIG IS YOUR TEAM?<br />WHERE DID YOU RECRUIT MOST OF</p>
-      <p begin="225.729s" xml:id="p108" end="226.261s" region="fallback_bottom">WHERE DID YOU RECRUIT MOST OF<br />THEM FROM?</p>
-      <p begin="226.295s" xml:id="p109" end="228.353s" region="fallback_bottom">THEM FROM?<br />WHAT IS IT THAT MAKES YOU CHOOSE</p>
-      <p begin="228.364s" xml:id="p110" end="229.798s" region="fallback_bottom">WHAT IS IT THAT MAKES YOU CHOOSE<br />THE TREASURY OR SOCIAL SECURITY</p>
-      <p begin="229.832s" xml:id="p111" end="231.256s" region="fallback_bottom">THE TREASURY OR SOCIAL SECURITY<br />OR USAID?</p>
-      <p begin="231.267s" xml:id="p112" end="232.201s" region="fallback_bottom">OR USAID?<br />HOW DOES IT WORK?</p>
-      <p begin="232.235s" xml:id="p113" end="242.067s" region="fallback_bottom">HOW DOES IT WORK?<br />LET THE PUBLIC KNOW, PLEASE.</p>
-      <p begin="242.078s" xml:id="p114" end="243.479s" region="fallback_bottom">LET THE PUBLIC KNOW, PLEASE.<br />&gt;&gt; WELL, WE JUST LOOK AT</p>
-      <p begin="243.513s" xml:id="p115" end="245.037s" region="fallback_bottom">&gt;&gt; WELL, WE JUST LOOK AT<br />EXECUTIVE ORDERS AND FOLLOWING</p>
-      <p begin="245.048s" xml:id="p116" end="247.172s" region="fallback_bottom">EXECUTIVE ORDERS AND FOLLOWING<br />THE MONEY AND LOOKING CLOSELY AT</p>
-      <p begin="247.183s" xml:id="p117" end="248.15s" region="fallback_bottom">THE MONEY AND LOOKING CLOSELY AT<br />USAID AND VIOLATING THE</p>
-      <p begin="248.151s" xml:id="p118" end="252.521s" region="fallback_bottom">USAID AND VIOLATING THE<br />PRESIDENT’S EXECUTIVE ORDERS TO</p>
-      <p begin="252.555s" xml:id="p119" end="254.446s" region="fallback_bottom">PRESIDENT’S EXECUTIVE ORDERS TO<br />SUSPEND FOREIGN AID -- WHAT’S</p>
-      <p begin="254.457s" xml:id="p120" end="255.714s" region="fallback_bottom">SUSPEND FOREIGN AID -- WHAT’S<br />CALLED FOREIGN AID IN OUR VIEW</p>
-      <p begin="255.725s" xml:id="p121" end="259.318s" region="fallback_bottom">CALLED FOREIGN AID IN OUR VIEW<br />IS A LOT OF CORRUPTION.</p>
-      <p begin="259.329s" xml:id="p122" end="261.587s" region="fallback_bottom">IS A LOT OF CORRUPTION.<br />SO WHAT WE SAW WAS A LARGE</p>
-      <p begin="261.598s" xml:id="p123" end="265.133s" region="fallback_bottom">SO WHAT WE SAW WAS A LARGE<br />AMOUNT OF MONEY BEING SENT TO</p>
-      <p begin="265.168s" xml:id="p124" end="265.858s" region="fallback_bottom">AMOUNT OF MONEY BEING SENT TO<br />NONGOVERNMENTAL ORGANIZATIONS</p>
-      <p begin="265.869s" xml:id="p125" end="267.493s" region="fallback_bottom">NONGOVERNMENTAL ORGANIZATIONS<br />BUT IT’S A -- THIS BY THE WAY IS</p>
-      <p begin="267.504s" xml:id="p126" end="268.937s" region="fallback_bottom">BUT IT’S A -- THIS BY THE WAY IS<br />ONE OF THE BIGGEST SOURCES OF</p>
-      <p begin="268.972s" xml:id="p127" end="271.864s" region="fallback_bottom">ONE OF THE BIGGEST SOURCES OF<br />FRAUD IN THE WORLD IS GOVERNMENT</p>
-      <p begin="271.875s" xml:id="p128" end="272.698s" region="fallback_bottom">FRAUD IN THE WORLD IS GOVERNMENT<br />FUNDED, NONGOVERNMENTAL</p>
-      <p begin="272.709s" xml:id="p129" end="273.109s" region="fallback_bottom">FUNDED, NONGOVERNMENTAL<br />ORGANIZATIONS.</p>
-      <p begin="273.143s" xml:id="p130" end="275.735s" region="fallback_bottom">ORGANIZATIONS.<br />THIS IS A GIGANTIC FRAUD</p>
-      <p begin="275.746s" xml:id="p131" end="277.97s" region="fallback_bottom">THIS IS A GIGANTIC FRAUD<br />LOOPHOLE WHERE THE GOVERNMENT</p>
-      <p begin="277.981s" xml:id="p132" end="282.107s" region="fallback_bottom">LOOPHOLE WHERE THE GOVERNMENT<br />CAN GIVE MONEY TO AN NGO AND</p>
-      <p begin="282.118s" xml:id="p133" end="283.185s" region="fallback_bottom">CAN GIVE MONEY TO AN NGO AND<br />THEN THERE’S NO CONTROLS OVER</p>
-      <p begin="283.186s" xml:id="p134" end="285.487s" region="fallback_bottom">THEN THERE’S NO CONTROLS OVER<br />THE NGO AND THEY’VE GIVEN</p>
-      <p begin="285.489s" xml:id="p135" end="286.98s" region="fallback_top">THE NGO AND THEY’VE GIVEN<br />BILLIONS AND WE ESTIMATE TENS OF</p>
-      <p begin="286.991s" xml:id="p136" end="288.581s" region="fallback_top">BILLIONS AND WE ESTIMATE TENS OF<br />BILLIONS TO NGOS THAT ARE</p>
-      <p begin="288.592s" xml:id="p137" end="293.796s" region="fallback_bottom">BILLIONS TO NGOS THAT ARE<br />ESSENTIALLY SCAMS.</p>
-      <p begin="293.797s" xml:id="p138" end="295.765s" region="fallback_bottom">ESSENTIALLY SCAMS.<br />AND WE’RE TRYING TO PUT A STOP</p>
-      <p begin="295.799s" xml:id="p139" end="296.222s" region="fallback_bottom">AND WE’RE TRYING TO PUT A STOP<br />TO THAT.</p>
-      <p begin="296.233s" xml:id="p140" end="298.067s" region="fallback_bottom">TO THAT.<br />LARRY: I DON’T WANT TO INTERRUPT</p>
-      <p begin="298.101s" xml:id="p141" end="299.525s" region="fallback_bottom">LARRY: I DON’T WANT TO INTERRUPT<br />BUT SECRETARY OF STATE RUBIO</p>
-      <p begin="299.536s" xml:id="p142" end="302.605s" region="fallback_bottom">BUT SECRETARY OF STATE RUBIO<br />CAME OUT AND TWEETED LARRY: THAT</p>
-      <p begin="302.606s" xml:id="p143" end="304.774s" region="fallback_bottom">CAME OUT AND TWEETED LARRY: THAT<br />HE’S ACCEPTED OVER 80% OF YOUR</p>
-      <p begin="304.808s" xml:id="p144" end="305.765s" region="fallback_bottom">HE’S ACCEPTED OVER 80% OF YOUR<br />RECOMMENDATIONS TO SCHULTZ DOWN</p>
-      <p begin="305.776s" xml:id="p145" end="308.611s" region="fallback_bottom">RECOMMENDATIONS TO SCHULTZ DOWN<br />IN USAID SO YOUR REVIEW AND</p>
-      <p begin="308.612s" xml:id="p146" end="311.637s" region="fallback_bottom">IN USAID SO YOUR REVIEW AND<br />ANALYSIS WAS SPOT ON.</p>
-      <p begin="311.648s" xml:id="p147" end="317.987s" region="fallback_bottom">ANALYSIS WAS SPOT ON.<br />&gt;&gt; YES.</p>
-      <p begin="318.021s" xml:id="p148" end="319.421s" region="fallback_bottom">&gt;&gt; YES.<br />SO WHEN PEOPLE CRITICIZE WHAT</p>
-      <p begin="319.423s" xml:id="p149" end="321.424s" region="fallback_bottom">SO WHEN PEOPLE CRITICIZE WHAT<br />DOGE IS DOING, WE SAY WHICH PART</p>
-      <p begin="321.425s" xml:id="p150" end="322.382s" region="fallback_bottom">DOGE IS DOING, WE SAY WHICH PART<br />SPECIFICALLY BECAUSE WE PUT ALL</p>
-      <p begin="322.393s" xml:id="p151" end="323.849s" region="fallback_bottom">SPECIFICALLY BECAUSE WE PUT ALL<br />THE ACTIONS OF THE DOGE TEAM ON</p>
-      <p begin="323.86s" xml:id="p152" end="326.319s" region="fallback_bottom">THE ACTIONS OF THE DOGE TEAM ON<br />THE DOGE.GOV WEBSITE AND ON THE</p>
-      <p begin="326.33s" xml:id="p153" end="330.123s" region="fallback_bottom">THE DOGE.GOV WEBSITE AND ON THE<br />DOGE HANDLE ON X.</p>
-      <p begin="330.134s" xml:id="p154" end="332.826s" region="fallback_bottom">DOGE HANDLE ON X.<br />SO WE POST THE RECEIPTS AND THIS</p>
-      <p begin="332.837s" xml:id="p155" end="334.103s" region="fallback_bottom">SO WE POST THE RECEIPTS AND THIS<br />ACTION HAS BEEN TAKEN AND THIS</p>
-      <p begin="334.138s" xml:id="p156" end="334.828s" region="fallback_bottom">ACTION HAS BEEN TAKEN AND THIS<br />ACTION WAS TAKEN.</p>
-      <p begin="334.839s" xml:id="p157" end="337.506s" region="fallback_bottom">ACTION WAS TAKEN.<br />WHEN WE GET CRITICISM ASK WE SAY</p>
-      <p begin="337.508s" xml:id="p158" end="338.264s" region="fallback_bottom">WHEN WE GET CRITICISM ASK WE SAY<br />OF WHAT?</p>
-      <p begin="338.275s" xml:id="p159" end="341.678s" region="fallback_top">OF WHAT?<br />WHICH LINE DO YOU DISAGREE WITH?</p>
-      <p begin="341.712s" xml:id="p160" end="343.546s" region="fallback_bottom">WHICH LINE DO YOU DISAGREE WITH?<br />WHICH CUT, WHICH COST SAVING DO</p>
-      <p begin="343.547s" xml:id="p161" end="344.67s" region="fallback_bottom">WHICH CUT, WHICH COST SAVING DO<br />YOU DISAGREE WITH?</p>
-      <p begin="344.681s" xml:id="p162" end="347.44s" region="fallback_bottom">YOU DISAGREE WITH?<br />PEOPLE USUALLY CAN’T THINK OF</p>
-      <p begin="347.451s" xml:id="p163" end="348.384s" region="fallback_bottom">PEOPLE USUALLY CAN’T THINK OF<br />ANY.</p>
-      <p begin="348.419s" xml:id="p164" end="349.619s" region="fallback_bottom">ANY.<br />LARRY: YEAH.</p>
-      <p begin="349.62s" xml:id="p165" end="351.721s" region="fallback_bottom">LARRY: YEAH.<br />IT’S TRANSPARENT LINE BY LINE.</p>
-      <p begin="351.722s" xml:id="p166" end="352.779s" region="fallback_top">IT’S TRANSPARENT LINE BY LINE.<br />&gt;&gt; TRANSPARENT LINE BY LINE.</p>
-      <p begin="352.79s" xml:id="p167" end="353.756s" region="fallback_top">&gt;&gt; TRANSPARENT LINE BY LINE.<br />LARRY: WHEN IS QUITE</p>
-      <p begin="353.757s" xml:id="p168" end="356.325s" region="fallback_top">LARRY: WHEN IS QUITE<br />REMARKABLE.</p>
-      <p begin="356.36s" xml:id="p169" end="358.618s" region="fallback_top">REMARKABLE.<br />&gt;&gt; RIGHT.</p>
-      <p begin="358.629s" xml:id="p170" end="363.089s" region="fallback_bottom">&gt;&gt; RIGHT.<br />SO WITH RESPECT TO THE TREASURY,</p>
-      <p begin="363.1s" xml:id="p171" end="365.959s" region="fallback_bottom">SO WITH RESPECT TO THE TREASURY,<br />FOR EXAMPLE, WITH THE TWO MAIN</p>
-      <p begin="365.97s" xml:id="p172" end="366.937s" region="fallback_bottom">FOR EXAMPLE, WITH THE TWO MAIN<br />RECOMMENDATIONS THAT WE</p>
-      <p begin="366.971s" xml:id="p173" end="368.562s" region="fallback_bottom">RECOMMENDATIONS THAT WE<br />SUGGESTED, WHICH HAVE NOW BEEN</p>
-      <p begin="368.573s" xml:id="p174" end="369.896s" region="fallback_top">SUGGESTED, WHICH HAVE NOW BEEN<br />IMPLEMENTED WAS THAT ANY</p>
-      <p begin="369.907s" xml:id="p175" end="371.665s" region="fallback_bottom">IMPLEMENTED WAS THAT ANY<br />PAYMENTS GOING OUT OF THE</p>
-      <p begin="371.676s" xml:id="p176" end="375.045s" region="fallback_top">PAYMENTS GOING OUT OF THE<br />TREASURY, ESPECIALLY THE</p>
-      <p begin="375.079s" xml:id="p177" end="376.87s" region="fallback_top">TREASURY, ESPECIALLY THE<br />TREASURY’S MAIN PAYMENT COMPUTER</p>
-      <p begin="376.881s" xml:id="p178" end="379.906s" region="fallback_top">TREASURY’S MAIN PAYMENT COMPUTER<br />CALLED PAM, THINGS LIKE AMOUNTS</p>
-      <p begin="379.917s" xml:id="p179" end="382.119s" region="fallback_top">CALLED PAM, THINGS LIKE AMOUNTS<br />ACT MANAGER OR SOMETHING LIKE</p>
-      <p begin="382.153s" xml:id="p180" end="384.411s" region="fallback_bottom">ACT MANAGER OR SOMETHING LIKE<br />THAT, IT’S $5 TRILLION A YEAR</p>
-      <p begin="384.422s" xml:id="p181" end="391.127s" region="fallback_bottom">THAT, IT’S $5 TRILLION A YEAR<br />AND THE PAYMENTS BE CODED WE</p>
-      <p begin="391.162s" xml:id="p182" end="393.854s" region="fallback_top">AND THE PAYMENTS BE CODED WE<br />APPROPRIATION AND EXPLANATION OF</p>
-      <p begin="393.865s" xml:id="p183" end="394.922s" region="fallback_top">APPROPRIATION AND EXPLANATION OF<br />PAYMENT.</p>
-      <p begin="394.933s" xml:id="p184" end="397.467s" region="fallback_bottom">PAYMENT.<br />VERY BASIC STUFF AND JUST THAT</p>
-      <p begin="397.502s" xml:id="p185" end="398.969s" region="fallback_bottom">VERY BASIC STUFF AND JUST THAT<br />ESTIMATING TO SAVE $100 BILLION</p>
-      <p begin="398.97s" xml:id="p186" end="399.526s" region="fallback_bottom">ESTIMATING TO SAVE $100 BILLION<br />A YEAR.</p>
-      <p begin="399.537s" xml:id="p187" end="401.872s" region="fallback_bottom">A YEAR.<br />LARRY: LET ME SEE IF I GOT THIS</p>
-      <p begin="401.906s" xml:id="p188" end="402.272s" region="fallback_bottom">LARRY: LET ME SEE IF I GOT THIS<br />RIGHT.</p>
-      <p begin="402.273s" xml:id="p189" end="403.273s" region="fallback_bottom">RIGHT.<br />YOU’RE NOT REALLY CHANGING</p>
-      <p begin="403.274s" xml:id="p190" end="403.697s" region="fallback_bottom">YOU’RE NOT REALLY CHANGING<br />POLICY.</p>
-      <p begin="403.708s" xml:id="p191" end="407.077s" region="fallback_bottom">POLICY.<br />YOU’RE AUDITING THE FISCAL</p>
-      <p begin="407.078s" xml:id="p192" end="409.212s" region="fallback_bottom">YOU’RE AUDITING THE FISCAL<br />MECHANISMS TO MAKE SURE THAT</p>
-      <p begin="409.213s" xml:id="p193" end="411.004s" region="fallback_bottom">MECHANISMS TO MAKE SURE THAT<br />FROM POINT A GETS TO POINT B AND</p>
-      <p begin="411.015s" xml:id="p194" end="412.582s" region="fallback_bottom">FROM POINT A GETS TO POINT B AND<br />THAT’S WHERE IT’S SUPPOSED TO</p>
-      <p begin="412.583s" xml:id="p195" end="414.517s" region="fallback_bottom">THAT’S WHERE IT’S SUPPOSED TO<br />GET TO, IN SOME CASE IT IS</p>
-      <p begin="414.519s" xml:id="p196" end="415.452s" region="fallback_bottom">GET TO, IN SOME CASE IT IS<br />DOESN’T GET THERE OR SOME CASE</p>
-      <p begin="415.453s" xml:id="p197" end="426.83s" region="fallback_bottom">DOESN’T GET THERE OR SOME CASE<br />IT IS MAY GO OVER THERE. YOU’RE</p>
-      <p begin="426.831s" xml:id="p198" end="428.422s" region="fallback_bottom">IT IS MAY GO OVER THERE. YOU’RE<br />NOT CHANGE LAWS BUT DOING WHAT</p>
-      <p begin="428.433s" xml:id="p199" end="429.857s" region="fallback_bottom">NOT CHANGE LAWS BUT DOING WHAT<br />ANY BUSINESS WOULD DO IN A</p>
-      <p begin="429.868s" xml:id="p200" end="433.47s" region="fallback_bottom">ANY BUSINESS WOULD DO IN A<br />PROFIT LOSS AUDIT.</p>
-      <p begin="433.505s" xml:id="p201" end="434.862s" region="fallback_top">PROFIT LOSS AUDIT.<br />&gt;&gt; WHAT WE’RE ADDING HERE IS</p>
-      <p begin="434.873s" xml:id="p202" end="441.678s" region="fallback_bottom">&gt;&gt; WHAT WE’RE ADDING HERE IS<br />CARING AND COMPETENCE.</p>
-      <p begin="441.713s" xml:id="p203" end="443.304s" region="fallback_top">CARING AND COMPETENCE.<br />AND THERE’S A MASSIVE AMOUNT OF</p>
-      <p begin="443.315s" xml:id="p204" end="444.414s" region="fallback_top">AND THERE’S A MASSIVE AMOUNT OF<br />FRAUD OF PEOPLE SUBMITTING</p>
-      <p begin="444.416s" xml:id="p205" end="452.623s" region="fallback_top">FRAUD OF PEOPLE SUBMITTING<br />SOCIAL SECURITY NUMBERS FOR</p>
-      <p begin="452.624s" xml:id="p206" end="453.481s" region="fallback_bottom">SOCIAL SECURITY NUMBERS FOR<br />UNLIMIT AND SOCIAL SECURITY</p>
-      <p begin="453.492s" xml:id="p207" end="456.393s" region="fallback_bottom">UNLIMIT AND SOCIAL SECURITY<br />LOANS AND MEDICAL.</p>
-      <p begin="456.428s" xml:id="p208" end="460.655s" region="fallback_top">LOANS AND MEDICAL.<br />WHERE THOSE ARE FAKE SOCIAL</p>
-      <p begin="460.666s" xml:id="p209" end="462.489s" region="fallback_top">WHERE THOSE ARE FAKE SOCIAL<br />SECURITY NUMBERS OR THEY’RE</p>
-      <p begin="462.5s" xml:id="p210" end="463.734s" region="fallback_top">SECURITY NUMBERS OR THEY’RE<br />STOLE AND WE’RE TRYING TO PUT A</p>
-      <p begin="463.768s" xml:id="p211" end="464.591s" region="fallback_top">STOLE AND WE’RE TRYING TO PUT A<br />STOP THAT THAT.</p>
-      <p begin="464.602s" xml:id="p212" end="465.869s" region="fallback_bottom">STOP THAT THAT.<br />THAT’S A NUMBER THAT’S ESTIMATED</p>
-      <p begin="465.871s" xml:id="p213" end="468.172s" region="fallback_top">THAT’S A NUMBER THAT’S ESTIMATED<br />ON THE ORDER OF 10% OF FEDERAL</p>
-      <p begin="468.173s" xml:id="p214" end="472.967s" region="fallback_bottom">ON THE ORDER OF 10% OF FEDERAL<br />EXPENDITURES AND THAT IS HALF A</p>
-      <p begin="472.978s" xml:id="p215" end="473.344s" region="fallback_bottom">EXPENDITURES AND THAT IS HALF A<br />TRILLION.</p>
-      <p begin="473.378s" xml:id="p216" end="474.501s" region="fallback_bottom">TRILLION.<br />LARRY: IT’S A HUGE NUMBER.</p>
-      <p begin="474.512s" xml:id="p217" end="476.947s" region="fallback_bottom">LARRY: IT’S A HUGE NUMBER.<br />YOU’RE WORKING WITH THE AGENCY</p>
-      <p begin="476.982s" xml:id="p218" end="477.872s" region="fallback_bottom">YOU’RE WORKING WITH THE AGENCY<br />HEADS AND WORKING WITH THE</p>
-      <p begin="477.883s" xml:id="p219" end="479.65s" region="fallback_bottom">HEADS AND WORKING WITH THE<br />CABINET SECRETARIES.</p>
-      <p begin="479.651s" xml:id="p220" end="481.485s" region="fallback_bottom">CABINET SECRETARIES.<br />I SAW HOWARD LUTNICK WAS ON TV</p>
-      <p begin="481.486s" xml:id="p221" end="482.91s" region="fallback_bottom">I SAW HOWARD LUTNICK WAS ON TV<br />YESTERDAY SAYING YOU WERE</p>
-      <p begin="482.921s" xml:id="p222" end="483.654s" region="fallback_bottom">YESTERDAY SAYING YOU WERE<br />PARTNERING WITH THEM.</p>
-      <p begin="483.689s" xml:id="p223" end="492.754s" region="fallback_top">PARTNERING WITH THEM.<br />IS THAT FAIR?</p>
-      <p begin="492.765s" xml:id="p224" end="494.765s" region="fallback_bottom">IS THAT FAIR?<br />&gt;&gt; WE CONSULT WITH THE CABINET</p>
-      <p begin="494.766s" xml:id="p225" end="495.799s" region="fallback_bottom">&gt;&gt; WE CONSULT WITH THE CABINET<br />SECRETARIES AND HEADS AND WE’RE</p>
-      <p begin="495.801s" xml:id="p226" end="502.297s" region="fallback_top">SECRETARIES AND HEADS AND WE’RE<br />TRYING TO BE SORT OF REFERRING</p>
-      <p begin="502.308s" xml:id="p227" end="503.998s" region="fallback_bottom">TRYING TO BE SORT OF REFERRING<br />TO OURSELVES AZTEC SUPPORT AND</p>
-      <p begin="504.009s" xml:id="p228" end="506.267s" region="fallback_top">TO OURSELVES AZTEC SUPPORT AND<br />HELPING THE -- AS TECH SUPPORT</p>
-      <p begin="506.278s" xml:id="p229" end="507.502s" region="fallback_top">HELPING THE -- AS TECH SUPPORT<br />AND HELPING THE DEPARTMENT GET A</p>
-      <p begin="507.513s" xml:id="p230" end="509.237s" region="fallback_top">AND HELPING THE DEPARTMENT GET A<br />HANDLE ON THINGS.</p>
-      <p begin="509.248s" xml:id="p231" end="511.415s" region="fallback_top">HANDLE ON THINGS.<br />WHAT ACTUALLY HAPPENS HERE IS</p>
-      <p begin="511.417s" xml:id="p232" end="512.851s" region="fallback_top">WHAT ACTUALLY HAPPENS HERE IS<br />THERE’S THIS VAST FEDERAL</p>
-      <p begin="512.885s" xml:id="p233" end="514.042s" region="fallback_top">THERE’S THIS VAST FEDERAL<br />BUREAUCRACY AND THEN YOU’VE GOT</p>
-      <p begin="514.053s" xml:id="p234" end="518.613s" region="fallback_bottom">BUREAUCRACY AND THEN YOU’VE GOT<br />A VERY THIN LAYER ON TOP OF THE</p>
-      <p begin="518.624s" xml:id="p235" end="521.292s" region="fallback_top">A VERY THIN LAYER ON TOP OF THE<br />POLITICALLY APPOINTED</p>
-      <p begin="521.327s" xml:id="p236" end="524.753s" region="fallback_bottom">POLITICALLY APPOINTED<br />OFFICIALS.</p>
-      <p begin="524.764s" xml:id="p237" end="527.198s" region="fallback_bottom">OFFICIALS.<br />THE BUREAUCRACY IS IN CONTROL</p>
-      <p begin="527.232s" xml:id="p238" end="528.723s" region="fallback_bottom">THE BUREAUCRACY IS IN CONTROL<br />AND THEY’VE LARGELY IGNORED THE</p>
-      <p begin="528.734s" xml:id="p239" end="530.325s" region="fallback_bottom">AND THEY’VE LARGELY IGNORED THE<br />POLITICALLY APPOINTED PEOPLE.</p>
-      <p begin="530.336s" xml:id="p240" end="537.132s" region="fallback_bottom">POLITICALLY APPOINTED PEOPLE.<br />LARRY: WHY SHOULD THE</p>
-      <p begin="537.143s" xml:id="p241" end="538.566s" region="fallback_top">LARRY: WHY SHOULD THE<br />BUREAUCRACY -- I WORKED FOR</p>
-      <p begin="538.577s" xml:id="p242" end="539.911s" region="fallback_bottom">BUREAUCRACY -- I WORKED FOR<br />REAGAN MANY YEARS AGO AND TRUMP</p>
-      <p begin="539.945s" xml:id="p243" end="540.868s" region="fallback_bottom">REAGAN MANY YEARS AGO AND TRUMP<br />IN THE FIRST TERM.</p>
-      <p begin="540.879s" xml:id="p244" end="546.541s" region="fallback_bottom">IN THE FIRST TERM.<br />IT’S A PERMANENT BUREAUCRACY AND</p>
-      <p begin="546.552s" xml:id="p245" end="548.086s" region="fallback_bottom">IT’S A PERMANENT BUREAUCRACY AND<br />LIBERAL BUREAUCRACY AND NOT ONE</p>
-      <p begin="548.12s" xml:id="p246" end="550.254s" region="fallback_bottom">LIBERAL BUREAUCRACY AND NOT ONE<br />THAT NECESSARILY ENFORCES OR</p>
-      <p begin="550.256s" xml:id="p247" end="551.48s" region="fallback_bottom">THAT NECESSARILY ENFORCES OR<br />IMPLEMENTS PRESIDENTIAL POLICY.</p>
-      <p begin="551.491s" xml:id="p248" end="552.29s" region="fallback_bottom">IMPLEMENTS PRESIDENTIAL POLICY.<br />&gt;&gt; THEY DON’T.</p>
-      <p begin="552.324s" xml:id="p249" end="555.65s" region="fallback_bottom">&gt;&gt; THEY DON’T.<br />THEY TRY THEIR BEST TO THWART</p>
-      <p begin="555.661s" xml:id="p250" end="556.327s" region="fallback_bottom">THEY TRY THEIR BEST TO THWART<br />PRESIDENTIAL POLICY AND THE</p>
-      <p begin="556.328s" xml:id="p251" end="558.019s" region="fallback_top">PRESIDENTIAL POLICY AND THE<br />PRESIDENT IS THE ELECTED</p>
-      <p begin="558.03s" xml:id="p252" end="562.667s" region="fallback_top">PRESIDENT IS THE ELECTED<br />REPRESENTATIVE OF THE PEOPLE AND</p>
-      <p begin="562.668s" xml:id="p253" end="565.236s" region="fallback_bottom">REPRESENTATIVE OF THE PEOPLE AND<br />IF THE PRESIDENT CANNOT GET</p>
-      <p begin="565.237s" xml:id="p254" end="566.928s" region="fallback_bottom">IF THE PRESIDENT CANNOT GET<br />THINGS IMPLEMENTED WITH THE</p>
-      <p begin="566.939s" xml:id="p255" end="568.263s" region="fallback_bottom">THINGS IMPLEMENTED WITH THE<br />REFLECTION OF THE WILL OF THE</p>
-      <p begin="568.274s" xml:id="p256" end="569.765s" region="fallback_bottom">REFLECTION OF THE WILL OF THE<br />PEOPLE, THERE’S NOT A DEMOCRACY,</p>
-      <p begin="569.776s" xml:id="p257" end="571.366s" region="fallback_top">PEOPLE, THERE’S NOT A DEMOCRACY,<br />THERE’S A BUREAUCRACY.</p>
-      <p begin="571.377s" xml:id="p258" end="572.844s" region="fallback_top">THERE’S A BUREAUCRACY.<br />IT’S RULE OF THE BUREAU AND NOT</p>
-      <p begin="572.845s" xml:id="p259" end="573.435s" region="fallback_top">IT’S RULE OF THE BUREAU AND NOT<br />RULE OF THE PEOPLE.</p>
-      <p begin="573.446s" xml:id="p260" end="576.338s" region="fallback_top">RULE OF THE PEOPLE.<br />THAT’S WHAT WE’RE TRYING TO</p>
-      <p begin="576.349s" xml:id="p261" end="583.488s" region="fallback_top">THAT’S WHAT WE’RE TRYING TO<br />DEFEAT HERE IS THE RULE OF THE</p>
-      <p begin="583.489s" xml:id="p262" end="589.284s" region="fallback_top">DEFEAT HERE IS THE RULE OF THE<br />BREWER BUREAUCRACY AND BACK TO</p>
-      <p begin="589.295s" xml:id="p263" end="590.552s" region="fallback_top">BREWER BUREAUCRACY AND BACK TO<br />WILL OF THE PEOPLE.</p>
-      <p begin="590.563s" xml:id="p264" end="592.32s" region="fallback_top">WILL OF THE PEOPLE.<br />THE BUREAUCRACY IS</p>
-      <p begin="592.331s" xml:id="p265" end="592.888s" region="fallback_top">THE BUREAUCRACY IS<br />OVERWHELMINGLY DEMOCRAT.</p>
-      <p begin="592.899s" xml:id="p266" end="595.491s" region="fallback_bottom">OVERWHELMINGLY DEMOCRAT.<br />WASHINGTON DC WAS 92.5% VOTED</p>
-      <p begin="595.502s" xml:id="p267" end="597.936s" region="fallback_top">WASHINGTON DC WAS 92.5% VOTED<br />FOR KAMALA.</p>
-      <p begin="597.971s" xml:id="p268" end="601.397s" region="fallback_top">FOR KAMALA.<br />SO THERE’S OVERWHELMINGLY A DEEP</p>
-      <p begin="601.408s" xml:id="p269" end="602.073s" region="fallback_bottom">SO THERE’S OVERWHELMINGLY A DEEP<br />BLUE SITUATION.</p>
-      <p begin="602.075s" xml:id="p270" end="605.234s" region="fallback_bottom">BLUE SITUATION.<br />LARRY: HOW DO YOU PICK YOUR NEXT</p>
-      <p begin="605.245s" xml:id="p271" end="613.418s" region="fallback_top">LARRY: HOW DO YOU PICK YOUR NEXT<br />TARGETED AGENCY OR DEPARTMENT?</p>
-      <p begin="613.419s" xml:id="p272" end="616.354s" region="fallback_top">TARGETED AGENCY OR DEPARTMENT?<br />&gt;&gt; WELL, WE’RE TRYING TO ACT</p>
-      <p begin="616.389s" xml:id="p273" end="617.246s" region="fallback_top">&gt;&gt; WELL, WE’RE TRYING TO ACT<br />BROADLY ACROSS ALL DEPARTMENTS</p>
-      <p begin="617.257s" xml:id="p274" end="620.692s" region="fallback_bottom">BROADLY ACROSS ALL DEPARTMENTS<br />AND NOT JUST ONE AT A TIME.</p>
-      <p begin="620.727s" xml:id="p275" end="621.617s" region="fallback_bottom">AND NOT JUST ONE AT A TIME.<br />BUT --</p>
-      <p begin="621.628s" xml:id="p276" end="623.319s" region="fallback_bottom">BUT --<br />LARRY: HAVE YOU BEEN IN ALL OF</p>
-      <p begin="623.33s" xml:id="p277" end="623.895s" region="fallback_bottom">LARRY: HAVE YOU BEEN IN ALL OF<br />THEM NOW?</p>
-      <p begin="623.897s" xml:id="p278" end="624.487s" region="fallback_bottom">THEM NOW?<br />&gt;&gt; PRETTY MUCH.</p>
-      <p begin="624.498s" xml:id="p279" end="625.23s" region="fallback_bottom">&gt;&gt; PRETTY MUCH.<br />LARRY: OH.</p>
-      <p begin="625.231s" xml:id="p280" end="630.001s" region="fallback_bottom">LARRY: OH.<br />&gt;&gt; WE’RE TRYING TO MAKE THE</p>
-      <p begin="630.003s" xml:id="p281" end="630.736s" region="fallback_bottom">&gt;&gt; WE’RE TRYING TO MAKE THE<br />GOVERNMENT MORE EFFICIENT ACROSS</p>
-      <p begin="630.737s" xml:id="p282" end="631.26s" region="fallback_bottom">GOVERNMENT MORE EFFICIENT ACROSS<br />THE BOARD.</p>
-      <p begin="631.271s" xml:id="p283" end="633.438s" region="fallback_bottom">THE BOARD.<br />LARRY: HOW BIG IS YOUR TEAM?</p>
-      <p begin="633.44s" xml:id="p284" end="635.508s" region="fallback_bottom">LARRY: HOW BIG IS YOUR TEAM?<br />&gt;&gt; LITTLE OVER 100 AT THIS</p>
-      <p begin="635.542s" xml:id="p285" end="635.941s" region="fallback_bottom">&gt;&gt; LITTLE OVER 100 AT THIS<br />POINT.</p>
-      <p begin="635.942s" xml:id="p286" end="637.099s" region="fallback_bottom">POINT.<br />HOPING TO GET TO 200.</p>
-      <p begin="637.11s" xml:id="p287" end="639.435s" region="fallback_bottom">HOPING TO GET TO 200.<br />LARRY: YOU’RE GOING TO GET TO</p>
-      <p begin="639.446s" xml:id="p288" end="640.403s" region="fallback_bottom">LARRY: YOU’RE GOING TO GET TO<br />200?</p>
-      <p begin="640.414s" xml:id="p289" end="640.769s" region="fallback_bottom">200?<br />&gt;&gt; YEAH.</p>
-      <p begin="640.78s" xml:id="p290" end="642.881s" region="fallback_bottom">&gt;&gt; YEAH.<br />LARRY: AND YOU’RE RECRUITING</p>
-      <p begin="642.916s" xml:id="p291" end="644.216s" region="fallback_bottom">LARRY: AND YOU’RE RECRUITING<br />FROM WHERE MORE OR LESS?</p>
-      <p begin="644.217s" xml:id="p292" end="647.619s" region="fallback_top">FROM WHERE MORE OR LESS?<br />&gt;&gt; BASICALLY IT’S A SOFTWARE</p>
-      <p begin="647.621s" xml:id="p293" end="653.259s" region="fallback_bottom">&gt;&gt; BASICALLY IT’S A SOFTWARE<br />PEOPLE AND INFORMS SECURITY</p>
-      <p begin="653.26s" xml:id="p294" end="655.418s" region="fallback_bottom">PEOPLE AND INFORMS SECURITY<br />SOFTWARE PEOPLE GOING TO FINANCE</p>
-      <p begin="655.429s" xml:id="p295" end="657.529s" region="fallback_bottom">SOFTWARE PEOPLE GOING TO FINANCE<br />AND GOING FOR THEM AND FINANCE</p>
-      <p begin="657.531s" xml:id="p296" end="667.373s" region="fallback_top">AND GOING FOR THEM AND FINANCE<br />AND TECHNOLOGY.</p>
-      <p begin="667.374s" xml:id="p297" end="671.5s" region="fallback_bottom">AND TECHNOLOGY.<br />AND IT WAS A BIT BIZARRE AND</p>
-      <p begin="671.511s" xml:id="p298" end="674.647s" region="fallback_top">AND IT WAS A BIT BIZARRE AND<br />GOING TO HAVE THIS ENORMOUS</p>
-      <p begin="674.681s" xml:id="p299" end="677.983s" region="fallback_top">GOING TO HAVE THIS ENORMOUS<br />FEDERAL BUDGET DEFICIT AND IT’S</p>
-      <p begin="677.985s" xml:id="p300" end="681.11s" region="fallback_top">FEDERAL BUDGET DEFICIT AND IT’S<br />A $2 TRILLION DEFICIT AND KEEPS</p>
-      <p begin="681.121s" xml:id="p301" end="687.961s" region="fallback_top">A $2 TRILLION DEFICIT AND KEEPS<br />GROWING AND PAYMENTS HAVE THAT</p>
-      <p begin="687.995s" xml:id="p302" end="689.252s" region="fallback_top">GROWING AND PAYMENTS HAVE THAT<br />AND THANKSGIVING THE REAL WAKEUP</p>
-      <p begin="689.263s" xml:id="p303" end="690.997s" region="fallback_top">AND THANKSGIVING THE REAL WAKEUP<br />CALL FOR ME LOOKING AND SEEING</p>
-      <p begin="690.998s" xml:id="p304" end="692.465s" region="fallback_bottom">CALL FOR ME LOOKING AND SEEING<br />THAT INTEREST PAYMENTS AND THE</p>
-      <p begin="692.466s" xml:id="p305" end="694.5s" region="fallback_bottom">THAT INTEREST PAYMENTS AND THE<br />NATIONAL DEBT CONCEDED THE</p>
-      <p begin="694.501s" xml:id="p306" end="706.335s" region="fallback_top">NATIONAL DEBT CONCEDED THE<br />DEFENSE DEPARTMENT BUDGET.</p>
-      <p begin="706.346s" xml:id="p307" end="708.08s" region="fallback_bottom">DEFENSE DEPARTMENT BUDGET.<br />LARRY: YOU KNOW HOW TO READ THEM</p>
-      <p begin="708.115s" xml:id="p308" end="711.341s" region="fallback_bottom">LARRY: YOU KNOW HOW TO READ THEM<br />AND BALANCE SHEET.</p>
-      <p begin="711.352s" xml:id="p309" end="723.653s" region="fallback_bottom">AND BALANCE SHEET.<br />YOU’VE HAD SOME YOU FEEL LIKE</p>
-      <p begin="723.664s" xml:id="p310" end="724.03s" region="fallback_bottom">YOU’VE HAD SOME YOU FEEL LIKE<br />THAT?</p>
-      <p begin="724.031s" xml:id="p311" end="725.031s" region="fallback_bottom">THAT?<br />LARRY: GIVEN UP YOUR OTHER</p>
-      <p begin="725.032s" xml:id="p312" end="725.965s" region="fallback_top">LARRY: GIVEN UP YOUR OTHER<br />STUFF.</p>
-      <p begin="726.0s" xml:id="p313" end="738.168s" region="fallback_top">STUFF.<br />WHERE IS THAT POWER AND MORE.</p>
-      <p begin="738.179s" xml:id="p314" end="749.246s" region="fallback_top">WHERE IS THAT POWER AND MORE.<br />LARRY: THERE’S NO TURNING BACK.</p>
-      <p begin="749.257s" xml:id="p315" end="751.657s" region="fallback_top">LARRY: THERE’S NO TURNING BACK.<br />&gt;&gt; I’M HERE TRYING TO ELIMINATE</p>
-      <p begin="751.659s" xml:id="p316" end="755.719s" region="fallback_top">&gt;&gt; I’M HERE TRYING TO ELIMINATE<br />WASTE AND FRAUD AND WE’RE MAKING</p>
-      <p begin="755.73s" xml:id="p317" end="762.292s" region="fallback_top">WASTE AND FRAUD AND WE’RE MAKING<br />GOOD PROGRESS AND OUR SAVINGS</p>
-      <p begin="762.303s" xml:id="p318" end="764.061s" region="fallback_bottom">GOOD PROGRESS AND OUR SAVINGS<br />EXCEED $4 BILLION IN DEBT.</p>
-      <p begin="764.072s" xml:id="p319" end="765.805s" region="fallback_bottom">EXCEED $4 BILLION IN DEBT.<br />LARRY: WIND UP GETTING TO A</p>
-      <p begin="765.84s" xml:id="p320" end="768.575s" region="fallback_bottom">LARRY: WIND UP GETTING TO A<br />TRILLION IN SAVINGS?</p>
-      <p begin="768.576s" xml:id="p321" end="769.533s" region="fallback_bottom">TRILLION IN SAVINGS?<br />&gt;&gt; YEAH, UNLESS WE’RE STAFFED,</p>
-      <p begin="769.544s" xml:id="p322" end="771.435s" region="fallback_bottom">&gt;&gt; YEAH, UNLESS WE’RE STAFFED,<br />WE’LL GET TO $1 TRILLION IN</p>
-      <p begin="771.446s" xml:id="p323" end="771.936s" region="fallback_bottom">WE’LL GET TO $1 TRILLION IN<br />SAVINGS.</p>
-      <p begin="771.947s" xml:id="p324" end="773.403s" region="fallback_bottom">SAVINGS.<br />LARRY: THAT STUFF CAN BE</p>
-      <p begin="773.414s" xml:id="p325" end="774.815s" region="fallback_bottom">LARRY: THAT STUFF CAN BE<br />TRANSLATED AND WE’VE BEEN</p>
-      <p begin="774.849s" xml:id="p326" end="777.15s" region="fallback_bottom">TRANSLATED AND WE’VE BEEN<br />TALKING AND HAD RUSSELL VOUGHT,</p>
-      <p begin="777.151s" xml:id="p327" end="780.453s" region="fallback_bottom">TALKING AND HAD RUSSELL VOUGHT,<br />OMB DIRECTOR ON EARLIER AND</p>
-      <p begin="780.455s" xml:id="p328" end="782.68s" region="fallback_bottom">OMB DIRECTOR ON EARLIER AND<br />REASSERTION SESSION AUTHORITY</p>
-      <p begin="782.691s" xml:id="p329" end="783.613s" region="fallback_bottom">REASSERTION SESSION AUTHORITY<br />AND IMPOUNDMENT AUTHORITY AND</p>
-      <p begin="783.624s" xml:id="p330" end="785.482s" region="fallback_bottom">AND IMPOUNDMENT AUTHORITY AND<br />IT’S AN AUDIT THAT WILL NOT</p>
-      <p begin="785.493s" xml:id="p331" end="786.493s" region="fallback_bottom">IT’S AN AUDIT THAT WILL NOT<br />GATHER DUST ON SHELVES.</p>
-      <p begin="786.494s" xml:id="p332" end="790.464s" region="fallback_bottom">GATHER DUST ON SHELVES.<br />THIS WILL WIND UP WITH REAL</p>
-      <p begin="790.498s" xml:id="p333" end="793.623s" region="fallback_bottom">THIS WILL WIND UP WITH REAL<br />SAVINGS, BEND THE SPENDING</p>
-      <p begin="793.634s" xml:id="p334" end="797.537s" region="fallback_top">SAVINGS, BEND THE SPENDING<br />BASELINE DOWN.</p>
-      <p begin="797.572s" xml:id="p335" end="799.363s" region="fallback_bottom">BASELINE DOWN.<br />&gt;&gt; THERE’S BEEN MANY GOOD AUDITS</p>
-      <p begin="799.374s" xml:id="p336" end="802.266s" region="fallback_top">&gt;&gt; THERE’S BEEN MANY GOOD AUDITS<br />WITH INSPECTOR GENERAL AND</p>
-      <p begin="802.277s" xml:id="p337" end="803.734s" region="fallback_top">WITH INSPECTOR GENERAL AND<br />GOVERNMENT ACCOUNTABILITY OFFICE</p>
-      <p begin="803.745s" xml:id="p338" end="807.38s" region="fallback_top">GOVERNMENT ACCOUNTABILITY OFFICE<br />AND NOTHING HAS BEEN DONE.</p>
-      <p begin="807.415s" xml:id="p339" end="810.784s" region="fallback_bottom">AND NOTHING HAS BEEN DONE.<br />THE GAO IDENTIFIED 17 MILLION</p>
-      <p begin="810.785s" xml:id="p340" end="811.575s" region="fallback_top">THE GAO IDENTIFIED 17 MILLION<br />DEAD PEOPLE IN THE SOCIAL</p>
-      <p begin="811.586s" xml:id="p341" end="812.786s" region="fallback_bottom">DEAD PEOPLE IN THE SOCIAL<br />SECURITY DATA BASE SEVERAL YEARS</p>
-      <p begin="812.787s" xml:id="p342" end="814.845s" region="fallback_bottom">SECURITY DATA BASE SEVERAL YEARS<br />AGO AND NOW 20 MILLION.</p>
-      <p begin="814.856s" xml:id="p343" end="816.457s" region="fallback_bottom">AGO AND NOW 20 MILLION.<br />BUT WE’RE NOT DOING ANYTHING</p>
-      <p begin="816.491s" xml:id="p344" end="821.552s" region="fallback_top">BUT WE’RE NOT DOING ANYTHING<br />ABOUT IT.</p>
-      <p begin="821.563s" xml:id="p345" end="823.497s" region="fallback_bottom">ABOUT IT.<br />AND I THINK YOU CAN SORT OF LOOK</p>
-      <p begin="823.531s" xml:id="p346" end="829.326s" region="fallback_bottom">AND I THINK YOU CAN SORT OF LOOK<br />AT THIS AS COMPLAINT MIN</p>
-      <p begin="829.337s" xml:id="p347" end="831.161s" region="fallback_bottom">AT THIS AS COMPLAINT MIN<br />MINIMIZIZATION OPTIMIZATION AND</p>
-      <p begin="831.172s" xml:id="p348" end="832.439s" region="fallback_top">MINIMIZIZATION OPTIMIZATION AND<br />PUTTING MONEY OUT AND NOBODY</p>
-      <p begin="832.44s" xml:id="p349" end="834.274s" region="fallback_top">PUTTING MONEY OUT AND NOBODY<br />COMPLAIN IFS THEY RECEIVE MONEY</p>
-      <p begin="834.309s" xml:id="p350" end="835.9s" region="fallback_top">COMPLAIN IFS THEY RECEIVE MONEY<br />BUT THEY DO COMPLAIN IF THEY</p>
-      <p begin="835.911s" xml:id="p351" end="837.502s" region="fallback_bottom">BUT THEY DO COMPLAIN IF THEY<br />DON’T RECEIVE MONEY.</p>
-      <p begin="837.513s" xml:id="p352" end="838.936s" region="fallback_bottom">DON’T RECEIVE MONEY.<br />AND THE PEOPLE THAT COMPLAIN THE</p>
-      <p begin="838.947s" xml:id="p353" end="840.638s" region="fallback_bottom">AND THE PEOPLE THAT COMPLAIN THE<br />LOUDEST ARE THE ONES THAT</p>
-      <p begin="840.649s" xml:id="p354" end="842.874s" region="fallback_top">LOUDEST ARE THE ONES THAT<br />RECEIVE THE FRAUDULENT MONEY.</p>
-      <p begin="842.885s" xml:id="p355" end="846.22s" region="fallback_bottom">RECEIVE THE FRAUDULENT MONEY.<br />LARRY: YOU’RE ON IT.</p>
-      <p begin="846.254s" xml:id="p356" end="857.788s" region="fallback_bottom">LARRY: YOU’RE ON IT.<br />&gt;&gt; YEAH.</p>
-      <p begin="857.799s" xml:id="p357" end="860.134s" region="fallback_bottom">&gt;&gt; YEAH.<br />WE’RE ELIMINATING WASTE AND</p>
-      <p begin="860.168s" xml:id="p358" end="861.959s" region="fallback_bottom">WE’RE ELIMINATING WASTE AND<br />FRAUD AND THAT’S WHAT I’M HERE</p>
-      <p begin="861.97s" xml:id="p359" end="863.194s" region="fallback_bottom">FRAUD AND THAT’S WHAT I’M HERE<br />FOR AND MAKING GOOD PROGRESS.</p>
-      <p begin="863.205s" xml:id="p360" end="864.405s" region="fallback_bottom">FOR AND MAKING GOOD PROGRESS.<br />LARRY: ARE YOU GOING TO GO</p>
-      <p begin="864.439s" xml:id="p361" end="865.095s" region="fallback_bottom">LARRY: ARE YOU GOING TO GO<br />ANOTHER YEAR?</p>
-      <p begin="865.106s" xml:id="p362" end="867.207s" region="fallback_bottom">ANOTHER YEAR?<br />&gt;&gt; YEAH, I THINK SO.</p>
-      <p begin="867.242s" xml:id="p363" end="868.399s" region="fallback_bottom">&gt;&gt; YEAH, I THINK SO.<br />LARRY: FINAL REPORT MIDDLE OF</p>
-      <p begin="868.41s" xml:id="p364" end="869.21s" region="fallback_bottom">LARRY: FINAL REPORT MIDDLE OF<br />NEXT YEAR?</p>
-      <p begin="869.244s" xml:id="p365" end="870.201s" region="fallback_bottom">NEXT YEAR?<br />&gt;&gt; WELL, WE’RE JUST GETTING</p>
-      <p begin="870.212s" xml:id="p366" end="872.246s" region="fallback_bottom">&gt;&gt; WELL, WE’RE JUST GETTING<br />THINGS DONE AS OPPOSED TO</p>
-      <p begin="872.281s" xml:id="p367" end="874.139s" region="fallback_bottom">THINGS DONE AS OPPOSED TO<br />WRITING A REPORT AND SAYING</p>
-      <p begin="874.15s" xml:id="p368" end="875.106s" region="fallback_bottom">WRITING A REPORT AND SAYING<br />REPORTS DON’T MEAN ANYTHING AND</p>
-      <p begin="875.117s" xml:id="p369" end="891.389s" region="fallback_top">REPORTS DON’T MEAN ANYTHING AND<br />YOU’VE GOT TO TAKE ACTION.</p>
-      <p begin="891.4s" xml:id="p370" end="892.924s" region="fallback_top">YOU’VE GOT TO TAKE ACTION.<br />THAT TITLEMENT SPENDING IS THE</p>
-      <p begin="892.935s" xml:id="p371" end="896.237s" region="fallback_bottom">THAT TITLEMENT SPENDING IS THE<br />BIG ONE TO ELIMINATE AND THAT’S</p>
-      <p begin="896.271s" xml:id="p372" end="902.066s" region="fallback_bottom">BIG ONE TO ELIMINATE AND THAT’S<br />A HALF TRILLION.</p>
-      <p begin="902.077s" xml:id="p373" end="904.111s" region="fallback_bottom">A HALF TRILLION.<br />AND THAT’S A MECHANISM BY WHICH</p>
-      <p begin="904.113s" xml:id="p374" end="905.58s" region="fallback_top">AND THAT’S A MECHANISM BY WHICH<br />THE DEMOCRATS ATTRACTION AND</p>
-      <p begin="905.581s" xml:id="p375" end="906.905s" region="fallback_bottom">THE DEMOCRATS ATTRACTION AND<br />OBTAIN ILLEGAL IMMIGRANTS BY</p>
-      <p begin="906.916s" xml:id="p376" end="908.24s" region="fallback_bottom">OBTAIN ILLEGAL IMMIGRANTS BY<br />ESSENTIALLY PAYING THEM TO COME</p>
-      <p begin="908.251s" xml:id="p377" end="909.317s" region="fallback_bottom">ESSENTIALLY PAYING THEM TO COME<br />HERE AND FELT THEY’RE TURNING</p>
-      <p begin="909.318s" xml:id="p378" end="912.01s" region="fallback_bottom">HERE AND FELT THEY’RE TURNING<br />THEM INTO VOTERS.</p>
-      <p begin="912.021s" xml:id="p379" end="915.156s" region="fallback_bottom">THEM INTO VOTERS.<br />THIS IS WHY THE DEPUTIES ARE SO</p>
-      <p begin="915.191s" xml:id="p380" end="916.982s" region="fallback_bottom">THIS IS WHY THE DEPUTIES ARE SO<br />UPSET ABOUT THE SITUATION AND</p>
-      <p begin="916.993s" xml:id="p381" end="919.784s" region="fallback_bottom">UPSET ABOUT THE SITUATION AND<br />LOSING, YOU KNOW, IF WE TURN OFF</p>
-      <p begin="919.795s" xml:id="p382" end="930.538s" region="fallback_bottom">LOSING, YOU KNOW, IF WE TURN OFF<br />THIS GIGANTIC MONEY MAGNET FOR</p>
-      <p begin="930.539s" xml:id="p383" end="932.03s" region="fallback_top">THIS GIGANTIC MONEY MAGNET FOR<br />THEM LOSING VOTERS.</p>
-      <p begin="932.041s" xml:id="p384" end="933.832s" region="fallback_top">THEM LOSING VOTERS.<br />LARRY: THE PRESIDENT COMPLETELY</p>
-      <p begin="933.843s" xml:id="p385" end="937.002s" region="fallback_bottom">LARRY: THE PRESIDENT COMPLETELY<br />SUPPORTS YOUR OPERATION..</p>
-      <p begin="937.013s" xml:id="p386" end="937.946s" region="fallback_top">SUPPORTS YOUR OPERATION..<br />&gt;&gt; YEAH, THANK YOUS.</p>
-      <p begin="937.947s" xml:id="p387" end="939.204s" region="fallback_top">&gt;&gt; YEAH, THANK YOUS.<br />WITHOUT THE PRESIDENT’S SUPPORT</p>
-      <p begin="939.215s" xml:id="p388" end="942.774s" region="fallback_top">WITHOUT THE PRESIDENT’S SUPPORT<br />WE COULDN’T MAKE PROGRESS HERE.</p>
-      <p begin="942.785s" xml:id="p389" end="944.219s" region="fallback_top">WE COULDN’T MAKE PROGRESS HERE.<br />BUT, YEAH, WHERE YOU’LL SEE THE</p>
-      <p begin="944.253s" xml:id="p390" end="948.623s" region="fallback_top">BUT, YEAH, WHERE YOU’LL SEE THE<br />BIGGEST OUTCRY IS FROM THE</p>
-      <p begin="948.624s" xml:id="p391" end="953.761s" region="fallback_top">BIGGEST OUTCRY IS FROM THE<br />DEMOCRATS WHO ARE NOT WANTING</p>
-      <p begin="953.763s" xml:id="p392" end="954.763s" region="fallback_top">DEMOCRATS WHO ARE NOT WANTING<br />WASTE AND FRAUD TURNED OFF</p>
-      <p begin="954.764s" xml:id="p393" end="957.132s" region="fallback_bottom">WASTE AND FRAUD TURNED OFF<br />BECAUSE IT’S A GIGANTIC MAGNET</p>
-      <p begin="957.133s" xml:id="p394" end="958.533s" region="fallback_top">BECAUSE IT’S A GIGANTIC MAGNET<br />TO ATTRACT ILLEGAL IMMIGRANTS</p>
-      <p begin="958.534s" xml:id="p395" end="960.535s" region="fallback_top">TO ATTRACT ILLEGAL IMMIGRANTS<br />AND HAVE THEM STAY IN THE</p>
-      <p begin="960.536s" xml:id="p396" end="960.892s" region="fallback_top">AND HAVE THEM STAY IN THE<br />COUNTRY.</p>
-      <p begin="960.903s" xml:id="p397" end="962.904s" region="fallback_bottom">COUNTRY.<br />AND YOU SEE SOME OF THE CRAZE</p>
-      <p begin="962.939s" xml:id="p398" end="966.532s" region="fallback_top">AND YOU SEE SOME OF THE CRAZE<br />YAY STUFF WHERE MONEY FROM FEMA,</p>
-      <p begin="966.543s" xml:id="p399" end="969.501s" region="fallback_top">YAY STUFF WHERE MONEY FROM FEMA,<br />FEMA IS MEANT TO TAKE CARE OF</p>
-      <p begin="969.512s" xml:id="p400" end="971.17s" region="fallback_bottom">FEMA IS MEANT TO TAKE CARE OF<br />AMERICANS IN DISTRESS AND A</p>
-      <p begin="971.181s" xml:id="p401" end="972.48s" region="fallback_bottom">AMERICANS IN DISTRESS AND A<br />BUNCH OF THEIR MONEY SENT TO PAY</p>
-      <p begin="972.482s" xml:id="p402" end="975.05s" region="fallback_top">BUNCH OF THEIR MONEY SENT TO PAY<br />FOR LUXURY HOTELS IN NEW YORK</p>
-      <p begin="975.085s" xml:id="p403" end="1002.735s" region="fallback_bottom">FOR LUXURY HOTELS IN NEW YORK<br />FOR ILLEGAL IMMIGRANTS.</p>
-      <p begin="1002.746s" xml:id="p404" end="1006.605s" region="fallback_bottom">FOR ILLEGAL IMMIGRANTS.<br />THERE’S NO VOTER ID NEEDED.</p>
-      <p begin="1006.616s" xml:id="p405" end="1013.555s" region="fallback_top">THERE’S NO VOTER ID NEEDED.<br />IN CALIFORNIA, AND NEW YORK</p>
-      <p begin="1013.59s" xml:id="p406" end="1015.147s" region="fallback_top">IN CALIFORNIA, AND NEW YORK<br />STATE, YOU’RE NOT ALLOWED TO</p>
-      <p begin="1015.158s" xml:id="p407" end="1016.258s" region="fallback_bottom">STATE, YOU’RE NOT ALLOWED TO<br />SHOW VOTER ID.</p>
-      <p begin="1016.293s" xml:id="p408" end="1018.127s" region="fallback_bottom">SHOW VOTER ID.<br />ISN’T THAT INSANE?</p>
-      <p begin="1018.128s" xml:id="p409" end="1018.594s" region="fallback_bottom">ISN’T THAT INSANE?<br />LARRY: INSANE.</p>
-      <p begin="1018.595s" xml:id="p410" end="1020.429s" region="fallback_bottom">LARRY: INSANE.<br />THAT AS A NEW YORKER, INSANE.</p>
-      <p begin="1020.43s" xml:id="p411" end="1021.12s" region="fallback_bottom">THAT AS A NEW YORKER, INSANE.<br />&gt;&gt; YEAH.</p>
-      <p begin="1021.131s" xml:id="p412" end="1021.854s" region="fallback_bottom">&gt;&gt; YEAH.<br />IT IS.</p>
-      <p begin="1021.865s" xml:id="p413" end="1023.866s" region="fallback_bottom">IT IS.<br />LARRY: IT VIOLATES THE ENTIRE</p>
-      <p begin="1023.9s" xml:id="p414" end="1024.323s" region="fallback_bottom">LARRY: IT VIOLATES THE ENTIRE<br />CONSTITUTION.</p>
-      <p begin="1024.334s" xml:id="p415" end="1026.225s" region="fallback_bottom">CONSTITUTION.<br />AND THE PRINCIPLES BEHIND THEM.</p>
-      <p begin="1026.236s" xml:id="p416" end="1026.559s" region="fallback_bottom">AND THE PRINCIPLES BEHIND THEM.<br />&gt;&gt; YES.</p>
-      <p begin="1026.57s" xml:id="p417" end="1027.836s" region="fallback_bottom">&gt;&gt; YES.<br />LARRY: PRODUCERS ARE YELLING AT</p>
-      <p begin="1027.838s" xml:id="p418" end="1028.571s" region="fallback_bottom">LARRY: PRODUCERS ARE YELLING AT<br />ME TO GET OUT.</p>
-      <p begin="1028.605s" xml:id="p419" end="1030.196s" region="fallback_bottom">ME TO GET OUT.<br />I DON’T WANT TO END THIS</p>
-      <p begin="1030.207s" xml:id="p420" end="1031.097s" region="fallback_bottom">I DON’T WANT TO END THIS<br />INTERVIEW BECAUSE IT’S TOO MUCH</p>
-      <p begin="1031.108s" xml:id="p421" end="1031.698s" region="fallback_bottom">INTERVIEW BECAUSE IT’S TOO MUCH<br />FUN.</p>
-      <p begin="1031.709s" xml:id="p422" end="1033.966s" region="fallback_bottom">FUN.<br />CAN I ASK YOU ONE THING, 20</p>
-      <p begin="1033.977s" xml:id="p423" end="1034.377s" region="fallback_bottom">CAN I ASK YOU ONE THING, 20<br />SECONDS?</p>
-      <p begin="1034.411s" xml:id="p424" end="1037.77s" region="fallback_bottom">SECONDS?<br />NOTHING TO DO WITH DOGE.</p>
-      <p begin="1037.781s" xml:id="p425" end="1040.24s" region="fallback_bottom">NOTHING TO DO WITH DOGE.<br />CAN YOU RESCUE THE ASTRONAUTS?</p>
-      <p begin="1040.251s" xml:id="p426" end="1041.383s" region="fallback_bottom">CAN YOU RESCUE THE ASTRONAUTS?<br />&gt;&gt; YES, WE’RE BRINGING THEM BACK</p>
-      <p begin="1041.418s" xml:id="p427" end="1042.909s" region="shifted_middle3">&gt;&gt; YES, WE’RE BRINGING THEM BACK<br />IN A FEW WEEKS.</p>
-      <p begin="1042.92s" xml:id="p428" end="1044.61s" region="shifted_middle3">IN A FEW WEEKS.<br />LARRY: NOT NEAR ENOUGH ATTENTION</p>
-      <p begin="1044.621s" xml:id="p429" end="1045.511s" region="shifted_middle3">LARRY: NOT NEAR ENOUGH ATTENTION<br />BEING PAID TO THIS.</p>
-      <p begin="1045.522s" xml:id="p430" end="1047.113s" region="shifted_middle3">BEING PAID TO THIS.<br />YOU’RE GOING TO GET THEM BACK?</p>
-      <p begin="1047.124s" xml:id="p431" end="1048.391s" region="shifted_middle3">YOU’RE GOING TO GET THEM BACK?<br />&gt;&gt; WE’RE GOING TO GET THEM</p>
+      <p begin="0.15s" xml:id="p0" end="2.97s" region="middle3">Sam Altman.<br />Sam, of course, the headlines right now,</p>
+      <p begin="2.97s" xml:id="p1" end="6.06s" region="middle3">Elon Musk making a bid apparently for<br />Openai.</p>
+      <p begin="6.09s" xml:id="p2" end="8.55s" region="middle3">Your response?<br />You're turning him down for 97 billion.</p>
+      <p begin="9.6s" xml:id="p3" end="11.34s" region="middle3">I mean, look over here.<br />It's not for sale.</p>
+      <p begin="11.34s" xml:id="p4" end="14.67s" region="middle3">The open admission is not for sale.<br />Ellen tries all sorts of things for a</p>
+      <p begin="14.67s" xml:id="p5" end="17.79s" region="shifted_middle3">long time.<br />This is the late, you know, this week's</p>
+      <p begin="17.79s" xml:id="p6" end="19.62s" region="shifted_middle3">episode.<br />You take it seriously.</p>
+      <p begin="19.62s" xml:id="p7" end="20.94s" region="shifted_middle3">It's all.<br />What do you think he's trying to drive</p>
+      <p begin="20.94s" xml:id="p8" end="22.92s" region="shifted_middle3">out with this?<br />I think he's probably just trying to</p>
+      <p begin="22.92s" xml:id="p9" end="25.41s" region="middle3">slow us down.<br />He obviously is a competitor.</p>
+      <p begin="26.49s" xml:id="p10" end="30.27s" region="shifted_middle3">It's, you know, he's working hard and<br />he's raised a lot of money for MCI, and</p>
+      <p begin="30.27s" xml:id="p11" end="35.07s" region="shifted_middle3">they're trying to compete with us from a<br />technological perspective, from, you</p>
+      <p begin="35.07s" xml:id="p12" end="36.63s" region="shifted_middle3">know, getting the product into the<br />market.</p>
+      <p begin="37.14s" xml:id="p13" end="41.52s" region="shifted_middle3">And I wish he would just compete by<br />building better products.</p>
+      <p begin="41.52s" xml:id="p14" end="44.79s" region="shifted_middle3">But I think there's been a lot of<br />tactics, you know, many, many lawsuits,</p>
+      <p begin="44.79s" xml:id="p15" end="46.71s" region="shifted_middle3">all sorts of other crazy stuff out of<br />this.</p>
+      <p begin="47.61s" xml:id="p16" end="49.71s" region="shifted_middle3">And we'll try to just put our head down<br />and keep working.</p>
+      <p begin="49.89s" xml:id="p17" end="53.55s" region="middle3">Does it make it more difficult to move<br />from that non-profit model to that for</p>
+      <p begin="53.55s" xml:id="p18" end="57.47s" region="middle3">profit model for open?<br />We're not moving to a for profit model</p>
+      <p begin="57.47s" xml:id="p19" end="59.63s" region="middle3">where we're not sure we're going to it<br />all.</p>
+      <p begin="59.63s" xml:id="p20" end="62.77s" region="middle3">But no matter what, the nonprofit will<br />continue to be extremely important.</p>
+      <p begin="62.78s" xml:id="p21" end="64.58s" region="shifted_middle3">It will drive.<br />The mission will continue to exist.</p>
+      <p begin="65.269s" xml:id="p22" end="69.41s" region="shifted_middle3">The board is looking at lots of options<br />about how to best structure for this</p>
+      <p begin="69.41s" xml:id="p23" end="72.7s" region="shifted_middle3">next phase.<br />But the nonprofit is not changing at</p>
+      <p begin="72.71s" xml:id="p24" end="74.27s" region="shifted_middle3">anything or going anywhere.<br />Okay.</p>
+      <p begin="74.33s" xml:id="p25" end="77.78s" region="middle3">What is your main mission here at the<br />Paris Action Summit?</p>
+      <p begin="77.78s" xml:id="p26" end="79.91s" region="middle3">Your Stargate?<br />There's question questions about how</p>
+      <p begin="79.91s" xml:id="p27" end="81.17s" region="middle3">much you're actually going to commit to<br />that.</p>
+      <p begin="81.17s" xml:id="p28" end="82.7s" region="middle3">Maybe you can give us some numbers on<br />that, Sam.</p>
+      <p begin="83.03s" xml:id="p29" end="88.16s" region="middle3">What is the messaging here from Unity?<br />So I've been to an earlier version of</p>
+      <p begin="88.16s" xml:id="p30" end="91.67s" region="middle3">this at Bletchley Park, and that one was<br />more focused on safety.</p>
+      <p begin="91.94s" xml:id="p31" end="93.8s" region="shifted_middle3">This one, people are still talking about<br />safety.</p>
+      <p begin="93.8s" xml:id="p32" end="97.4s" region="shifted_middle3">But but really, I think people are now<br />saying, okay, this technology is here.</p>
+      <p begin="97.4s" xml:id="p33" end="99.8s" region="shifted_middle3">It's having an incredible impact.<br />We've got to drive it.</p>
+      <p begin="99.8s" xml:id="p34" end="102.41s" region="shifted_middle3">There is a lot of questions about how<br />people can, you know.</p>
+      <p begin="103.48s" xml:id="p35" end="106.0s" region="middle3">Maybe the most common question I've<br />gotten is can you do a Stargate in my</p>
+      <p begin="106.0s" xml:id="p36" end="108.28s" region="middle3">country?<br />You know, we need infrastructure here.</p>
+      <p begin="108.28s" xml:id="p37" end="109.48s" region="middle3">We want to do this.<br />Can you help?</p>
+      <p begin="109.87s" xml:id="p38" end="113.68s" region="middle3">So that that's been a common one.<br />But a lot of other things about just how</p>
+      <p begin="113.68s" xml:id="p39" end="116.65s" region="middle3">are we going to deploy this technology<br />to make sure people benefit.</p>
+      <p begin="116.74s" xml:id="p40" end="118.96s" region="middle3">Where's it going to go?<br />You know, in what ways the model going</p>
+      <p begin="118.96s" xml:id="p41" end="121.3s" region="middle3">to improve.<br />Last week, we launched this thing called</p>
+      <p begin="121.3s" xml:id="p42" end="123.67s" region="middle3">Deep Research.<br />We've got a ton of questions about that.</p>
+      <p begin="123.67s" xml:id="p43" end="126.61s" region="middle3">You know, how can we use this to really<br />drive economic growth?</p>
+      <p begin="126.61s" xml:id="p44" end="129.3s" region="middle3">But maybe economic growth has been the<br />single biggest theme here.</p>
+      <p begin="129.31s" xml:id="p45" end="132.34s" region="middle3">And having a currency on deep sea can<br />argue you in the seem to me looking into</p>
+      <p begin="132.34s" xml:id="p46" end="135.43s" region="middle3">that whether they distilled whether they<br />inappropriately used your your</p>
+      <p begin="135.43s" xml:id="p47" end="139.39s" region="middle3">inferencing data, have you had more<br />clarity that they did or didn't they get</p>
+      <p begin="139.39s" xml:id="p48" end="141.19s" region="middle3">challenged?<br />They built a good model.</p>
+      <p begin="141.19s" xml:id="p49" end="143.71s" region="middle3">Many people will distill from many other<br />models.</p>
+      <p begin="145.18s" xml:id="p50" end="148.72s" region="shifted_middle3">Again, I feel so confident about our<br />research roadmap and also our product</p>
+      <p begin="148.72s" xml:id="p51" end="152.2s" region="shifted_middle3">roadmap that, you know, deep sea will do<br />whatever it is going to do and people do</p>
+      <p begin="152.2s" xml:id="p52" end="155.86s" region="shifted_middle3">whatever they're going to do, and we're<br />just going to try to like build the best</p>
+      <p begin="155.86s" xml:id="p53" end="157.69s" region="middle3">technology we can and get it in people's<br />hands.</p>
+      <p begin="157.69s" xml:id="p54" end="159.67s" region="middle3">And I think that's mostly going pretty<br />well.</p>
+      <p begin="159.7s" xml:id="p55" end="162.94s" region="middle3">Do you think Musk's approach then, is<br />from a position of insecurity about</p>
+      <p begin="162.94s" xml:id="p56" end="165.04s" region="middle3">Excel?<br />Probably his whole life is from a</p>
+      <p begin="165.04s" xml:id="p57" end="168.55s" region="middle3">position of insecurity.<br />I feel for the guy who feels that I do,</p>
+      <p begin="168.55s" xml:id="p58" end="170.68s" region="shifted_middle3">actually.<br />I don't think he's like a happy person.</p>
+      <p begin="170.68s" xml:id="p59" end="171.85s" region="middle3">I do feel for him.<br />Okay.</p>
+      <p begin="171.97s" xml:id="p60" end="175.45s" region="middle3">Do you worry that he has this proximity<br />to the president and he can influence</p>
+      <p begin="175.45s" xml:id="p61" end="179.24s" region="middle3">the decision making of of the US<br />presidency and policies around this this</p>
+      <p begin="179.29s" xml:id="p62" end="181.45s" region="middle3">agenda on A.I.<br />in particular?</p>
+      <p begin="181.51s" xml:id="p63" end="184.87s" region="middle3">Maybe I should, but not particularly.<br />I mean, I try to just wake up and think</p>
+      <p begin="184.87s" xml:id="p64" end="186.67s" region="middle3">about, like, how we're going to make our<br />technology better.</p>
+      <p begin="187.21s" xml:id="p65" end="189.13s" region="middle3">Sam Altman, thank you.<br />Thank you so much, sir.</p>
+      <p begin="189.13s" xml:id="p66" end="191.32s" region="middle3">You're co-founder, of course, of Open<br />Openai.</p>
     </div>
   </body>
 </tt>

@@ -48,7 +48,7 @@ class SubtitlePlacement:
                 Each element is a NumPy array of detections.
         """
         # Run the model in batch mode
-        results = model(frames, batch=len(frames), verbose=True)  # Run batch inference
+        results = model(frames, batch=len(frames), verbose=False)  # Run batch inference
 
         # Extract detections for each frame
         batch_detections = []
@@ -68,90 +68,97 @@ class SubtitlePlacement:
             tuple: (position_name, coordinates)
         """
 
-        def zones_overlap(zone1, zone2):
-            """Checks if two zones overlap."""
+        def zones_overlap(zone1, zone2, threshold=0.05):  # 10% threshold
+            """Checks if two zones overlap significantly (IoA)."""
             x1a, y1a, x2a, y2a = zone1
             x1b, y1b, x2b, y2b = zone2
-            return not (x2a < x1b or x1a > x2b or y2a < y1b or y1a > y2b)
 
-        # Check if we already computed a safe zone for this frame in memory
-        cache_key = (frame_width, frame_height, tuple(tuple(d) for d in detections))  # Unique key per resolution + detections
-        if cache_key in safe_zone_cache:
-            return safe_zone_cache[cache_key]  # Return cached value
+            # Calculate overlap rectangle
+            inter_x1 = max(x1a, x1b)
+            inter_y1 = max(y1a, y1b)
+            inter_x2 = min(x2a, x2b)
+            inter_y2 = min(y2a, y2b)
 
-        # Try Predefined Positions
+            # Check if there's any intersection
+            if inter_x2 <= inter_x1 or inter_y2 <= inter_y1:
+                return False
+
+            inter_area = (inter_x2 - inter_x1) * (inter_y2 - inter_y1)
+            zone_area = (x2a - x1a) * (y2a - y1a)
+
+            # Intersection over Area (IoA)
+            iou = inter_area / zone_area
+
+            return iou > threshold
+
+        # ✅ Step 1: Try Predefined Positions
         for position_name, position in sorted(pre_positions.items(), key=lambda x: x[1].get("priority", 0), reverse=True):
             x1, y1, x2, y2 = position["coordinates"]
 
-            # Check if the original pre-position is available
-            if not any(zones_overlap((x1, y1, x2, y2), detection[:4]) for detection in detections):
-                safe_zone_cache[cache_key] = (position_name, (x1, y1, x2, y2))  # Store in cache
-                
-                # Store in used safe zones for JSON output
+            # if not any(zones_overlap((x1, y1, x2, y2), detection[:4]) for detection in detections):
+            if not any(zones_overlap((x1, y1, x2, y2), detection[:4], threshold=0.1) for detection in detections):
                 used_safe_zones[position_name] = {
                     "coordinates": [x1, y1, x2, y2]
                 }
                 return (position_name, (x1, y1, x2, y2))
 
-            min_width = max(0.6 * frame_width, 600)  # 60% of frame width, but at least 600px
-
-            # Try shifting left and right before moving to fallback
+            # ✅ Step 2: Try shifting left and right
+            min_width = max(0.6 * frame_width, 600)
             for shift_dir in ["left", "right"]:
-                shift_attempts = 0
-                while shift_attempts < 10:  # Try shifting multiple times
+                attempts = 0
+                shift_value = shift_x
+                while attempts < 10:
                     if shift_dir == "left":
-                        new_x1, new_x2 = max(0, x1 - shift_x), max(min_width, x2 - shift_x)
+                        new_x1 = max(0, x1 - shift_value)
+                        new_x2 = max(min_width, x2 - shift_value)
                     else:
-                        new_x1, new_x2 = min(frame_width - min_width, x1 + shift_x), min(frame_width, x2 + shift_x)
+                        new_x1 = min(frame_width - min_width, x1 + shift_value)
+                        new_x2 = min(frame_width, x2 + shift_value)
 
                     shifted_zone = (new_x1, y1, new_x2, y2)
-
                     if new_x2 > new_x1 and not any(zones_overlap(shifted_zone, detection[:4]) for detection in detections):
-                        safe_zone_cache[cache_key] = (f"shifted_{position_name}", shifted_zone)  # ✅ Store shifted result in cache
-                        
-                        # Store in used safe zones with "shifted_" prefix
-                        used_safe_zones[f"shifted_{position_name}"] = {
+                        shifted_name = f"shifted_{position_name}"
+                        used_safe_zones[shifted_name] = {
                             "coordinates": [new_x1, y1, new_x2, y2]
                         }
-                        return (f"shifted_{position_name}", shifted_zone)  # Return valid shifted zone
+                        return (shifted_name, shifted_zone)
 
-                    shift_attempts += 1
-                    shift_x *= 1.5  # Increase shift size if first shift attempt fails
+                    shift_value *= 1.5
+                    attempts += 1
 
-        # No Predefined Positions Worked, Try Dynamic Safe Zone
-        fallback_position_name = "fallback_bottom"
-        proposed_safe_zone = (0, frame_height - subtitle_height - margin, frame_width, frame_height - margin)
+        # ✅ Step 3: Try Cached Safe Zone (if exists)
+        cache_key = (frame_width, frame_height, tuple(tuple(d) for d in detections))
+        if cache_key in safe_zone_cache:
+            return safe_zone_cache[cache_key]
 
+        # ✅ Step 4: Dynamic fallback position (bottom-up shifting)
+        fallback_position_name = "dynamic_position"
+        proposed = (0, frame_height - subtitle_height - margin, frame_width, frame_height - margin)
         while True:
-            if all(not zones_overlap(proposed_safe_zone, (int(d[0]), int(d[1]), int(d[2]), int(d[3]))) for d in detections):
-                safe_zone_cache[cache_key] = (fallback_position_name, proposed_safe_zone)  # ✅ Store in cache
-                
-                # Store dynamic position as "fallback_bottom"
+            if all(not zones_overlap(proposed, detection[:4]) for detection in detections):
+                safe_zone_cache[cache_key] = (fallback_position_name, proposed)
                 used_safe_zones[fallback_position_name] = {
-                    "coordinates": list(proposed_safe_zone)
+                    "coordinates": list(proposed)
                 }
-                return (fallback_position_name, proposed_safe_zone)
+                return (fallback_position_name, proposed)
 
-            # Try shifting up
-            x1, y1, x2, y2 = proposed_safe_zone
+            # Shift upwards
+            x1, y1, x2, y2 = proposed
+
             new_y1 = y1 - subtitle_height - margin
             new_y2 = y2 - subtitle_height - margin
 
             if new_y1 < 0:
-                break  # No valid space above, fallback required
+                break
+            proposed = (x1, new_y1, x2, new_y2)
 
-            proposed_safe_zone = (x1, new_y1, x2, new_y2)
-
-        # Final Fallback to Top and Cache It
+        # ✅ Step 5: Final Fallback to Top
         fallback_position_name = "fallback_top"
         final_safe_zone = (0, margin, frame_width, subtitle_height + margin)
-        safe_zone_cache[cache_key] = (fallback_position_name, final_safe_zone)  # ✅ Store fallback result in cache
-
-        # Store fallback position as "fallback_top"
+        safe_zone_cache[cache_key] = (fallback_position_name, final_safe_zone)
         used_safe_zones[fallback_position_name] = {
             "coordinates": list(final_safe_zone)
         }
-
         return (fallback_position_name, final_safe_zone)
     
     def get_used_safe_zones():
@@ -174,7 +181,7 @@ class SubtitlePlacement:
         Returns:
             tuple: (subtitle_height, margin)
         """
-        subtitle_height = max(0.12 * frame_height, 30)  # Minimum 18px for readability
+        subtitle_height = max(0.15 * frame_height, 30)  # Minimum 18px for readability
         margin = max(0.02 * frame_height, 5)  # Minimum 5px to avoid text touching edges
 
         return int(subtitle_height), int(margin)
@@ -331,19 +338,6 @@ class RenderSubtitle:
             raise ValueError("Unsupported subtitle format. Only SRT and TTML are supported.")
 
         return subtitle_data
-
-    def get_subtitles_for_frames(frame_times, subtitle_dict):
-        """
-        Retrieves subtitles for a batch of frame timestamps.
-
-        Parameters:
-            frame_times (list): List of timestamps (in seconds).
-            subtitle_dict (dict): Pre-indexed subtitle dictionary.
-
-        Returns:
-            list: List of subtitle texts corresponding to each frame timestamp.
-        """
-        return [subtitle_dict.get(int(time), "") for time in frame_times]
     
     def get_video_fps(video_path):
         """Extracts FPS from a video using FFmpeg."""
@@ -441,7 +435,7 @@ class RenderSubtitle:
         for region_name, region_data in json_data.items():
             x1, y1, x2, y2 = region_data["coordinates"]
 
-            print(frame_height,frame_width)
+            # print(frame_height,frame_width)
 
             # Convert absolute pixel values to TTML percentages
             origin_x = (x1 / frame_width) * 100
@@ -495,7 +489,6 @@ class Main:
         print(f"Corrected FPS: {fps}")
 
         subtitle_data = RenderSubtitle.parse_subtitle_file(file_path)
-        # subtitle_timestamps = SubtitlePlacement.get_subtitle_timestamps(file_path)
 
         cap = cv2.VideoCapture(video_input_path)
 
@@ -569,7 +562,6 @@ class Main:
 
         # Final batch
         if frame_buffer and subtitle_index < len(subtitle_data):
-            # subtitles = [subtitle_data[subtitle_index]]
             detect_start = time.time()
             processed_frames = SubtitlePlacement.process_frames_batch(frame_buffer)
             detect_end = time.time()
