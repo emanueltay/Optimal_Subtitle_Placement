@@ -68,7 +68,7 @@ class SubtitlePlacement:
             tuple: (position_name, coordinates)
         """
 
-        def zones_overlap(zone1, zone2, threshold=0.05):  # 10% threshold
+        def zones_overlap(zone1, zone2, threshold=0.05):  # threshold
             """Checks if two zones overlap significantly (IoA)."""
             x1a, y1a, x2a, y2a = zone1
             x1b, y1b, x2b, y2b = zone2
@@ -91,7 +91,7 @@ class SubtitlePlacement:
 
             return iou > threshold
 
-        # ✅ Step 1: Try Predefined Positions
+        # Step 1: Try Predefined Positions
         for position_name, position in sorted(pre_positions.items(), key=lambda x: x[1].get("priority", 0), reverse=True):
             x1, y1, x2, y2 = position["coordinates"]
 
@@ -102,7 +102,7 @@ class SubtitlePlacement:
                 }
                 return (position_name, (x1, y1, x2, y2))
 
-            # ✅ Step 2: Try shifting left and right
+            # Step 2: Try shifting left and right
             min_width = max(0.6 * frame_width, 600)
             for shift_dir in ["left", "right"]:
                 attempts = 0
@@ -126,12 +126,12 @@ class SubtitlePlacement:
                     shift_value *= 1.5
                     attempts += 1
 
-        # ✅ Step 3: Try Cached Safe Zone (if exists)
+        # Step 3: Try Cached Safe Zone (if exists)
         cache_key = (frame_width, frame_height, tuple(tuple(d) for d in detections))
         if cache_key in safe_zone_cache:
             return safe_zone_cache[cache_key]
 
-        # ✅ Step 4: Dynamic fallback position (bottom-up shifting)
+        # Step 4: Dynamic fallback position (bottom-up shifting)
         fallback_position_name = "dynamic_position"
         proposed = (0, frame_height - subtitle_height - margin, frame_width, frame_height - margin)
         while True:
@@ -152,7 +152,7 @@ class SubtitlePlacement:
                 break
             proposed = (x1, new_y1, x2, new_y2)
 
-        # ✅ Step 5: Final Fallback to Top
+        # Step 5: Final Fallback to Top
         fallback_position_name = "fallback_top"
         final_safe_zone = (0, margin, frame_width, subtitle_height + margin)
         safe_zone_cache[cache_key] = (fallback_position_name, final_safe_zone)
@@ -387,11 +387,11 @@ class RenderSubtitle:
 
         # Restore All Root Attributes (Explicitly Add Missing Namespaces)
         root.attrib.clear()
-        root.attrib.update(root_attribs)  # ✅ Restore original attributes
+        root.attrib.update(root_attribs)  # Restore original attributes
 
         # Ensure `xmlns:tts` is Explicitly Set (if missing)
         if "xmlns:tts" not in root.attrib:
-            root.set("xmlns:tts", "http://www.w3.org/ns/ttml#styling")  # ✅ Add missing styling namespace
+            root.set("xmlns:tts", "http://www.w3.org/ns/ttml#styling")  # Add missing styling namespace
 
         # Find or Create the <head> Element (Using Preserved Namespace)
         head_element = root.find(f'.//{{{namespace_uri}}}head', ns)
@@ -465,24 +465,41 @@ class RenderSubtitle:
 
             if matched_subtitle:
                 if matched_subtitle["region"] is not None:
-                    p.attrib["region"] = matched_subtitle["region"]  # ✅ Assign Correct Region
+                    p.attrib["region"] = matched_subtitle["region"]  # Assign Correct Region
                 elif "region" in p.attrib:
-                    del p.attrib["region"]  # ✅ Remove `region` if it's None
+                    del p.attrib["region"]  # Remove `region` if it's None
 
         # Save Updated TTML File
         tree.write(output_ttml_path, encoding="utf-8", xml_declaration=True)
 
 class Main:
+    def log_profiling_summary(video_duration, load_duration, run_duration, total_video_read_time, total_yolo_time, total_region_assign_time, ttml_generation_time, output_path, log_path=None):
+        minutes, seconds = divmod(video_duration, 60)
+        run_minutes, run_seconds = divmod(run_duration, 60)
 
-    def main(video_input_path, ttml_file, output_path, resize_resolution=None):
-        
+        summary_lines = [
+            "\n📊 PROFILING SUMMARY",
+            f"🎬 Video Duration: {int(minutes)}m {int(seconds)}s",
+            f"📦 Load Time: {load_duration:.2f}s",
+            f"🚀 Run Time: {int(run_minutes)}m {int(run_seconds)}s",
+            f"📥 Video Read Time: {total_video_read_time:.2f}s",
+            f"🔍 YOLO Detection Time: {total_yolo_time:.2f}s",
+            f"📐 Region Assignment Time: {total_region_assign_time:.4f}s",
+            f"📝 TTML Generation Time: {ttml_generation_time:.4f}s",
+            f"✅ Output TTML saved to: {output_path}"
+        ]
+
+        if log_path:
+            with open(log_path, 'w') as f:
+                f.write("\n".join(summary_lines))
+            print(f"\n📝 Profiling summary written to: {log_path}")
+
+    def main(video_input_path, ttml_file, output_path, resize_resolution=None, stream_fps=None, log_path=None):
         # Start Load Timer
         start_load_time = time.time()
 
         # Define file paths
-        video_input_path = video_input_path
         file_path = ttml_file
-        output_path = output_path
 
         # Load Video Metadata
         fps = RenderSubtitle.get_video_fps(video_input_path)
@@ -493,12 +510,19 @@ class Main:
         cap = cv2.VideoCapture(video_input_path)
 
         # Original Resolution for TTML generation
-        frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-        frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-        print(f"🎞 Frame Dimensions: {frame_width}x{frame_height}")
+        original_frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+        original_frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+        print(f"🎞 Frame Dimensions: {original_frame_width}x{original_frame_height}")
 
         total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
         video_duration = total_frames / fps
+
+        # Use resized resolution for detection if specified
+        frame_width = original_frame_width
+        frame_height = original_frame_height
+        if resize_resolution:
+            frame_width, frame_height = resize_resolution
+            print(f"🔄 Resized Frame Dimensions for Detection: {frame_width}x{frame_height}")
 
         # End Load Timer
         end_load_time = time.time()
@@ -525,12 +549,16 @@ class Main:
             if not ret:
                 break
 
+            frame_time = frame_number / fps
+
+            # Apply frame skipping if stream_fps is specified
+            if stream_fps is not None and frame_number % int(fps // stream_fps) != 0:
+                frame_number += 1
+                continue
+
             # Resize frame for faster processing
             if resize_resolution:
                 frame = cv2.resize(frame, resize_resolution)
-                frame_width, frame_height = resize_resolution
-
-            frame_time = frame_number / fps
 
             if subtitle_index < len(subtitle_data):
                 current_subtitle = subtitle_data[subtitle_index]
@@ -543,7 +571,6 @@ class Main:
 
                 if frame_time > current_end:
                     if frame_buffer:
-
                         detect_start = time.time()
                         processed_frames = SubtitlePlacement.process_frames_batch(frame_buffer)
                         detect_end = time.time()
@@ -577,22 +604,21 @@ class Main:
         # Generate TTML Layout using original resolution
         ttml_gen_start = time.time()
         layout = SubtitlePlacement.get_used_safe_zones()
-        RenderSubtitle.generate_updated_ttml(file_path, output_path, layout, subtitle_data, frame_width, frame_height)
+        RenderSubtitle.generate_updated_ttml(file_path, output_path, layout, subtitle_data, original_frame_width, original_frame_height)
         ttml_gen_end = time.time()
         ttml_generation_time = ttml_gen_end - ttml_gen_start
 
-        minutes, seconds = divmod(video_duration, 60)
-
-        # Final Timing Summary
-        print("\n📊 PROFILING SUMMARY")
-        print(f"🎬 Video Duration: {int(minutes)}m {int(seconds)}s")
-        print(f"📦 Load Time: {load_duration:.2f}s")
-        print(f"🚀 Run Time: {run_duration:.2f}s")
-        print(f"📥 Video Read Time: {total_video_read_time:.2f}s")
-        print(f"🔍 YOLO Detection Time: {total_yolo_time:.2f}s")
-        print(f"📐 Region Assignment Time: {total_region_assign_time:.2f}s")
-        print(f"📝 TTML Generation Time: {ttml_generation_time:.2f}s")
-        print(f"✅ Output TTML saved to: {output_path}")
+        Main.log_profiling_summary(
+            video_duration=video_duration,
+            load_duration=load_duration,
+            run_duration=run_duration,
+            total_video_read_time=total_video_read_time,
+            total_yolo_time=total_yolo_time,
+            total_region_assign_time=total_region_assign_time,
+            ttml_generation_time=ttml_generation_time,
+            output_path=output_path,
+            log_path=log_path
+        )
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Auto Subtitle Placement")
@@ -601,16 +627,19 @@ if __name__ == "__main__":
     parser.add_argument("--ttml", required=True, help="Path to input TTML subtitle file")
     parser.add_argument("--output", required=True, help="Path to save updated TTML file")
     parser.add_argument("--resize", nargs=2, type=int, default=None, help="Resize resolution (width height), e.g. --resize 640 360")
+    parser.add_argument("--stream_fps", type=int, default=None, help="Reduce processing FPS by specifying a lower FPS (e.g. 5)")
+    parser.add_argument("--log_path", type=str, default=None, help="Optional path to save profiling summary log (e.g. profiling.txt)")
 
     args = parser.parse_args()
 
-    # Handle optional resize argument
     resize_resolution = tuple(args.resize) if args.resize else None
 
-    # Run main
+    # Run main with additional optional parameters
     Main.main(
         video_input_path=args.video,
         ttml_file=args.ttml,
         output_path=args.output,
-        resize_resolution=resize_resolution
+        resize_resolution=resize_resolution,
+        stream_fps=args.stream_fps,
+        log_path=args.log_path
     )
