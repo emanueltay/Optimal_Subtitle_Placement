@@ -1,0 +1,5 @@
+{
+    "region_json_path": "Config/subtitle_regions.json",
+    "model_path": "Model/fine-tuned_model(YOLO12)/best.pt",
+    "safe_zone_history_length": 3
+}

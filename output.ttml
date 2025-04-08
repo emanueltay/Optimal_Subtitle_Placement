@@ -5,9 +5,9 @@
       <ttm:title />
     </metadata>
     <styling>
-      <style xml:id="s0" tts:color="white" tts:fontSize="70%" tts:fontFamily="sansSerif" tts:backgroundColor="black" tts:displayAlign="center" tts:wrapOption="wrap" /></styling>
+      <style xml:id="s0" tts:color="white" tts:fontSize="80%" tts:fontFamily="sansSerif" tts:backgroundColor="black" tts:displayAlign="center" tts:wrapOption="wrap" /></styling>
     <layout>
-      <region tts:origin="7% 47%" tts:extent="54% 10%" tts:displayAlign="center" tts:textAlign="center" xml:id="middle3" /><region tts:origin="0% 47%" tts:extent="47% 10%" tts:displayAlign="center" tts:textAlign="center" xml:id="shifted_middle3" /></layout>
+      <region tts:origin="10% 70%" tts:extent="80% 16%" tts:displayAlign="center" tts:textAlign="center" xml:id="middle3" /><region tts:origin="0% 70%" tts:extent="64% 16%" tts:displayAlign="center" tts:textAlign="center" xml:id="shifted_middle3" /></layout>
   </head>
   <body style="s0">
     <div>

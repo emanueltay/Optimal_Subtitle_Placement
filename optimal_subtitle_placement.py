@@ -3,25 +3,32 @@ import cv2
 import json
 import re
 import argparse
-import numpy as np
+import numpy
 import pysrt
 import subprocess
 import torch
 import os
 import math
 import time
-from collections import Counter, deque, defaultdict
+from collections import deque
 import xml.etree.ElementTree as ET
 
 # Global in-memory cache for dynamic & shifted safe zones
 safe_zone_cache = {}
 used_safe_zones = {}  # Dictionary to store all assigned safe zones
 
-safe_zone_history = deque(maxlen=3)  # Stores past safe zones for consistency (4)
-region_json_path = "subtitle_regions_scaled_test.json"
+# Resolve path relative to the script location
+script_dir = os.path.dirname(os.path.abspath(__file__))
+config_path = os.path.join(script_dir, "Config/config.json")
 
-# Load the trained model
-model = YOLO("Model/fine-tuned_model(YOLO12)(100_epochs)/best.pt")
+with open(config_path, "r") as f:
+    config = json.load(f)
+
+region_json_path = os.path.join(script_dir, config["region_json_path"])
+model_path = os.path.join(script_dir, config["model_path"])
+safe_zone_history = deque(maxlen=config["safe_zone_history_length"])
+
+model = YOLO(model_path)
 
 # Automatically select GPU if available
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -58,7 +65,7 @@ class SubtitlePlacement:
 
         return batch_detections  # List of detections per frame
 
-    def calculate_safe_zone_with_prepositions(frame_width, frame_height, detections, pre_positions, subtitle_height=30, margin=10, shift_x=20):
+    def calculate_safe_zone_with_prepositions(frame_width, frame_height, detections, pre_positions, subtitle_height=30, margin=10, shift_x=30):
         """
         Calculate the safe zone for subtitle placement using pre-defined positions.
         If blocked, it attempts to shift left/right before moving vertically.
@@ -369,51 +376,41 @@ class RenderSubtitle:
         Returns:
             None (Writes updated TTML file to disk)
         """
-
-        # Load TTML File
         tree = ET.parse(ttml_file_path)
         root = tree.getroot()
 
-        # Load TTML File
-        tree = ET.parse(ttml_file_path)
-        root = tree.getroot()
+        # Define TTML namespace for use in XPath expressions
+        ns = {'ttml': 'http://www.w3.org/ns/ttml'}
 
-        # Preserve All Original Root Attributes (Ensuring All Namespaces Remain)
-        root_attribs = root.attrib.copy()  # Copy attributes before modification
-
-        # Extract Namespace (from <tt> root tag)
-        namespace_uri = root.tag.split("}")[0].strip("{")  # Extracts URI from "{namespace}tag"
-        ns = {"ttml": namespace_uri} if namespace_uri else {}
-
-        # Restore All Root Attributes (Explicitly Add Missing Namespaces)
+        # Extract and preserve existing root attributes
+        root_attribs = root.attrib.copy()
         root.attrib.clear()
-        root.attrib.update(root_attribs)  # Restore original attributes
+        root.attrib.update(root_attribs)
 
-        # Ensure `xmlns:tts` is Explicitly Set (if missing)
+        # Ensure required namespaces are explicitly present
         if "xmlns:tts" not in root.attrib:
-            root.set("xmlns:tts", "http://www.w3.org/ns/ttml#styling")  # Add missing styling namespace
+            root.set("xmlns:tts", "http://www.w3.org/ns/ttml#styling")
 
-        # Find or Create the <head> Element (Using Preserved Namespace)
-        head_element = root.find(f'.//{{{namespace_uri}}}head', ns)
+        # Find or create <head>
+        head_element = root.find('.//ttml:head', ns)
         if head_element is None:
-            head_element = ET.Element(f"{{{namespace_uri}}}head")
-            root.insert(0, head_element)  # Insert <head> as the first child
+            head_element = ET.Element("{http://www.w3.org/ns/ttml}head")
+            root.insert(0, head_element)
 
-        # Find or Create the <styling> Element
-        styling_element = head_element.find('.//ttml:styling', ns)
+        # Find or create <styling>
+        styling_element = head_element.find('ttml:styling', ns)
         if styling_element is None:
             styling_element = ET.Element("{http://www.w3.org/ns/ttml}styling")
-            head_element.insert(0, styling_element)  # Insert before layout
+            head_element.insert(0, styling_element)
 
-        # Remove Any Existing <style> Elements (Always Replacing)
-        for style in styling_element.findall('.//ttml:style', ns):
+        # Remove old <style> and insert new style
+        for style in styling_element.findall('ttml:style', ns):
             styling_element.remove(style)
 
-        # Define and Add the New Style Element
         new_style = ET.Element("{http://www.w3.org/ns/ttml}style", attrib={
             "xml:id": "s0",
             "tts:color": "white",
-            "tts:fontSize": "70%",
+            "tts:fontSize": "80%",
             "tts:fontFamily": "sansSerif",
             "tts:backgroundColor": "black",
             "tts:displayAlign": "center",
@@ -421,29 +418,23 @@ class RenderSubtitle:
         })
         styling_element.append(new_style)
 
-        # Find or Create the <layout> Element
-        layout_element = head_element.find('.//ttml:layout', ns)
+        # Find or create <layout>
+        layout_element = head_element.find('ttml:layout', ns)
         if layout_element is None:
             layout_element = ET.Element("{http://www.w3.org/ns/ttml}layout")
             head_element.append(layout_element)
 
-        # Remove ALL existing <region> elements inside <layout>
         for region in list(layout_element):
             layout_element.remove(region)
 
-        # Insert Subtitle Regions from JSON
+        # Add new <region> elements
         for region_name, region_data in json_data.items():
             x1, y1, x2, y2 = region_data["coordinates"]
-
-            # print(frame_height,frame_width)
-
-            # Convert absolute pixel values to TTML percentages
             origin_x = (x1 / frame_width) * 100
             origin_y = (y1 / frame_height) * 100
             extent_x = ((x2 - x1) / frame_width) * 100
             extent_y = ((y2 - y1) / frame_height) * 100
 
-            # Construct the region XML element
             region_element = ET.Element("{http://www.w3.org/ns/ttml}region", attrib={
                 "tts:origin": f"{math.ceil(origin_x)}% {math.ceil(origin_y)}%",
                 "tts:extent": f"{math.ceil(extent_x)}% {math.ceil(extent_y)}%",
@@ -451,26 +442,22 @@ class RenderSubtitle:
                 "tts:textAlign": "center",
                 "xml:id": region_name
             })
-
-            # Add to <layout>
             layout_element.append(region_element)
 
-        # Find All <p> Elements (Subtitles) and Update Regions
+        # Update <p> elements with region
         for p in root.findall('.//ttml:p', ns):
             start_time = RenderSubtitle.convert_ttml_time_to_seconds(p.attrib.get("begin", "0.0s"))
             end_time = RenderSubtitle.convert_ttml_time_to_seconds(p.attrib.get("end", "0.0s"))
-
-            # Find Matching Subtitle
             matched_subtitle = next((sub for sub in subtitle_data if sub["start"] <= start_time <= sub["end"]), None)
 
             if matched_subtitle:
                 if matched_subtitle["region"] is not None:
-                    p.attrib["region"] = matched_subtitle["region"]  # Assign Correct Region
+                    p.attrib["region"] = matched_subtitle["region"]
                 elif "region" in p.attrib:
-                    del p.attrib["region"]  # Remove `region` if it's None
+                    del p.attrib["region"]
 
-        # Save Updated TTML File
-        tree.write(output_ttml_path, encoding="utf-8", xml_declaration=True)
+        # Save updated TTML file with XML declaration
+        tree.write(output_ttml_path, encoding="utf-8", xml_declaration=True, method="xml")
 
 class Main:
     def log_profiling_summary(video_duration, load_duration, run_duration, total_video_read_time, total_yolo_time, total_region_assign_time, ttml_generation_time, output_path, log_path=None):
@@ -478,21 +465,21 @@ class Main:
         run_minutes, run_seconds = divmod(run_duration, 60)
 
         summary_lines = [
-            "\n📊 PROFILING SUMMARY",
-            f"🎬 Video Duration: {int(minutes)}m {int(seconds)}s",
-            f"📦 Load Time: {load_duration:.2f}s",
-            f"🚀 Run Time: {int(run_minutes)}m {int(run_seconds)}s",
-            f"📥 Video Read Time: {total_video_read_time:.2f}s",
-            f"🔍 YOLO Detection Time: {total_yolo_time:.2f}s",
-            f"📐 Region Assignment Time: {total_region_assign_time:.4f}s",
-            f"📝 TTML Generation Time: {ttml_generation_time:.4f}s",
-            f"✅ Output TTML saved to: {output_path}"
+            "\nPROFILING SUMMARY",
+            f"Video Duration: {int(minutes)}m {int(seconds)}s",
+            f"Load Time: {load_duration:.2f}s",
+            f"Run Time: {int(run_minutes)}m {int(run_seconds)}s",
+            f"Video Read Time: {total_video_read_time:.2f}s",
+            f"YOLO Detection Time: {total_yolo_time:.2f}s",
+            f"Region Assignment Time: {total_region_assign_time:.4f}s",
+            f"TTML Generation Time: {ttml_generation_time:.4f}s",
+            f"Output TTML saved to: {output_path}"
         ]
 
         if log_path:
             with open(log_path, 'w') as f:
                 f.write("\n".join(summary_lines))
-            print(f"\n📝 Profiling summary written to: {log_path}")
+            print(f"\nProfiling summary written to: {log_path}")
 
     def main(video_input_path, ttml_file, output_path, resize_resolution=None, stream_fps=None, log_path=None):
         # Start Load Timer
@@ -503,31 +490,25 @@ class Main:
 
         # Load Video Metadata
         fps = RenderSubtitle.get_video_fps(video_input_path)
-        print(f"Corrected FPS: {fps}")
 
         subtitle_data = RenderSubtitle.parse_subtitle_file(file_path)
 
         cap = cv2.VideoCapture(video_input_path)
 
         # Original Resolution for TTML generation
-        original_frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-        original_frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-        print(f"🎞 Frame Dimensions: {original_frame_width}x{original_frame_height}")
+        frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+        frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
         total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
         video_duration = total_frames / fps
 
         # Use resized resolution for detection if specified
-        frame_width = original_frame_width
-        frame_height = original_frame_height
         if resize_resolution:
             frame_width, frame_height = resize_resolution
-            print(f"🔄 Resized Frame Dimensions for Detection: {frame_width}x{frame_height}")
 
         # End Load Timer
         end_load_time = time.time()
         load_duration = end_load_time - start_load_time
-        print(f"📦 Total Load Time: {load_duration:.2f} seconds")
 
         # Start Run Timer
         start_run_time = time.time()
@@ -604,7 +585,7 @@ class Main:
         # Generate TTML Layout using original resolution
         ttml_gen_start = time.time()
         layout = SubtitlePlacement.get_used_safe_zones()
-        RenderSubtitle.generate_updated_ttml(file_path, output_path, layout, subtitle_data, original_frame_width, original_frame_height)
+        RenderSubtitle.generate_updated_ttml(file_path, output_path, layout, subtitle_data, frame_width, frame_height)
         ttml_gen_end = time.time()
         ttml_generation_time = ttml_gen_end - ttml_gen_start
 
