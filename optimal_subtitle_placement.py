@@ -27,6 +27,7 @@ with open(config_path, "r") as f:
 region_json_path = os.path.join(script_dir, config["region_json_path"])
 model_path = os.path.join(script_dir, config["model_path"])
 safe_zone_history = deque(maxlen=config["safe_zone_history_length"])
+style_attributes = config.get("subtitle_style", {})
 
 model = YOLO(model_path)
 
@@ -407,15 +408,7 @@ class RenderSubtitle:
         for style in styling_element.findall('ttml:style', ns):
             styling_element.remove(style)
 
-        new_style = ET.Element("{http://www.w3.org/ns/ttml}style", attrib={
-            "xml:id": "s0",
-            "tts:color": "white",
-            "tts:fontSize": "80%",
-            "tts:fontFamily": "sansSerif",
-            "tts:backgroundColor": "black",
-            "tts:displayAlign": "center",
-            "tts:wrapOption": "wrap"
-        })
+        new_style = ET.Element("{http://www.w3.org/ns/ttml}style", attrib=style_attributes)
         styling_element.append(new_style)
 
         # Find or create <layout>
@@ -457,7 +450,7 @@ class RenderSubtitle:
                     del p.attrib["region"]
 
         # Save updated TTML file with XML declaration
-        tree.write(output_ttml_path, encoding="utf-8", xml_declaration=True, method="xml")
+        tree.write(output_ttml_path, encoding="utf-8", xml_declaration=True)
 
 class Main:
     def log_profiling_summary(video_duration, load_duration, run_duration, total_video_read_time, total_yolo_time, total_region_assign_time, ttml_generation_time, output_path, log_path=None):
@@ -490,7 +483,7 @@ class Main:
 
         # Load Video Metadata
         fps = RenderSubtitle.get_video_fps(video_input_path)
-
+        print(f"Corrected FPS: {fps}")
         subtitle_data = RenderSubtitle.parse_subtitle_file(file_path)
 
         cap = cv2.VideoCapture(video_input_path)
@@ -498,6 +491,7 @@ class Main:
         # Original Resolution for TTML generation
         frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
         frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+        print(f"Frame Dimensions: {frame_width}x{frame_height}")
 
         total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
         video_duration = total_frames / fps
@@ -505,6 +499,7 @@ class Main:
         # Use resized resolution for detection if specified
         if resize_resolution:
             frame_width, frame_height = resize_resolution
+            print(f"Resized Frame Dimensions for Detection: {frame_width}x{frame_height}")
 
         # End Load Timer
         end_load_time = time.time()

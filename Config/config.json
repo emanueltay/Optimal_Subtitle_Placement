@@ -1,5 +1,14 @@
 {
     "region_json_path": "Config/subtitle_regions.json",
     "model_path": "Model/fine-tuned_model(YOLO12)/best.pt",
-    "safe_zone_history_length": 3
+    "safe_zone_history_length": 3,
+    "subtitle_style": {
+        "xml:id": "s0",
+        "tts:color": "white",
+        "tts:fontSize": "80%",
+        "tts:fontFamily": "sansSerif",
+        "tts:backgroundColor": "black",
+        "tts:displayAlign": "center",
+        "tts:wrapOption": "wrap"
+    }
 }
