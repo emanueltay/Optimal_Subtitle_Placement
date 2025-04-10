@@ -7,1027 +7,442 @@
     <styling>
       <style xml:id="s0" tts:color="white" tts:fontSize="80%" tts:fontFamily="sansSerif" tts:backgroundColor="black" tts:displayAlign="center" tts:wrapOption="wrap" /></styling>
     <layout>
-      <region tts:origin="10% 70%" tts:extent="80% 15%" tts:displayAlign="center" tts:textAlign="center" xml:id="middle3" /><region tts:origin="10% 75%" tts:extent="80% 15%" tts:displayAlign="center" tts:textAlign="center" xml:id="above_3" /><region tts:origin="10% 65%" tts:extent="80% 15%" tts:displayAlign="center" tts:textAlign="center" xml:id="between_m3_m2_1" /><region tts:origin="10% 90%" tts:extent="80% 10%" tts:displayAlign="center" tts:textAlign="center" xml:id="bottom" /><region tts:origin="10% 56%" tts:extent="80% 15%" tts:displayAlign="center" tts:textAlign="center" xml:id="middle2" /><region tts:origin="10% 60%" tts:extent="80% 15%" tts:displayAlign="center" tts:textAlign="center" xml:id="between_m3_m2_2" /><region tts:origin="0% 33%" tts:extent="100% 15%" tts:displayAlign="center" tts:textAlign="center" xml:id="dynamic_position" /><region tts:origin="0% 90%" tts:extent="79% 10%" tts:displayAlign="center" tts:textAlign="center" xml:id="shifted_bottom" /><region tts:origin="0% 2%" tts:extent="100% 15%" tts:displayAlign="center" tts:textAlign="center" xml:id="fallback_top" /></layout>
+      <region tts:origin="10% 65%" tts:extent="80% 15%" tts:displayAlign="center" tts:textAlign="center" xml:id="between_m3_m2_1" /><region tts:origin="10% 70%" tts:extent="80% 15%" tts:displayAlign="center" tts:textAlign="center" xml:id="middle3" /><region tts:origin="10% 75%" tts:extent="80% 15%" tts:displayAlign="center" tts:textAlign="center" xml:id="above_3" /><region tts:origin="10% 90%" tts:extent="80% 10%" tts:displayAlign="center" tts:textAlign="center" xml:id="bottom" /><region tts:origin="10% 56%" tts:extent="80% 15%" tts:displayAlign="center" tts:textAlign="center" xml:id="middle2" /><region tts:origin="10% 60%" tts:extent="80% 15%" tts:displayAlign="center" tts:textAlign="center" xml:id="between_m3_m2_2" /><region tts:origin="0% 33%" tts:extent="100% 15%" tts:displayAlign="center" tts:textAlign="center" xml:id="dynamic_position" /><region tts:origin="0% 90%" tts:extent="79% 10%" tts:displayAlign="center" tts:textAlign="center" xml:id="shifted_bottom" /></layout>
   </head>
   <body style="s0">
     <div>
-      <p begin="0.96s" xml:id="p0" end="4.12s" region="middle3">This Is East Asia tonight good evening</p>
-      <p begin="4.12s" xml:id="p1" end="6.04s" region="middle3">I'm matell Edwards tonight's top stories</p>
-      <p begin="6.04s" xml:id="p2" end="8.84s" region="between_m3_m2_1">from East Asia China's top political</p>
-      <p begin="8.84s" xml:id="p3" end="11.12s" region="between_m3_m2_1">advisory body concludes its annual</p>
-      <p begin="11.12s" xml:id="p4" end="13.679s" region="middle3">meeting pledging to drive modernization</p>
-      <p begin="13.679s" xml:id="p5" end="16.119s" region="middle3">through reforms well meantime beijing's</p>
-      <p begin="16.119s" xml:id="p6" end="18.359s" region="between_m3_m2_1">tariffs on certain us agricultural</p>
-      <p begin="18.359s" xml:id="p7" end="20.56s" region="between_m3_m2_1">products take effect today and as</p>
-      <p begin="20.56s" xml:id="p8" end="22.68s" region="between_m3_m2_1">America's largest overseas Market</p>
-      <p begin="22.68s" xml:id="p9" end="25.039s" region="between_m3_m2_1">China's retaliatory move escalates the</p>
-      <p begin="25.039s" xml:id="p10" end="26.48s" region="middle3">trade fight between the world's two</p>
-      <p begin="26.48s" xml:id="p11" end="28.76s" region="middle3">largest economies and North Korea</p>
-      <p begin="28.76s" xml:id="p12" end="31.24s" region="middle3">launches a barage of ballistic missiles</p>
-      <p begin="31.24s" xml:id="p13" end="33.64s" region="between_m3_m2_1">as South Korea begins its freedom Shield</p>
-      <p begin="33.64s" xml:id="p14" end="36.16s" region="between_m3_m2_1">joint drills with the US pongyang warns</p>
-      <p begin="36.16s" xml:id="p15" end="38.719s" region="middle2">that the exercises are provocative acts</p>
-      <p begin="38.719s" xml:id="p16" end="41.559s" region="between_m3_m2_2">that could spark conflict a South Korean</p>
-      <p begin="41.559s" xml:id="p17" end="43.36s" region="between_m3_m2_2">prosecutors vowed to pursue an</p>
-      <p begin="43.36s" xml:id="p18" end="45.239s" region="between_m3_m2_2">Insurrection conviction for impeached</p>
-      <p begin="45.239s" xml:id="p19" end="47.52s" region="middle2">president yunsung who walked free over</p>
-      <p begin="47.52s" xml:id="p20" end="50.199s" region="middle2">the weekend after spending 52 days in</p>
-      <p begin="50.199s" xml:id="p21" end="52.359s" region="middle2">detention over a shortlived martial law</p>
-      <p begin="52.359s" xml:id="p22" end="54.34s" region="between_m3_m2_2">decree</p>
-      <p begin="54.34s" xml:id="p23" end="70.52s" region="between_m3_m2_2">[Music]</p>
-      <p begin="70.52s" xml:id="p24" end="73.28s" region="middle2">also on East Asia tonight Japan marks</p>
-      <p begin="73.28s" xml:id="p25" end="75.84s" region="middle2">the 80th anniversary of the US fire</p>
-      <p begin="75.84s" xml:id="p26" end="78.159s" region="middle2">bombing of its capital during World War</p>
-      <p begin="78.159s" xml:id="p27" end="80.72s" region="middle2">II and despite being the single most</p>
-      <p begin="80.72s" xml:id="p28" end="83.159s" region="dynamic_position">destructive aerial bombing in history it</p>
-      <p begin="83.159s" xml:id="p29" end="85.479s" region="middle2">now runs the risk of fading away from</p>
-      <p begin="85.479s" xml:id="p30" end="87.46s" region="between_m3_m2_2">memory</p>
-      <p begin="87.46s" xml:id="p31" end="94.28s" region="between_m3_m2_2">[Music]</p>
-      <p begin="94.28s" xml:id="p32" end="96.88s" region="middle2">China's top advisory body has concluded</p>
-      <p begin="96.88s" xml:id="p33" end="99.36s" region="middle2">its annual session calling for greater</p>
-      <p begin="99.36s" xml:id="p34" end="100.96s" region="middle2">efforts to serve the country's</p>
-      <p begin="100.96s" xml:id="p35" end="103.36s" region="middle2">modernization Drive president Shi</p>
-      <p begin="103.36s" xml:id="p36" end="104.96s" region="middle2">Jinping was among the leaders in</p>
-      <p begin="104.96s" xml:id="p37" end="106.759s" region="between_m3_m2_2">attendance at the Great Hall of the</p>
-      <p begin="106.759s" xml:id="p38" end="109.56s" region="between_m3_m2_2">people in Beijing chairperson Wang</p>
-      <p begin="109.56s" xml:id="p39" end="112.119s" region="between_m3_m2_2">huning urged the top advisory body to</p>
-      <p begin="112.119s" xml:id="p40" end="114.84s" region="between_m3_m2_2">give full play to its political role by</p>
-      <p begin="114.84s" xml:id="p41" end="119.439s" region="between_m3_m2_2">uniting all Chinese people</p>
-      <p begin="138.48s" xml:id="p42" end="141.16s" region="middle2">China's top legislative body NPC will</p>
-      <p begin="141.16s" xml:id="p43" end="145.72s" region="middle2">continue to deliberate today and wrap up</p>
-      <p begin="146.239s" xml:id="p44" end="148.28s" region="middle2">tomorrow all right for the very latest</p>
-      <p begin="148.28s" xml:id="p45" end="150.8s" region="middle2">we are joined Now by cna's T ugan in</p>
-      <p begin="150.8s" xml:id="p46" end="153.64s" region="middle2">Beijing yugan quite a few reforms and</p>
-      <p begin="153.64s" xml:id="p47" end="155.76s" region="middle2">announcements being made but walk us</p>
-      <p begin="155.76s" xml:id="p48" end="157.2s" region="middle2">through some of the key takeaways from</p>
-      <p begin="157.2s" xml:id="p49" end="161.4s" region="middle2">the cppcc annual session this</p>
-      <p begin="162.12s" xml:id="p50" end="164.28s" region="middle2">year well the</p>
-      <p begin="164.28s" xml:id="p51" end="167.04s" region="middle2">cppcc uh we should remember has no</p>
-      <p begin="167.04s" xml:id="p52" end="169.48s" region="middle2">lawmaking power so it's essentially like</p>
-      <p begin="169.48s" xml:id="p53" end="172.0s" region="middle2">a Brain Trust for the Chinese government</p>
-      <p begin="172.0s" xml:id="p54" end="174.159s" region="between_m3_m2_2">so it's all about the suggestions from</p>
-      <p begin="174.159s" xml:id="p55" end="175.76s" region="between_m3_m2_2">the delegates there were some</p>
-      <p begin="175.76s" xml:id="p56" end="177.84s" region="between_m3_m2_2">interesting ones this year some of which</p>
-      <p begin="177.84s" xml:id="p57" end="179.68s" region="between_m3_m2_2">kind of reflects the people's concerns</p>
-      <p begin="179.68s" xml:id="p58" end="182.12s" region="between_m3_m2_2">while While others are more big picture</p>
-      <p begin="182.12s" xml:id="p59" end="184.08s" region="between_m3_m2_2">among them was one aimed at addressing</p>
-      <p begin="184.08s" xml:id="p60" end="186.48s" region="middle2">the declining birth rate there was a</p>
-      <p begin="186.48s" xml:id="p61" end="188.56s" region="middle2">professor who proposed reducing the</p>
-      <p begin="188.56s" xml:id="p62" end="191.28s" region="middle2">legal marriage age to 18 for both</p>
-      <p begin="191.28s" xml:id="p63" end="194.2s" region="between_m3_m2_2">genders that's down from 22 for men and</p>
-      <p begin="194.2s" xml:id="p64" end="196.599s" region="between_m3_m2_2">20 for women the delegate argues that a</p>
-      <p begin="196.599s" xml:id="p65" end="198.92s" region="middle2">lower marriage age would allow for more</p>
-      <p begin="198.92s" xml:id="p66" end="201.0s" region="middle2">kids although it's unclear how that</p>
-      <p begin="201.0s" xml:id="p67" end="203.159s" region="middle2">would work for nearly two-thirds of the</p>
-      <p begin="203.159s" xml:id="p68" end="206.959s" region="middle2">population in China live in cities and</p>
-      <p begin="206.959s" xml:id="p69" end="208.68s" region="between_m3_m2_2">which are and they are increasingly</p>
-      <p begin="208.68s" xml:id="p70" end="211.879s" region="middle2">marrying far later uh than the legal age</p>
-      <p begin="211.879s" xml:id="p71" end="214.159s" region="middle2">and also having fewer to no kids due to</p>
-      <p begin="214.159s" xml:id="p72" end="216.319s" region="middle2">the cost of living issues there were</p>
-      <p begin="216.319s" xml:id="p73" end="219.239s" region="middle2">also other suggest another suggestion uh</p>
-      <p begin="219.239s" xml:id="p74" end="221.56s" region="middle2">that address parental concern about</p>
-      <p begin="221.56s" xml:id="p75" end="224.56s" region="between_m3_m2_2">their kids screen time famous former</p>
-      <p begin="224.56s" xml:id="p76" end="227.08s" region="middle2">basketballer Yao Ming suggested set</p>
-      <p begin="227.08s" xml:id="p77" end="229.879s" region="middle2">setting a day for mobile screens to be</p>
-      <p begin="229.879s" xml:id="p78" end="233.48s" region="middle2">switched off for 24 hours for kids and</p>
-      <p begin="233.48s" xml:id="p79" end="236.2s" region="middle2">parents alike he says that he wanted to</p>
-      <p begin="236.2s" xml:id="p80" end="238.84s" region="between_m3_m2_2">allow kids to have a chance to enjoy the</p>
-      <p begin="238.84s" xml:id="p81" end="241.959s" region="between_m3_m2_2">great outdoor to engage in sports to</p>
-      <p begin="241.959s" xml:id="p82" end="244.48s" region="between_m3_m2_2">enjoy real life interactions without</p>
-      <p begin="244.48s" xml:id="p83" end="248.0s" region="between_m3_m2_2">devices in all there were over</p>
-      <p begin="248.0s" xml:id="p84" end="251.12s" region="between_m3_m2_2">5,890 suggestions moted this year of</p>
-      <p begin="251.12s" xml:id="p85" end="254.2s" region="between_m3_m2_2">which 5,2 of them were accepted for</p>
-      <p begin="254.2s" xml:id="p86" end="256.68s" region="between_m3_m2_2">further consideration now a substantial</p>
-      <p begin="256.68s" xml:id="p87" end="258.959s" region="between_m3_m2_2">fraction of that of those suggestions</p>
-      <p begin="258.959s" xml:id="p88" end="260.88s" region="between_m3_m2_2">will be taken quite seriously at the</p>
-      <p begin="260.88s" xml:id="p89" end="262.32s" region="between_m3_m2_2">sideline of this year's session a</p>
-      <p begin="262.32s" xml:id="p90" end="264.52s" region="between_m3_m2_2">spokesperson revealed that last year</p>
-      <p begin="264.52s" xml:id="p91" end="266.759s" region="middle2">more than 5,000 suggestions were also</p>
-      <p begin="266.759s" xml:id="p92" end="268.24s" region="between_m3_m2_2">adopted by various government</p>
-      <p begin="268.24s" xml:id="p93" end="271.0s" region="between_m3_m2_2">departments leading to over 2,000 policy</p>
-      <p begin="271.0s" xml:id="p94" end="274.039s" region="middle2">measures now one standout area area is</p>
-      <p begin="274.039s" xml:id="p95" end="276.88s" region="middle2">the area of Elder Care a vice minister</p>
-      <p begin="276.88s" xml:id="p96" end="278.8s" region="middle2">of civil Affairs noted that 87</p>
-      <p begin="278.8s" xml:id="p97" end="281.56s" region="between_m3_m2_2">suggestions and proposals from two from</p>
-      <p begin="281.56s" xml:id="p98" end="283.52s" region="middle2">the two sessions shipped Nationwide</p>
-      <p begin="283.52s" xml:id="p99" end="285.96s" region="middle2">efforts to improve Elder Care Services</p>
-      <p begin="285.96s" xml:id="p100" end="288.759s" region="between_m3_m2_2">these include developing near home elder</p>
-      <p begin="288.759s" xml:id="p101" end="291.199s" region="middle2">care to allow seniors to live</p>
-      <p begin="291.199s" xml:id="p102" end="294.44s" region="middle2">comfortably in familiar surroundings or</p>
-      <p begin="294.44s" xml:id="p103" end="296.6s" region="between_m3_m2_2">so you got quite a number of issues uh</p>
-      <p begin="296.6s" xml:id="p104" end="298.8s" region="between_m3_m2_2">and policies raised here but all in how</p>
-      <p begin="298.8s" xml:id="p105" end="300.68s" region="middle2">would you say uh you know how how do you</p>
-      <p begin="300.68s" xml:id="p106" end="304.24s" region="between_m3_m2_2">think the delegates responded to</p>
-      <p begin="305.16s" xml:id="p107" end="308.88s" region="middle2">them well there over 2,000 delegates so</p>
-      <p begin="308.88s" xml:id="p108" end="311.12s" region="middle2">it's pretty hard to be sure what all of</p>
-      <p begin="311.12s" xml:id="p109" end="313.8s" region="between_m3_m2_2">them think but for most of the delegates</p>
-      <p begin="313.8s" xml:id="p110" end="315.8s" region="middle2">that we speak to and or we manage to</p>
-      <p begin="315.8s" xml:id="p111" end="317.639s" region="between_m3_m2_2">speak to the economy is definitely at</p>
-      <p begin="317.639s" xml:id="p112" end="319.8s" region="middle2">the top of their minds uh while many are</p>
-      <p begin="319.8s" xml:id="p113" end="321.84s" region="between_m3_m2_2">outwardly optimistic that this year's</p>
-      <p begin="321.84s" xml:id="p114" end="325.84s" region="between_m3_m2_2">goal of 5% growth um that's the same as</p>
-      <p begin="325.84s" xml:id="p115" end="328.12s" region="between_m3_m2_2">uh sorry that's the same as last year's</p>
-      <p begin="328.12s" xml:id="p116" end="330.199s" region="between_m3_m2_2">they are also quite realistic of the</p>
-      <p begin="330.199s" xml:id="p117" end="333.56s" region="between_m3_m2_2">challenges htic</p>
-      <p begin="358.639s" xml:id="p118" end="362.639s" region="between_m3_m2_2">lism for</p>
-      <p begin="397.56s" xml:id="p119" end="398.68s" region="middle2">while we're on the topic of the</p>
-      <p begin="398.68s" xml:id="p120" end="400.599s" region="middle2">delegates sentiments earlier this</p>
-      <p begin="400.599s" xml:id="p121" end="403.52s" region="middle2">morning during the closing of the cppcc</p>
-      <p begin="403.52s" xml:id="p122" end="405.88s" region="middle2">there were four resolutions being passed</p>
-      <p begin="405.88s" xml:id="p123" end="408.88s" region="middle2">all four were passed pretty much uh</p>
-      <p begin="408.88s" xml:id="p124" end="410.96s" region="between_m3_m2_2">unanimous agreement while two were</p>
-      <p begin="410.96s" xml:id="p125" end="413.919s" region="middle2">passed with a unanimous yes from all 200</p>
-      <p begin="413.919s" xml:id="p126" end="416.599s" region="between_m3_m2_2">and 80 delegates one resolution on the</p>
-      <p begin="416.599s" xml:id="p127" end="418.36s" region="middle2">report the standing committee of the</p>
-      <p begin="418.36s" xml:id="p128" end="422.0s" region="middle2">cppcc had one opposing vote while</p>
-      <p begin="422.0s" xml:id="p129" end="424.16s" region="between_m3_m2_2">another report on how the proposals were</p>
-      <p begin="424.16s" xml:id="p130" end="427.24s" region="middle2">handled since the last cppcc meeting had</p>
-      <p begin="427.24s" xml:id="p131" end="429.84s" region="between_m3_m2_2">one dissenting vote and one exstension</p>
-      <p begin="429.84s" xml:id="p132" end="432.36s" region="middle2">well such isolated uh isolated incidents</p>
-      <p begin="432.36s" xml:id="p133" end="435.479s" region="between_m3_m2_2">of opposing votes are not unusual but it</p>
-      <p begin="435.479s" xml:id="p134" end="437.28s" region="between_m3_m2_2">does give you a sense of how things</p>
-      <p begin="437.28s" xml:id="p135" end="439.8s" region="between_m3_m2_2">usually go at the closing of the</p>
-      <p begin="439.8s" xml:id="p136" end="442.28s" region="between_m3_m2_2">cppcc all right many thanks for that</p>
-      <p begin="442.28s" xml:id="p137" end="446.319s" region="between_m3_m2_2">report appreciate it CNA tanan in</p>
-      <p begin="446.319s" xml:id="p138" end="448.599s" region="between_m3_m2_2">Beijing China over the weekend has</p>
-      <p begin="448.599s" xml:id="p139" end="451.319s" region="between_m3_m2_2">pledged new initiatives and more funds</p>
-      <p begin="451.319s" xml:id="p140" end="454.16s" region="middle2">to stabilize employment calling it a top</p>
-      <p begin="454.16s" xml:id="p141" end="456.36s" region="between_m3_m2_2">priority on the sidelines of the annual</p>
-      <p begin="456.36s" xml:id="p142" end="458.639s" region="between_m3_m2_2">two sessions in Beijing officials also</p>
-      <p begin="458.639s" xml:id="p143" end="460.919s" region="middle2">say that they will ramp up efforts to</p>
-      <p begin="460.919s" xml:id="p144" end="462.879s" region="middle2">support the struggling housing market</p>
-      <p begin="462.879s" xml:id="p145" end="466.36s" region="middle2">CNA tans with a</p>
-      <p begin="466.56s" xml:id="p146" end="469.12s" region="between_m3_m2_2">report the news conference addressing</p>
-      <p begin="469.12s" xml:id="p147" end="471.199s" region="between_m3_m2_2">the livelihoods of the people has become</p>
-      <p begin="471.199s" xml:id="p148" end="473.08s" region="between_m3_m2_2">another closely watched event on the</p>
-      <p begin="473.08s" xml:id="p149" end="475.479s" region="between_m3_m2_2">sidelines of the annual two sessions</p>
-      <p begin="475.479s" xml:id="p150" end="478.0s" region="between_m3_m2_2">particularly as unemployment especially</p>
-      <p begin="478.0s" xml:id="p151" end="480.52s" region="middle2">among young people become more prominent</p>
-      <p begin="480.52s" xml:id="p152" end="483.4s" region="middle2">amid a prolonged housing crisis</p>
-      <p begin="483.4s" xml:id="p153" end="485.52s" region="between_m3_m2_2">officials acknowledge that stabilizing</p>
-      <p begin="485.52s" xml:id="p154" end="488.039s" region="middle2">employment is set to be an arduous task</p>
-      <p begin="488.039s" xml:id="p155" end="491.159s" region="middle2">with 12.22 million fresh graduates set</p>
-      <p begin="491.159s" xml:id="p156" end="493.639s" region="middle2">to enter China's job market this year</p>
-      <p begin="493.639s" xml:id="p157" end="497.84s" region="middle2">marking another record</p>
-      <p begin="521.56s" xml:id="p158" end="523.8s" region="middle2">however Miss Wong noted that the central</p>
-      <p begin="523.8s" xml:id="p159" end="526.32s" region="middle2">government's 2025 targets of GDP growth</p>
-      <p begin="526.32s" xml:id="p160" end="529.08s" region="between_m3_m2_2">of around 5% and over 12 million new</p>
-      <p begin="529.08s" xml:id="p161" end="532.48s" region="between_m3_m2_2">Urban jobs demonstrate its determination</p>
-      <p begin="532.48s" xml:id="p162" end="534.68s" region="middle2">to implement strong measures to ensure</p>
-      <p begin="534.68s" xml:id="p163" end="536.959s" region="middle2">employment the resolve comes on the back</p>
-      <p begin="536.959s" xml:id="p164" end="538.959s" region="middle2">of officials positive assessment of</p>
-      <p begin="538.959s" xml:id="p165" end="541.04s" region="middle2">measures and announced last September to</p>
-      <p begin="541.04s" xml:id="p166" end="544.48s" region="middle2">support the struggling property</p>
-      <p begin="562.48s" xml:id="p167" end="565.279s" region="between_m3_m2_2">Market Mr KN pointed to the improved</p>
-      <p begin="565.279s" xml:id="p168" end="567.36s" region="between_m3_m2_2">home sales numbers in the last quarter</p>
-      <p begin="567.36s" xml:id="p169" end="570.16s" region="between_m3_m2_2">of 2024 and the first two months of this</p>
-      <p begin="570.16s" xml:id="p170" end="572.56s" region="between_m3_m2_2">year he said government agencies will</p>
-      <p begin="572.56s" xml:id="p171" end="574.64s" region="between_m3_m2_2">next focus on intensifying the</p>
-      <p begin="574.64s" xml:id="p172" end="577.0s" region="between_m3_m2_2">implementation of measures introduced</p>
-      <p begin="577.0s" xml:id="p173" end="579.64s" region="between_m3_m2_2">last year including interest rate cuts</p>
-      <p begin="579.64s" xml:id="p174" end="581.839s" region="middle2">and increased loans for home</p>
-      <p begin="581.839s" xml:id="p175" end="584.6s" region="middle2">purchases the 90minut news conference</p>
-      <p begin="584.6s" xml:id="p176" end="586.64s" region="middle2">featuring senior officials from four</p>
-      <p begin="586.64s" xml:id="p177" end="588.88s" region="between_m3_m2_2">government departments also highlighted</p>
-      <p begin="588.88s" xml:id="p178" end="590.8s" region="between_m3_m2_2">some of the Chinese government's policy</p>
-      <p begin="590.8s" xml:id="p179" end="593.88s" region="middle2">priorities including the impact of AI on</p>
-      <p begin="593.88s" xml:id="p180" end="595.92s" region="middle2">unemployment and measures that will be</p>
-      <p begin="595.92s" xml:id="p181" end="599.44s" region="middle2">taken to address the situation</p>
-      <p begin="599.44s" xml:id="p182" end="601.839s" region="middle2">China meantime is also grappling with</p>
-      <p begin="601.839s" xml:id="p183" end="603.72s" region="between_m3_m2_2">external challenges that will have an</p>
-      <p begin="603.72s" xml:id="p184" end="606.76s" region="between_m3_m2_2">impact at home beijing's 10 to 15%</p>
-      <p begin="606.76s" xml:id="p185" end="609.2s" region="between_m3_m2_2">tariffs on us agricultural Imports have</p>
-      <p begin="609.2s" xml:id="p186" end="611.76s" region="middle2">come into force today in retaliation to</p>
-      <p begin="611.76s" xml:id="p187" end="613.56s" region="between_m3_m2_2">president Donald Trump's levies on</p>
-      <p begin="613.56s" xml:id="p188" end="615.88s" region="middle2">Chinese Imports the new duties will</p>
-      <p begin="615.88s" xml:id="p189" end="619.16s" region="fallback_top">cover chicken wheat corn and cotton on</p>
-      <p begin="619.16s" xml:id="p190" end="621.88s" region="middle2">Wednesday Washington's 25% tariffs on</p>
-      <p begin="621.88s" xml:id="p191" end="623.72s" region="middle2">steel and aluminium Imports are</p>
-      <p begin="623.72s" xml:id="p192" end="626.48s" region="between_m3_m2_2">scheduled to take effect now for more</p>
-      <p begin="626.48s" xml:id="p193" end="629.0s" region="between_m3_m2_2">insights we are joined Now by Dr John</p>
-      <p begin="629.0s" xml:id="p194" end="629.88s" region="between_m3_m2_2">quel</p>
-      <p begin="629.88s" xml:id="p195" end="632.279s" region="middle2">right here in the studio now Dr quelch</p>
-      <p begin="632.279s" xml:id="p196" end="634.16s" region="middle2">is Executive Vice Chancellor of Duke</p>
-      <p begin="634.16s" xml:id="p197" end="635.76s" region="middle2">kunan University well so good to have</p>
-      <p begin="635.76s" xml:id="p198" end="638.44s" region="middle2">you here with us today Dr quch so let's</p>
-      <p begin="638.44s" xml:id="p199" end="640.24s" region="middle2">just talk about some of these uh of</p>
-      <p begin="640.24s" xml:id="p200" end="642.56s" region="between_m3_m2_2">China slapping tariffs uh on us farm</p>
-      <p begin="642.56s" xml:id="p201" end="644.2s" region="middle2">products that basically taking effect</p>
-      <p begin="644.2s" xml:id="p202" end="646.8s" region="between_m3_m2_2">today um curious to know does Beijing</p>
-      <p begin="646.8s" xml:id="p203" end="649.0s" region="between_m3_m2_2">have any real leverage here I mean in in</p>
-      <p begin="649.0s" xml:id="p204" end="650.399s" region="middle2">this trade War like like a strong</p>
-      <p begin="650.399s" xml:id="p205" end="652.68s" region="middle2">counter strategy or are they simply you</p>
-      <p begin="652.68s" xml:id="p206" end="654.48s" region="middle2">know it's a tit for thing reacting to</p>
-      <p begin="654.48s" xml:id="p207" end="657.279s" region="between_m3_m2_2">the US moves uh so Beijing has so far</p>
-      <p begin="657.279s" xml:id="p208" end="659.839s" region="middle2">been proportionate and deliberate in its</p>
-      <p begin="659.839s" xml:id="p209" end="662.519s" region="middle2">measured responses to uh the Trump</p>
-      <p begin="662.519s" xml:id="p210" end="665.2s" region="middle2">tariffs as was the case in uh the first</p>
-      <p begin="665.2s" xml:id="p211" end="668.12s" region="middle2">Trump Administration um The Leverage</p>
-      <p begin="668.12s" xml:id="p212" end="670.92s" region="middle2">that they are attempting to use is by</p>
-      <p begin="670.92s" xml:id="p213" end="674.36s" region="middle2">selectively targeting um constituencies</p>
-      <p begin="674.36s" xml:id="p214" end="676.56s" region="between_m3_m2_2">the farmers and then in the previous set</p>
-      <p begin="676.56s" xml:id="p215" end="679.44s" region="middle2">of responses the energy sector these are</p>
-      <p begin="679.44s" xml:id="p216" end="681.959s" region="middle2">constituencies that supported uh</p>
-      <p begin="681.959s" xml:id="p217" end="685.2s" region="middle2">president Trump in his election um it's</p>
-      <p begin="685.2s" xml:id="p218" end="688.519s" region="middle2">also worth noting that um uh China</p>
-      <p begin="688.519s" xml:id="p219" end="691.92s" region="middle2">investment in the United States is only</p>
-      <p begin="691.92s" xml:id="p220" end="695.88s" region="middle2">oneth of us companies investments in</p>
-      <p begin="695.88s" xml:id="p221" end="700.24s" region="middle2">China so although the trade uh situation</p>
-      <p begin="700.24s" xml:id="p222" end="705.16s" region="middle2">is in favor of China Visa the US the</p>
-      <p begin="705.16s" xml:id="p223" end="708.399s" region="middle2">investment is much higher by the US in</p>
-      <p begin="708.399s" xml:id="p224" end="711.44s" region="between_m3_m2_2">uh China than China's investment is in</p>
-      <p begin="711.44s" xml:id="p225" end="713.639s" region="middle2">the US so there's some leverage there</p>
-      <p begin="713.639s" xml:id="p226" end="715.32s" region="middle2">the final point I'd mentioned is that in</p>
-      <p begin="715.32s" xml:id="p227" end="717.399s" region="between_m3_m2_2">the white house there's obviously a</p>
-      <p begin="717.399s" xml:id="p228" end="720.76s" region="middle2">group of very technology oriented folks</p>
-      <p begin="720.76s" xml:id="p229" end="724.32s" region="middle2">uh such as Elon Musk representing Tesla</p>
-      <p begin="724.32s" xml:id="p230" end="728.88s" region="middle2">we also have the um Tech entrepreneurs</p>
-      <p begin="728.88s" xml:id="p231" end="732.079s" region="middle2">and major tech companies like apple and</p>
-      <p begin="732.079s" xml:id="p232" end="735.6s" region="middle2">meta Microsoft and so on who are very</p>
-      <p begin="735.6s" xml:id="p233" end="738.44s" region="middle2">invested in China and really don't want</p>
-      <p begin="738.44s" xml:id="p234" end="741.639s" region="middle2">to have their supply chains uh seriously</p>
-      <p begin="741.639s" xml:id="p235" end="744.6s" region="middle2">disrupted by an Ever escalating tariff</p>
-      <p begin="744.6s" xml:id="p236" end="747.24s" region="middle2">War so I'm I'm very optimistic at the</p>
-      <p begin="747.24s" xml:id="p237" end="750.72s" region="between_m3_m2_2">moment that that that we will not see uh</p>
-      <p begin="750.72s" xml:id="p238" end="754.12s" region="middle2">the tariffs go to 60% which was one</p>
-      <p begin="754.12s" xml:id="p239" end="755.76s" region="between_m3_m2_2">number that President Trump had</p>
-      <p begin="755.76s" xml:id="p240" end="757.399s" region="between_m3_m2_2">threatened at some points in the</p>
-      <p begin="757.399s" xml:id="p241" end="758.8s" region="middle2">campaign so you think right now it's</p>
-      <p begin="758.8s" xml:id="p242" end="760.6s" region="between_m3_m2_2">just going to be kept at this level for</p>
-      <p begin="760.6s" xml:id="p243" end="763.48s" region="middle2">now well I'm hopeful I'm can't be sure</p>
-      <p begin="763.48s" xml:id="p244" end="765.56s" region="middle2">with the current Administration in</p>
-      <p begin="765.56s" xml:id="p245" end="768.639s" region="middle2">Washington you can never be sure uh but</p>
-      <p begin="768.639s" xml:id="p246" end="771.519s" region="middle2">I I'm hopeful at this juncture that the</p>
-      <p begin="771.519s" xml:id="p247" end="774.32s" region="between_m3_m2_2">focus will be on settling Canada</p>
-      <p begin="774.32s" xml:id="p248" end="777.68s" region="middle2">settling Mexico and not turning and then</p>
-      <p begin="777.68s" xml:id="p249" end="781.12s" region="middle2">perhaps turning to a deal or a rosmond</p>
-      <p begin="781.12s" xml:id="p250" end="783.56s" region="between_m3_m2_2">of some sort with China it is actually</p>
-      <p begin="783.56s" xml:id="p251" end="785.88s" region="between_m3_m2_2">encouraging in my view that the Trump</p>
-      <p begin="785.88s" xml:id="p252" end="788.76s" region="between_m3_m2_2">Administration went after all three of</p>
-      <p begin="788.76s" xml:id="p253" end="790.68s" region="between_m3_m2_2">the biggest trading partners of the</p>
-      <p begin="790.68s" xml:id="p254" end="793.519s" region="middle2">United States Canada Mexico and China</p>
-      <p begin="793.519s" xml:id="p255" end="795.92s" region="between_m3_m2_2">rather than singling China out alone</p>
-      <p begin="795.92s" xml:id="p256" end="797.76s" region="middle2">yeah so so so we do notice that</p>
-      <p begin="797.76s" xml:id="p257" end="799.839s" region="middle2">nevertheless you know we we we see Trump</p>
-      <p begin="799.839s" xml:id="p258" end="801.079s" region="middle2">raising tariffs and then China</p>
-      <p begin="801.079s" xml:id="p259" end="803.199s" region="middle2">retaliating this back and forth uh at</p>
-      <p begin="803.199s" xml:id="p260" end="805.68s" region="middle2">what point Dr cros do you think this</p>
-      <p begin="805.68s" xml:id="p261" end="807.92s" region="middle2">cycle will actually start hurting uh</p>
-      <p begin="807.92s" xml:id="p262" end="810.12s" region="middle2">both economies and I guess the bigger</p>
-      <p begin="810.12s" xml:id="p263" end="812.68s" region="middle2">question is is there a Breaking Point</p>
-      <p begin="812.68s" xml:id="p264" end="816.079s" region="middle2">where one side has to actually back</p>
-      <p begin="816.079s" xml:id="p265" end="819.44s" region="middle2">down so I think what president Trump is</p>
-      <p begin="819.44s" xml:id="p266" end="822.279s" region="middle2">thinking is the following he's thinking</p>
-      <p begin="822.279s" xml:id="p267" end="825.16s" region="middle2">number one international trade as a</p>
-      <p begin="825.16s" xml:id="p268" end="827.279s" region="between_m3_m2_2">percentage of gross domestic product in</p>
-      <p begin="827.279s" xml:id="p269" end="829.36s" region="between_m3_m2_2">the United States is</p>
-      <p begin="829.36s" xml:id="p270" end="833.959s" region="middle2">25% but in China it's 35% so China</p>
-      <p begin="833.959s" xml:id="p271" end="836.36s" region="middle2">economy relatively more dependent on</p>
-      <p begin="836.36s" xml:id="p272" end="839.519s" region="middle2">International Trade than the US economy</p>
-      <p begin="839.519s" xml:id="p273" end="842.32s" region="between_m3_m2_2">and then you add to that the extreme</p>
-      <p begin="842.32s" xml:id="p274" end="845.48s" region="middle2">imbalance in terms of the trade deficit</p>
-      <p begin="845.48s" xml:id="p275" end="848.44s" region="between_m3_m2_2">that uh the US is running with China</p>
-      <p begin="848.44s" xml:id="p276" end="852.56s" region="between_m3_m2_2">president Trump thinks he can out tariff</p>
-      <p begin="852.56s" xml:id="p277" end="855.72s" region="middle2">China he can cause more pain to China</p>
-      <p begin="855.72s" xml:id="p278" end="857.959s" region="middle2">than China can cause to the United</p>
-      <p begin="857.959s" xml:id="p279" end="861.0s" region="middle2">States at the moment the estimates are</p>
-      <p begin="861.0s" xml:id="p280" end="863.32s" region="middle2">that all of these tariff activities of</p>
-      <p begin="863.32s" xml:id="p281" end="865.8s" region="middle2">President Trump are going to add</p>
-      <p begin="865.8s" xml:id="p282" end="870.32s" region="between_m3_m2_2">$2,000 per year to the average bill of a</p>
-      <p begin="870.32s" xml:id="p283" end="874.32s" region="between_m3_m2_2">US household that's around about 3% of</p>
-      <p begin="874.32s" xml:id="p284" end="877.639s" region="middle2">gross income of a US household so</p>
-      <p begin="877.639s" xml:id="p285" end="881.92s" region="between_m3_m2_2">perhaps not enough to really to really</p>
-      <p begin="881.92s" xml:id="p286" end="885.24s" region="between_m3_m2_2">inflict massive pain on the US consumer</p>
-      <p begin="885.24s" xml:id="p287" end="886.92s" region="middle2">at the moment definitely will add to</p>
-      <p begin="886.92s" xml:id="p288" end="890.16s" region="middle2">inflation but maybe not enough yet to</p>
-      <p begin="890.16s" xml:id="p289" end="893.36s" region="middle2">cause a destabilization of the US</p>
-      <p begin="893.36s" xml:id="p290" end="896.399s" region="between_m3_m2_2">economy the China economy on the other</p>
-      <p begin="896.399s" xml:id="p291" end="899.639s" region="between_m3_m2_2">hand is weak at the moment in terms of</p>
-      <p begin="899.639s" xml:id="p292" end="903.04s" region="middle2">domestic consumption if all of these</p>
-      <p begin="903.04s" xml:id="p293" end="905.72s" region="between_m3_m2_2">exports were unable to be sent to the</p>
-      <p begin="905.72s" xml:id="p294" end="908.519s" region="between_m3_m2_2">United States the Chinese economy at the</p>
-      <p begin="908.519s" xml:id="p295" end="911.8s" region="between_m3_m2_2">moment could probably not absorb all of</p>
-      <p begin="911.8s" xml:id="p296" end="914.839s" region="between_m3_m2_2">that production in its domestic economy</p>
-      <p begin="914.839s" xml:id="p297" end="917.12s" region="middle2">so Dr quch are you want to move on to uh</p>
-      <p begin="917.12s" xml:id="p298" end="918.759s" region="middle2">you know what the some of suggestions</p>
-      <p begin="918.759s" xml:id="p299" end="920.399s" region="middle2">and and reforms that have been uh</p>
-      <p begin="920.399s" xml:id="p300" end="922.44s" region="middle2">announced over the weekend uh during the</p>
-      <p begin="922.44s" xml:id="p301" end="925.079s" region="between_m3_m2_2">two sessions and jobs was a big thing uh</p>
-      <p begin="925.079s" xml:id="p302" end="927.04s" region="middle2">and as a matter of of of uh as a matter</p>
-      <p begin="927.04s" xml:id="p303" end="928.48s" region="middle2">of some statistics here that youth and</p>
-      <p begin="928.48s" xml:id="p304" end="930.16s" region="middle2">unemployment in China is very high it's</p>
-      <p begin="930.16s" xml:id="p305" end="931.72s" region="between_m3_m2_2">at</p>
-      <p begin="931.72s" xml:id="p306" end="934.04s" region="between_m3_m2_2">15.7% and AI as you know it's going to</p>
-      <p begin="934.04s" xml:id="p307" end="935.88s" region="between_m3_m2_2">be disrupting all the um drob markets</p>
-      <p begin="935.88s" xml:id="p308" end="937.72s" region="middle2">worldwide how do you think China should</p>
-      <p begin="937.72s" xml:id="p309" end="940.24s" region="between_m3_m2_2">be you know balancing driving automation</p>
-      <p begin="940.24s" xml:id="p310" end="941.92s" region="middle2">for efficiency and at the same time</p>
-      <p begin="941.92s" xml:id="p311" end="944.079s" region="middle2">ensuring that there is sustainable uh</p>
-      <p begin="944.079s" xml:id="p312" end="947.0s" region="middle2">employment uh for millions of workers uh</p>
-      <p begin="947.0s" xml:id="p313" end="949.04s" region="between_m3_m2_2">so China has to double down on</p>
-      <p begin="949.04s" xml:id="p314" end="951.8s" region="between_m3_m2_2">Technology Innovation to make sure that</p>
-      <p begin="951.8s" xml:id="p315" end="955.519s" region="between_m3_m2_2">uh its uh world uh leading capabilities</p>
-      <p begin="955.519s" xml:id="p316" end="959.12s" region="middle2">are further uh developed in these uh</p>
-      <p begin="959.12s" xml:id="p317" end="963.04s" region="middle2">very important stem areas including AI</p>
-      <p begin="963.04s" xml:id="p318" end="965.8s" region="middle2">um the unemployment rate for youth has</p>
-      <p begin="965.8s" xml:id="p319" end="968.88s" region="middle2">actually improved uh since it peaked at</p>
-      <p begin="968.88s" xml:id="p320" end="972.279s" region="middle2">around about 21% youth unemployment so</p>
-      <p begin="972.279s" xml:id="p321" end="975.199s" region="middle2">it's come down a little bit um the fact</p>
-      <p begin="975.199s" xml:id="p322" end="977.88s" region="middle2">of the matter is Elli that not every</p>
-      <p begin="977.88s" xml:id="p323" end="981.68s" region="middle2">child is going to be a stem genius and</p>
-      <p begin="981.68s" xml:id="p324" end="984.0s" region="middle2">we have to understand that it's a</p>
-      <p begin="984.0s" xml:id="p325" end="987.24s" region="middle2">reality and so the service sector of the</p>
-      <p begin="987.24s" xml:id="p326" end="990.16s" region="middle2">Chinese economy has to develop further</p>
-      <p begin="990.16s" xml:id="p327" end="991.959s" region="middle2">you know one example of that would be</p>
-      <p begin="991.959s" xml:id="p328" end="995.44s" region="middle2">the tourism and hospitality industries</p>
-      <p begin="995.44s" xml:id="p329" end="998.519s" region="middle2">that can absorb a lot of Labor uh that</p>
-      <p begin="998.519s" xml:id="p330" end="1002.16s" region="middle2">is not necessarily stem capable even</p>
-      <p begin="1002.16s" xml:id="p331" end="1005.12s" region="middle2">with the best vocational training so I</p>
-      <p begin="1005.12s" xml:id="p332" end="1007.079s" region="between_m3_m2_2">think that there are policies that can</p>
-      <p begin="1007.079s" xml:id="p333" end="1010.959s" region="between_m3_m2_2">be put in place to uh lift up domestic</p>
-      <p begin="1010.959s" xml:id="p334" end="1013.959s" region="dynamic_position">consumption uh and foreign tourism for</p>
-      <p begin="1013.959s" xml:id="p335" end="1016.959s" region="middle2">example that could help uh in a little</p>
-      <p begin="1016.959s" xml:id="p336" end="1021.68s" region="middle2">bit of a a little bit of a way to mify</p>
-      <p begin="1021.68s" xml:id="p337" end="1024.319s" region="middle2">this very severe youth unemployment</p>
-      <p begin="1024.319s" xml:id="p338" end="1026.4s" region="middle2">problem so from youth unemployment we</p>
-      <p begin="1026.4s" xml:id="p339" end="1029.0s" region="between_m3_m2_2">also have this aging population issue</p>
-      <p begin="1029.0s" xml:id="p340" end="1032.079s" region="between_m3_m2_2">where um it is projected to reach uh</p>
-      <p begin="1032.079s" xml:id="p341" end="1035.799s" region="middle2">30% by 2035 I mean that's that's quite</p>
-      <p begin="1035.799s" xml:id="p342" end="1037.64s" region="middle2">um staggering so how do you think that</p>
-      <p begin="1037.64s" xml:id="p343" end="1039.199s" region="middle2">China is addressing the economic</p>
-      <p begin="1039.199s" xml:id="p344" end="1041.28s" region="middle2">challenges right I mean of having uh to</p>
-      <p begin="1041.28s" xml:id="p345" end="1043.28s" region="between_m3_m2_2">handle this aging society and then at</p>
-      <p begin="1043.28s" xml:id="p346" end="1045.0s" region="between_m3_m2_1">the same time ensuring that there's</p>
-      <p begin="1045.0s" xml:id="p347" end="1046.799s" region="between_m3_m2_1">social infrastructure that there is</p>
-      <p begin="1046.799s" xml:id="p348" end="1049.2s" region="middle3">Healthcare overall economy it's equipped</p>
-      <p begin="1049.2s" xml:id="p349" end="1050.72s" region="middle3">to be able to support um this</p>
-      <p begin="1050.72s" xml:id="p350" end="1053.64s">demographic shift so part of the</p>
-      <p begin="1053.64s" xml:id="p351" end="1055.88s">economic development story of China</p>
-      <p begin="1055.88s" xml:id="p352" end="1058.799s">involves uh urbanization and around</p>
-      <p begin="1058.799s" xml:id="p353" end="1061.32s">about 2third of the Chinese population</p>
-      <p begin="1061.32s" xml:id="p354" end="1064.679s">now lives in urban areas uh many of</p>
-      <p begin="1064.679s" xml:id="p355" end="1067.679s">those people have are now living</p>
-      <p begin="1067.679s" xml:id="p356" end="1072.0s">remotely from uh their parents and so as</p>
-      <p begin="1072.0s" xml:id="p357" end="1075.159s">the parents age um you know the ability</p>
-      <p begin="1075.159s" xml:id="p358" end="1078.28s">of their children in many cases just one</p>
-      <p begin="1078.28s" xml:id="p359" end="1079.64s">offspring</p>
-      <p begin="1079.64s" xml:id="p360" end="1083.559s">uh to help out around the home is</p>
-      <p begin="1083.559s" xml:id="p361" end="1086.52s">reduced because of the job Mobility that</p>
-      <p begin="1086.52s" xml:id="p362" end="1089.52s">has accompanied urbanization so it</p>
-      <p begin="1089.52s" xml:id="p363" end="1092.4s">becomes important for uh the government</p>
-      <p begin="1092.4s" xml:id="p364" end="1095.32s">and local communities to provide health</p>
-      <p begin="1095.32s" xml:id="p365" end="1097.48s">clinics to provide preventive Health</p>
-      <p begin="1097.48s" xml:id="p366" end="1100.72s">Care to provide tella Health uh and</p>
-      <p begin="1100.72s" xml:id="p367" end="1104.52s">other approaches that will sustain those</p>
-      <p begin="1104.52s" xml:id="p368" end="1107.64s">uh elderly people uh when in many cases</p>
-      <p begin="1107.64s" xml:id="p369" end="1110.24s">they're not able to supported directly</p>
-      <p begin="1110.24s" xml:id="p370" end="1113.44s">by other family members I might also</p>
-      <p begin="1113.44s" xml:id="p371" end="1115.52s">mention you know at the other end of the</p>
-      <p begin="1115.52s" xml:id="p372" end="1118.2s">spectrum the level of attention that</p>
-      <p begin="1118.2s" xml:id="p373" end="1121.28s">Chinese parents pay to their children's</p>
-      <p begin="1121.28s" xml:id="p374" end="1124.0s">education is commendable but often that</p>
-      <p begin="1124.0s" xml:id="p375" end="1126.159s">is at the expense of the children being</p>
-      <p begin="1126.159s" xml:id="p376" end="1129.28s">allowed to engage in significant daily</p>
-      <p begin="1129.28s" xml:id="p377" end="1131.84s">or regular physical activity they're</p>
-      <p begin="1131.84s" xml:id="p378" end="1135.2s">studying studying math all the time and</p>
-      <p begin="1135.2s" xml:id="p379" end="1137.679s">actually if they don't develop the habit</p>
-      <p begin="1137.679s" xml:id="p380" end="1140.24s">of uh phys physical activity as</p>
-      <p begin="1140.24s" xml:id="p381" end="1143.039s">youngsters they're not going to carry</p>
-      <p begin="1143.039s" xml:id="p382" end="1146.039s">that into adulthood and that's going to</p>
-      <p begin="1146.039s" xml:id="p383" end="1148.799s">result in a lot of health related</p>
-      <p begin="1148.799s" xml:id="p384" end="1152.6s">problems together with um uh poor eating</p>
-      <p begin="1152.6s" xml:id="p385" end="1156.159s">habits of high fat high sugar content</p>
-      <p begin="1156.159s" xml:id="p386" end="1158.72s">Foods all of that is going to result in</p>
-      <p begin="1158.72s" xml:id="p387" end="1161.4s">bigger Health Care challenges for the</p>
-      <p begin="1161.4s" xml:id="p388" end="1164.4s">population in the longterm as well as</p>
-      <p begin="1164.4s" xml:id="p389" end="1166.72s">the Aging issue which you've correctly</p>
-      <p begin="1166.72s" xml:id="p390" end="1169.0s">identified yeah and I think that's why</p>
-      <p begin="1169.0s" xml:id="p391" end="1170.84s">uh the government highlighted uh once</p>
-      <p begin="1170.84s" xml:id="p392" end="1172.64s">again about this three-year weight</p>
-      <p begin="1172.64s" xml:id="p393" end="1174.2s">management campaign that that they've</p>
-      <p begin="1174.2s" xml:id="p394" end="1176.159s">rolled out uh I guess it's just to you</p>
-      <p begin="1176.159s" xml:id="p395" end="1178.44s">know ensure that you know they can</p>
-      <p begin="1178.44s" xml:id="p396" end="1180.48s">sustain healthare uh in China and make</p>
-      <p begin="1180.48s" xml:id="p397" end="1182.24s">sure the people stay healthy well</p>
-      <p begin="1182.24s" xml:id="p398" end="1185.72s">staggering 50% of Chinese population is</p>
-      <p begin="1185.72s" xml:id="p399" end="1187.88s">considered to be overweight or obese at</p>
-      <p begin="1187.88s" xml:id="p400" end="1191.0s">the moment and that may increase to uh</p>
-      <p begin="1191.0s" xml:id="p401" end="1194.28s">over 60% by the end of the decade uh</p>
-      <p begin="1194.28s" xml:id="p402" end="1197.88s">that's a very severe problem because uh</p>
-      <p begin="1197.88s" xml:id="p403" end="1200.799s">we know that uh uh obesity and being</p>
-      <p begin="1200.799s" xml:id="p404" end="1203.24s">overweight can result in many chronic</p>
-      <p begin="1203.24s" xml:id="p405" end="1206.559s">diseases including diabetes which can be</p>
-      <p begin="1206.559s" xml:id="p406" end="1210.52s">extremely costly to society so keeping</p>
-      <p begin="1210.52s" xml:id="p407" end="1213.799s">uh China healthy and making sure people</p>
-      <p begin="1213.799s" xml:id="p408" end="1215.76s">uh are aware of what they need to do</p>
-      <p begin="1215.76s" xml:id="p409" end="1218.32s">from a nutritional and exercise point of</p>
-      <p begin="1218.32s" xml:id="p410" end="1221.2s">view is very important to uh maintaining</p>
-      <p begin="1221.2s" xml:id="p411" end="1223.4s">economic development at the pace it's</p>
-      <p begin="1223.4s" xml:id="p412" end="1225.44s">been going yeah absolutely and uh we're</p>
-      <p begin="1225.44s" xml:id="p413" end="1226.76s">going to be covering that threeyear</p>
-      <p begin="1226.76s" xml:id="p414" end="1228.039s">weight management campaign a little</p>
-      <p begin="1228.039s" xml:id="p415" end="1229.52s">later on our program but it's been so</p>
-      <p begin="1229.52s" xml:id="p416" end="1231.72s">good having you in our studio thank you</p>
-      <p begin="1231.72s" xml:id="p417" end="1234.36s">so much Dr kch for joining us and I was</p>
-      <p begin="1234.36s" xml:id="p418" end="1236.36s">just talking to Dr John kch Executive</p>
-      <p begin="1236.36s" xml:id="p419" end="1239.52s">Vice Chancellor of Duke kunan</p>
-      <p begin="1239.52s" xml:id="p420" end="1241.32s">University we're going to go for a short</p>
-      <p begin="1241.32s" xml:id="p421" end="1243.2s">break now but coming up next on East</p>
-      <p begin="1243.2s" xml:id="p422" end="1245.919s">Asia tonight Russia moves to save its</p>
-      <p begin="1245.919s" xml:id="p423" end="1248.08s">Auto industry from the onslaught of</p>
-      <p begin="1248.08s" xml:id="p424" end="1251.2s">swelling Imports of cheap Chinese cars</p>
-      <p begin="1251.2s" xml:id="p425" end="1253.08s">and the Japanese government moving to</p>
-      <p begin="1253.08s" xml:id="p426" end="1255.44s">address the shortage of a vital Staple</p>
-      <p begin="1255.44s" xml:id="p427" end="1259.16s">in the nation as rice prices surge</p>
-      <p begin="1259.16s" xml:id="p428" end="1271.84s">[Music]</p>
-      <p begin="1271.84s" xml:id="p429" end="1273.2s">hello again good to have your company on</p>
-      <p begin="1273.2s" xml:id="p430" end="1276.0s">East Asia tonight Roland Lim is here</p>
-      <p begin="1276.0s" xml:id="p431" end="1277.799s">with me with a Roundup of business news</p>
-      <p begin="1277.799s" xml:id="p432" end="1279.6s">as usual and Roland today we're talking</p>
-      <p begin="1279.6s" xml:id="p433" end="1281.48s">about Japan's base pay apparently it's</p>
-      <p begin="1281.48s" xml:id="p434" end="1283.799s">seeing its biggest jump in more than</p>
-      <p begin="1283.799s" xml:id="p435" end="1286.679s">three decades that's right Telly but the</p>
-      <p begin="1286.679s" xml:id="p436" end="1288.88s">two-year High inflation putting a DRFT</p>
-      <p begin="1288.88s" xml:id="p437" end="1292.159s">on rail wage growth now Japan's rail</p>
-      <p begin="1292.159s" xml:id="p438" end="1294.919s">wages fell in January after 2 months of</p>
-      <p begin="1294.919s" xml:id="p439" end="1297.32s">slight gains that's despite base pay</p>
-      <p begin="1297.32s" xml:id="p440" end="1301.24s">rising at its fastest Pace in 32 years</p>
-      <p begin="1301.24s" xml:id="p441" end="1305.0s">regular pay Rose by 3.1% from a year ago</p>
-      <p begin="1305.0s" xml:id="p442" end="1306.72s">the biggest jump since</p>
-      <p begin="1306.72s" xml:id="p443" end="1311.24s">1992 overtime pay was also up by 3.1%</p>
-      <p begin="1311.24s" xml:id="p444" end="1313.919s">but inflation at a 2-year high is</p>
-      <p begin="1313.919s" xml:id="p445" end="1317.159s">undoing all these advantages inflation</p>
-      <p begin="1317.159s" xml:id="p446" end="1319.76s">adjusted rail wages which determines</p>
-      <p begin="1319.76s" xml:id="p447" end="1323.12s">consumers purchasing power fell 1.8% in</p>
-      <p begin="1323.12s" xml:id="p448" end="1326.039s">January from a year earlier fresh food</p>
-      <p begin="1326.039s" xml:id="p449" end="1328.279s">prices are major factor rising at the</p>
-      <p begin="1328.279s" xml:id="p450" end="1330.159s">fastest Pace in two decades with the</p>
-      <p begin="1330.159s" xml:id="p451" end="1332.2s">overall inflation rate hitting</p>
-      <p begin="1332.2s" xml:id="p452" end="1335.36s">4% the figures come as unions and</p>
-      <p begin="1335.36s" xml:id="p453" end="1337.679s">employers hold their annual wage</p>
-      <p begin="1337.679s" xml:id="p454" end="1340.32s">negotiations this week Japan's biggest</p>
-      <p begin="1340.32s" xml:id="p455" end="1342.96s">labor group has said its member unions</p>
-      <p begin="1342.96s" xml:id="p456" end="1344.96s">are demanding an average</p>
-      <p begin="1344.96s" xml:id="p457" end="1348.0s">6.09% pay high that's their boldest</p>
-      <p begin="1348.0s" xml:id="p458" end="1351.279s">demand in more than 30 years the bank of</p>
-      <p begin="1351.279s" xml:id="p459" end="1353.6s">Japan likely keeping tabs ahead of its</p>
-      <p begin="1353.6s" xml:id="p460" end="1355.96s">policy review next week it is widely</p>
-      <p begin="1355.96s" xml:id="p461" end="1357.72s">expected to keep interest rates</p>
-      <p begin="1357.72s" xml:id="p462" end="1360.159s">unchanged as officials cite the need to</p>
-      <p begin="1360.159s" xml:id="p463" end="1362.64s">gauge the sustainability of wage growth</p>
-      <p begin="1362.64s" xml:id="p464" end="1366.76s">after its rate hike back in</p>
-      <p begin="1366.919s" xml:id="p465" end="1369.32s">January meantime the Japanese government</p>
-      <p begin="1369.32s" xml:id="p466" end="1372.679s">is releasing some of its emergency rice</p>
-      <p begin="1372.679s" xml:id="p467" end="1375.279s">stockpile in a rare auction and that's</p>
-      <p begin="1375.279s" xml:id="p468" end="1377.919s">to help drive down the surging price of</p>
-      <p begin="1377.919s" xml:id="p469" end="1379.84s">the staple now prices have nearly</p>
-      <p begin="1379.84s" xml:id="p470" end="1382.44s">doubled over a year with the shortage</p>
-      <p begin="1382.44s" xml:id="p471" end="1385.12s">driven by poor harvests as well as Panic</p>
-      <p begin="1385.12s" xml:id="p472" end="1387.52s">buying over a mega Earthquake warning</p>
-      <p begin="1387.52s" xml:id="p473" end="1390.799s">Last Summer the agriculture Ministry is</p>
-      <p begin="1390.799s" xml:id="p474" end="1393.919s">expected to select successful biders for</p>
-      <p begin="1393.919s" xml:id="p475" end="1397.0s">150,000 tons of rice by Wednesday and</p>
-      <p begin="1397.0s" xml:id="p476" end="1399.4s">the oxygen grain is expected to reach</p>
-      <p begin="1399.4s" xml:id="p477" end="1402.0s">shops by the end of this month the</p>
-      <p begin="1402.0s" xml:id="p478" end="1404.0s">country keeps a million tons for</p>
-      <p begin="1404.0s" xml:id="p479" end="1405.96s">emergencies but this is the first time</p>
-      <p begin="1405.96s" xml:id="p480" end="1408.2s">that supply chain issues are driving the</p>
-      <p begin="1408.2s" xml:id="p481" end="1411.12s">resp response to the</p>
-      <p begin="1411.44s" xml:id="p482" end="1415.72s">crisis taiwan's tsmc recorded a 39%</p>
-      <p begin="1415.72s" xml:id="p483" end="1417.64s">Revenue jump in the first two months</p>
-      <p begin="1417.64s" xml:id="p484" end="1419.559s">quickening from the same period last</p>
-      <p begin="1419.559s" xml:id="p485" end="1422.559s">year that suggests demand for AI chips</p>
-      <p begin="1422.559s" xml:id="p486" end="1425.159s">appear to be growing unabated the</p>
-      <p begin="1425.159s" xml:id="p487" end="1427.039s">world's largest chipmaker reported</p>
-      <p begin="1427.039s" xml:id="p488" end="1428.44s">combined revenue for the first two</p>
-      <p begin="1428.44s" xml:id="p489" end="1431.44s">months of around $17 billion and that</p>
-      <p begin="1431.44s" xml:id="p490" end="1433.64s">compares with 34% growth for the whole</p>
-      <p begin="1433.64s" xml:id="p491" end="1436.44s">of last year analysts on average are</p>
-      <p begin="1436.44s" xml:id="p492" end="1439.48s">projecting growth at about 41 % this</p>
-      <p begin="1439.48s" xml:id="p493" end="1442.679s">quarter tsmc sales are being watched to</p>
-      <p begin="1442.679s" xml:id="p494" end="1445.44s">gauge the strength in the AI sector now</p>
-      <p begin="1445.44s" xml:id="p495" end="1447.84s">its growth is seen as a sign of healthy</p>
-      <p begin="1447.84s" xml:id="p496" end="1450.159s">spending on artificial intelligence</p>
-      <p begin="1450.159s" xml:id="p497" end="1453.2s">Computing last week Taiwanese hanh High</p>
-      <p begin="1453.2s" xml:id="p498" end="1456.159s">Precision industry also known as foxcon</p>
-      <p begin="1456.159s" xml:id="p499" end="1459.96s">posted a 25% rise in Revenue during the</p>
-      <p begin="1459.96s" xml:id="p500" end="1463.039s">first two months of this year meanwhile</p>
-      <p begin="1463.039s" xml:id="p501" end="1466.159s">tsmc faces uncertainty in 2025 including</p>
-      <p begin="1466.159s" xml:id="p502" end="1468.72s">the potential for us tariffs on chip</p>
-      <p begin="1468.72s" xml:id="p503" end="1472.679s">Imports which could impact its</p>
-      <p begin="1472.76s" xml:id="p504" end="1475.159s">business Russia is trying to curb a</p>
-      <p begin="1475.159s" xml:id="p505" end="1478.2s">flood of Chinese vehicle Imports a move</p>
-      <p begin="1478.2s" xml:id="p506" end="1480.44s">that could hit Chinese manufacturers</p>
-      <p begin="1480.44s" xml:id="p507" end="1483.24s">hard according to the China passenger</p>
-      <p begin="1483.24s" xml:id="p508" end="1485.96s">car Association exports to Russia last</p>
-      <p begin="1485.96s" xml:id="p509" end="1489.88s">year hit Sevenfold the level of 2022 as</p>
-      <p begin="1489.88s" xml:id="p510" end="1492.559s">sanctions over its invasion of Ukraine</p>
-      <p begin="1492.559s" xml:id="p511" end="1495.679s">cut off Western Brands now car makers in</p>
-      <p begin="1495.679s" xml:id="p512" end="1498.84s">China also embrace the Russian Market</p>
-      <p begin="1498.84s" xml:id="p513" end="1501.039s">after anti-dumping measures hit sales in</p>
-      <p begin="1501.039s" xml:id="p514" end="1503.84s">other regions including the US the EU</p>
-      <p begin="1503.84s" xml:id="p515" end="1507.44s">and Brazil Russia bought more than 1</p>
-      <p begin="1507.44s" xml:id="p516" end="1509.919s">million Chinese vehicles last year</p>
-      <p begin="1509.919s" xml:id="p517" end="1513.48s">handing Chinese brand 63% of the Russian</p>
-      <p begin="1513.48s" xml:id="p518" end="1516.24s">auto market and leaving just 29% to</p>
-      <p begin="1516.24s" xml:id="p519" end="1519.039s">local car makers Russian authorities are</p>
-      <p begin="1519.039s" xml:id="p520" end="1521.399s">pushing back though in January Moscow</p>
-      <p begin="1521.399s" xml:id="p521" end="1523.72s">raised the so-called recycling fees</p>
-      <p begin="1523.72s" xml:id="p522" end="1526.76s">which act like tariffs to $7,500 for</p>
-      <p begin="1526.76s" xml:id="p523" end="1528.799s">most passenger cars and that's more than</p>
-      <p begin="1528.799s" xml:id="p524" end="1531.88s">double from last September these charges</p>
-      <p begin="1531.88s" xml:id="p525" end="1534.799s">are set to rise by 10 to 20% annually</p>
-      <p begin="1534.799s" xml:id="p526" end="1536.6s">until</p>
-      <p begin="1536.6s" xml:id="p527" end="1539.72s">2030 a recent Russian inquiry also found</p>
-      <p begin="1539.72s" xml:id="p528" end="1541.84s">three Chinese truck makers violated</p>
-      <p begin="1541.84s" xml:id="p529" end="1544.36s">safety standards and banned the sale of</p>
-      <p begin="1544.36s" xml:id="p530" end="1546.559s">one model and more compliance checks</p>
-      <p begin="1546.559s" xml:id="p531" end="1549.039s">could</p>
-      <p begin="1549.76s" xml:id="p532" end="1551.96s">follow and you're all caught up with the</p>
-      <p begin="1551.96s" xml:id="p533" end="1553.799s">business news so Telly back to you thank</p>
-      <p begin="1553.799s" xml:id="p534" end="1555.96s">so very much for that Roland well time</p>
-      <p begin="1555.96s" xml:id="p535" end="1557.399s">now for another break but coming up on</p>
-      <p begin="1557.399s" xml:id="p536" end="1559.12s">East Asia tonight South Korean</p>
-      <p begin="1559.12s" xml:id="p537" end="1561.36s">prosecutors vowed to pursue jail for</p>
-      <p begin="1561.36s" xml:id="p538" end="1563.24s">yunsung Yol after the impeached</p>
-      <p begin="1563.24s" xml:id="p539" end="1565.6s">president walked free over the</p>
-      <p begin="1565.6s" xml:id="p540" end="1568.0s">weekend and tight security for former</p>
-      <p begin="1568.0s" xml:id="p541" end="1570.039s">Philippine president Rodrigo duerte in</p>
-      <p begin="1570.039s" xml:id="p542" end="1573.04s">Hong Kong as he campaigns for his Senate</p>
-      <p begin="1573.04s" xml:id="p543" end="1584.919s">[Music]</p>
-      <p begin="1584.919s" xml:id="p544" end="1587.6s">pigs this is East Asia tonight and here</p>
-      <p begin="1587.6s" xml:id="p545" end="1589.88s">are the headlines we're following North</p>
-      <p begin="1589.88s" xml:id="p546" end="1592.559s">Korea fires multiple ballistic missiles</p>
-      <p begin="1592.559s" xml:id="p547" end="1594.6s">after condemning military drills between</p>
-      <p begin="1594.6s" xml:id="p548" end="1597.36s">the US and South Korea as a dangerous</p>
-      <p begin="1597.36s" xml:id="p549" end="1600.96s">provocative act Beijing begins levying</p>
-      <p begin="1600.96s" xml:id="p550" end="1603.96s">10 to 15% tariffs on us agricultural</p>
-      <p begin="1603.96s" xml:id="p551" end="1605.559s">Imports hitting back against</p>
-      <p begin="1605.559s" xml:id="p552" end="1608.48s">Washington's 25% duties on steel and</p>
-      <p begin="1608.48s" xml:id="p553" end="1610.76s">aluminium Imports that's due on</p>
-      <p begin="1610.76s" xml:id="p554" end="1613.32s">Wednesday China's top political advisory</p>
-      <p begin="1613.32s" xml:id="p555" end="1615.679s">body concludes its annual meeting</p>
-      <p begin="1615.679s" xml:id="p556" end="1617.72s">pledging to drive modernization through</p>
-      <p begin="1617.72s" xml:id="p557" end="1620.32s">deepen reforms high quality development</p>
-      <p begin="1620.32s" xml:id="p558" end="1623.44s">and stronger National</p>
-      <p begin="1624.72s" xml:id="p559" end="1627.679s">Unity the two sessions hasn't just</p>
-      <p begin="1627.679s" xml:id="p560" end="1630.399s">focused on Tech and trade rivalry with</p>
-      <p begin="1630.399s" xml:id="p561" end="1633.24s">the us or domestic e economic issues</p>
-      <p begin="1633.24s" xml:id="p562" end="1635.399s">just this weekend the discussion about a</p>
-      <p begin="1635.399s" xml:id="p563" end="1637.559s">three-year weight management campaign</p>
-      <p begin="1637.559s" xml:id="p564" end="1640.88s">and the Press had the press and neens</p>
-      <p begin="1640.88s" xml:id="p565" end="1644.88s">buzzing you</p>
-      <p begin="1664.32s" xml:id="p566" end="1666.279s">now you heard their laughter filling the</p>
-      <p begin="1666.279s" xml:id="p567" end="1668.159s">press conference as the health official</p>
-      <p begin="1668.159s" xml:id="p568" end="1670.519s">doubled down on healthier Lifestyles</p>
-      <p begin="1670.519s" xml:id="p569" end="1672.76s">noting improved living conditions But</p>
-      <p begin="1672.76s" xml:id="p570" end="1674.96s">Rising calorie intake and lack of</p>
-      <p begin="1674.96s" xml:id="p571" end="1677.159s">exercise his remarks quickly caught</p>
-      <p begin="1677.159s" xml:id="p572" end="1679.72s">attention online at one point the hash</p>
-      <p begin="1679.72s" xml:id="p573" end="1681.72s">threeyear action plan for implementing</p>
-      <p begin="1681.72s" xml:id="p574" end="1683.88s">weight management hit top four on</p>
-      <p begin="1683.88s" xml:id="p575" end="1685.88s">Chinese social media w war will</p>
-      <p begin="1685.88s" xml:id="p576" end="1687.799s">hospitals establishing weight management</p>
-      <p begin="1687.799s" xml:id="p577" end="1690.399s">clinics trended even higher at number</p>
-      <p begin="1690.399s" xml:id="p578" end="1692.919s">two some shared their waste slimming</p>
-      <p begin="1692.919s" xml:id="p579" end="1695.279s">workout routines While others joked if</p>
-      <p begin="1695.279s" xml:id="p580" end="1696.76s">failing to lose weight would mean</p>
-      <p begin="1696.76s" xml:id="p581" end="1699.44s">monetary deductions even firemen from a</p>
-      <p begin="1699.44s" xml:id="p582" end="1702.2s">local fire station in Shandong chimed in</p>
-      <p begin="1702.2s" xml:id="p583" end="1704.36s">encouraging a mix of exercise and proper</p>
-      <p begin="1704.36s" xml:id="p584" end="1706.32s">diet along with a video of them in</p>
-      <p begin="1706.32s" xml:id="p585" end="1709.32s">action</p>
-      <p begin="1737.519s" xml:id="p586" end="1740.039s">we</p>
-      <p begin="1751.039s" xml:id="p587" end="1753.44s">a China's rising life expectancy has</p>
-      <p begin="1753.44s" xml:id="p588" end="1755.84s">also resonated rising to the second</p>
-      <p begin="1755.84s" xml:id="p589" end="1758.48s">position on wo's trending chart it's now</p>
-      <p begin="1758.48s" xml:id="p590" end="1762.6s">at 79 years up from 78.6 a year before</p>
-      <p begin="1762.6s" xml:id="p591" end="1765.72s">signifying a rapidly aging population as</p>
-      <p begin="1765.72s" xml:id="p592" end="1768.48s">more live longer and fewer have children</p>
-      <p begin="1768.48s" xml:id="p593" end="1770.48s">this poses challenges for the economy</p>
-      <p begin="1770.48s" xml:id="p594" end="1772.519s">and healthc Care System some netizens</p>
-      <p begin="1772.519s" xml:id="p595" end="1774.559s">pledged to embrace the weight management</p>
-      <p begin="1774.559s" xml:id="p596" end="1778.159s">campaign hoping to push that number past</p>
-      <p begin="1778.159s" xml:id="p597" end="1781.0s">80 now moves to raise the standard floor</p>
-      <p begin="1781.0s" xml:id="p598" end="1783.399s">height of residential units over 3 MERS</p>
-      <p begin="1783.399s" xml:id="p599" end="1785.559s">were also welcomed many praised its</p>
-      <p begin="1785.559s" xml:id="p600" end="1787.32s">benefits with some already looking</p>
-      <p begin="1787.32s" xml:id="p601" end="1790.84s">forward to roomier living</p>
-      <p begin="1791.08s" xml:id="p602" end="1793.679s">spaces and for more of our coverage on</p>
-      <p begin="1793.679s" xml:id="p603" end="1795.919s">China's two sessions do head to our</p>
-      <p begin="1795.919s" xml:id="p604" end="1798.279s">website cna. Asia you can also follow</p>
-      <p begin="1798.279s" xml:id="p605" end="1800.399s">news and all the latest updates via our</p>
-      <p begin="1800.399s" xml:id="p606" end="1802.32s">mobile</p>
-      <p begin="1802.32s" xml:id="p607" end="1805.24s">app in other news North Korea fired</p>
-      <p begin="1805.24s" xml:id="p608" end="1807.519s">multiple unidentified ballistic missiles</p>
-      <p begin="1807.519s" xml:id="p609" end="1809.96s">today according to Saul South Korea's</p>
-      <p begin="1809.96s" xml:id="p610" end="1811.919s">military says the missiles were fired</p>
-      <p begin="1811.919s" xml:id="p611" end="1814.559s">towards the sea off the West Coast at</p>
-      <p begin="1814.559s" xml:id="p612" end="1817.44s">around 1:50 p.m. local time the launch</p>
-      <p begin="1817.44s" xml:id="p613" end="1819.76s">was conducted as South Korea and the us</p>
-      <p begin="1819.76s" xml:id="p614" end="1822.039s">kicked off annual joint military drills</p>
-      <p begin="1822.039s" xml:id="p615" end="1824.2s">the first such major exercise under the</p>
-      <p begin="1824.2s" xml:id="p616" end="1826.919s">second Trump Administration cna's senior</p>
-      <p begin="1826.919s" xml:id="p617" end="1831.0s">correspondent Limon has more on the</p>
-      <p begin="1831.44s" xml:id="p618" end="1834.2s">drills every year soldiers from the US</p>
-      <p begin="1834.2s" xml:id="p619" end="1836.76s">and South Korea hold joint drills as</p>
-      <p begin="1836.76s" xml:id="p620" end="1838.84s">part of preparations for any possible</p>
-      <p begin="1838.84s" xml:id="p621" end="1842.2s">attack from North Korea about 19,000</p>
-      <p begin="1842.2s" xml:id="p622" end="1844.159s">South Korean troops are taking part in</p>
-      <p begin="1844.159s" xml:id="p623" end="1846.96s">this year's Freedom Shield but unlike</p>
-      <p begin="1846.96s" xml:id="p624" end="1848.84s">previous years there will be no live</p>
-      <p begin="1848.84s" xml:id="p625" end="1850.72s">fire drills this</p>
-      <p begin="1850.72s" xml:id="p626" end="1853.48s">time this was agreed by both sides</p>
-      <p begin="1853.48s" xml:id="p627" end="1856.279s">following an accident in poan last</p>
-      <p begin="1856.279s" xml:id="p628" end="1858.72s">Thursday where South Korean fighter</p>
-      <p begin="1858.72s" xml:id="p629" end="1861.639s">dropped bombs on a civilian Village by</p>
-      <p begin="1861.639s" xml:id="p630" end="1865.76s">mistake during a LIF fire drill with US</p>
-      <p begin="1865.76s" xml:id="p631" end="1868.84s">forces the blasts destroyed residential</p>
-      <p begin="1868.84s" xml:id="p632" end="1871.24s">buildings part of a church and a Truck</p>
-      <p begin="1871.24s" xml:id="p633" end="1874.76s">in Poon City about 40 kmet Northeast of</p>
-      <p begin="1874.76s" xml:id="p634" end="1877.679s">the capital Soul the top Air Force</p>
-      <p begin="1877.679s" xml:id="p635" end="1880.32s">Commander apologized for the incident on</p>
-      <p begin="1880.32s" xml:id="p636" end="1883.32s">Monday</p>
-      <p begin="1899.76s" xml:id="p637" end="1902.039s">pilot era is suspected to be the cause</p>
-      <p begin="1902.039s" xml:id="p638" end="1904.399s">of the accident as a pilot entered the</p>
-      <p begin="1904.399s" xml:id="p639" end="1907.399s">wrong target coordinates prior to</p>
-      <p begin="1907.399s" xml:id="p640" end="1910.0s">takeoff North Korea Monday blasted the</p>
-      <p begin="1910.0s" xml:id="p641" end="1912.159s">drill saying souling Washington will pay</p>
-      <p begin="1912.159s" xml:id="p642" end="1913.72s">a price for their dangerous and</p>
-      <p begin="1913.72s" xml:id="p643" end="1914.84s">provocate</p>
-      <p begin="1914.84s" xml:id="p644" end="1917.399s">effects this comes Amit Rising concerns</p>
-      <p begin="1917.399s" xml:id="p645" end="1919.84s">over nor North Korea's military buildup</p>
-      <p begin="1919.84s" xml:id="p646" end="1922.0s">on Saturday North Korea unveiled for the</p>
-      <p begin="1922.0s" xml:id="p647" end="1924.6s">first time a nuclear powered submarine</p>
-      <p begin="1924.6s" xml:id="p648" end="1926.76s">under construction North Korea State</p>
-      <p begin="1926.76s" xml:id="p649" end="1929.2s">media released photos showing what it</p>
-      <p begin="1929.2s" xml:id="p650" end="1931.76s">called a nuclear powered strategic guide</p>
-      <p begin="1931.76s" xml:id="p651" end="1934.2s">up missile submarine and its leader</p>
-      <p begin="1934.2s" xml:id="p652" end="1937.48s">kimjongun visiting the shipyard experts</p>
-      <p begin="1937.48s" xml:id="p653" end="1939.639s">have voiced concerns saying that the</p>
-      <p begin="1939.639s" xml:id="p654" end="1942.039s">naval vessel could carry nuclear capable</p>
-      <p begin="1942.039s" xml:id="p655" end="1944.2s">weapons which would threaten not just</p>
-      <p begin="1944.2s" xml:id="p656" end="1949.799s">South Korea but also the US Limon to CNA</p>
-      <p begin="1949.799s" xml:id="p657" end="1952.559s">Soul the South Korean prosecutors say</p>
-      <p begin="1952.559s" xml:id="p658" end="1954.639s">they will continue pursuing impeached</p>
-      <p begin="1954.639s" xml:id="p659" end="1956.519s">president yunsung Yu's conviction for</p>
-      <p begin="1956.519s" xml:id="p660" end="1958.399s">Insurrection that's despite a Court</p>
-      <p begin="1958.399s" xml:id="p661" end="1960.48s">ruling that ordered his release from</p>
-      <p begin="1960.48s" xml:id="p662" end="1963.159s">prison over the weekend Mr Yun has been</p>
-      <p begin="1963.159s" xml:id="p663" end="1965.6s">on criminal trial since last month over</p>
-      <p begin="1965.6s" xml:id="p664" end="1967.559s">Insurrection charges for briefly</p>
-      <p begin="1967.559s" xml:id="p665" end="1970.44s">imposing the martial law in December the</p>
-      <p begin="1970.44s" xml:id="p666" end="1972.159s">embattled leader walked out of a</p>
-      <p begin="1972.159s" xml:id="p667" end="1974.279s">Detention Center on Saturday after</p>
-      <p begin="1974.279s" xml:id="p668" end="1977.0s">prosecutors waved their right to appeal</p>
-      <p begin="1977.0s" xml:id="p669" end="1979.24s">Mr yun's arrest was overturned last</p>
-      <p begin="1979.24s" xml:id="p670" end="1981.48s">Friday on technical grounds the head</p>
-      <p begin="1981.48s" xml:id="p671" end="1984.399s">prosecutor shim buong said he respected</p>
-      <p begin="1984.399s" xml:id="p672" end="1986.639s">the Court's ruling and that the decision</p>
-      <p begin="1986.639s" xml:id="p673" end="1989.32s">not to appeal was based on quote due</p>
-      <p begin="1989.32s" xml:id="p674" end="1991.44s">process of the law president yun's</p>
-      <p begin="1991.44s" xml:id="p675" end="1993.159s">release comes ahead of his Insurrection</p>
-      <p begin="1993.159s" xml:id="p676" end="1995.279s">ruling the Constitutional court is</p>
-      <p begin="1995.279s" xml:id="p677" end="1997.519s">expected to decide in the coming days</p>
-      <p begin="1997.519s" xml:id="p678" end="2001.559s">whether to OU or reinstate the</p>
-      <p begin="2001.559s" xml:id="p679" end="2004.039s">leader a former Philippine president</p>
-      <p begin="2004.039s" xml:id="p680" end="2006.76s">Rodrigo duerte says he is ready for</p>
-      <p begin="2006.76s" xml:id="p681" end="2008.559s">possible arrest for following reports of</p>
-      <p begin="2008.559s" xml:id="p682" end="2010.679s">a pending warrant from the international</p>
-      <p begin="2010.679s" xml:id="p683" end="2013.2s">criminal court the warrant stems from Mr</p>
-      <p begin="2013.2s" xml:id="p684" end="2015.76s">duterte's illegal drugs Campaign which</p>
-      <p begin="2015.76s" xml:id="p685" end="2018.12s">started in 2016 and resulted in</p>
-      <p begin="2018.12s" xml:id="p686" end="2020.399s">thousands of extrajudicial killings</p>
-      <p begin="2020.399s" xml:id="p687" end="2022.279s">according to human rights groups the</p>
-      <p begin="2022.279s" xml:id="p688" end="2024.159s">Philippine presidential office says it</p>
-      <p begin="2024.159s" xml:id="p689" end="2025.6s">has not received any official</p>
-      <p begin="2025.6s" xml:id="p690" end="2027.6s">communication from interpole but</p>
-      <p begin="2027.6s" xml:id="p691" end="2029.76s">indicates that Mr duterte could be</p>
-      <p begin="2029.76s" xml:id="p692" end="2032.08s">handed over if an arrest warrant is</p>
-      <p begin="2032.08s" xml:id="p693" end="2034.48s">issued Mr duterte who is currently in</p>
-      <p begin="2034.48s" xml:id="p694" end="2036.88s">Hong Kong said he was not at fault for</p>
-      <p begin="2036.88s" xml:id="p695" end="2039.039s">the drug war and Justified it as a</p>
-      <p begin="2039.039s" xml:id="p696" end="2041.639s">campaign for peace and National Security</p>
-      <p begin="2041.639s" xml:id="p697" end="2043.48s">he made those remarks while addressing a</p>
-      <p begin="2043.48s" xml:id="p698" end="2045.84s">campaign rally attended by thousands of</p>
-      <p begin="2045.84s" xml:id="p699" end="2047.76s">Filipino workers yesterday with his</p>
-      <p begin="2047.76s" xml:id="p700" end="2050.48s">daughter vice president Sarah duterte by</p>
-      <p begin="2050.48s" xml:id="p701" end="2053.0s">his side he was in a city to drum up</p>
-      <p begin="2053.0s" xml:id="p702" end="2054.919s">support for his senatorial candidates</p>
-      <p begin="2054.919s" xml:id="p703" end="2057.679s">ahead of the upcoming midterm elections</p>
-      <p begin="2057.679s" xml:id="p704" end="2059.599s">Mr duterte is presently staying at a</p>
-      <p begin="2059.599s" xml:id="p705" end="2061.359s">hotel in Hong Kong under a tight</p>
-      <p begin="2061.359s" xml:id="p706" end="2063.72s">security it's unclear how long he will</p>
-      <p begin="2063.72s" xml:id="p707" end="2065.919s">stay in Hong Kong which is not a party</p>
-      <p begin="2065.919s" xml:id="p708" end="2068.879s">to the ICC the court is investigating</p>
-      <p begin="2068.879s" xml:id="p709" end="2070.599s">the former Philippine president for</p>
-      <p begin="2070.599s" xml:id="p710" end="2072.919s">alleged crimes against humanity related</p>
-      <p begin="2072.919s" xml:id="p711" end="2075.679s">to the deaths during his drug war local</p>
-      <p begin="2075.679s" xml:id="p712" end="2078.0s">records estimate more than 6,000 people</p>
-      <p begin="2078.0s" xml:id="p713" end="2080.639s">have died human rights groups suggest</p>
-      <p begin="2080.639s" xml:id="p714" end="2083.839s">the toll may be much</p>
-      <p begin="2083.839s" xml:id="p715" end="2086.639s">higher evacuation orders in northeastern</p>
-      <p begin="2086.639s" xml:id="p716" end="2089.32s">Japan have now been fully lifted 12 Days</p>
-      <p begin="2089.32s" xml:id="p717" end="2091.04s">After wildf fires broke out in the</p>
-      <p begin="2091.04s" xml:id="p718" end="2093.079s">country the move follows yesterday's</p>
-      <p begin="2093.079s" xml:id="p719" end="2095.32s">announcement that the fires in ofunato</p>
-      <p begin="2095.32s" xml:id="p720" end="2097.359s">city in iwat prefecture had been</p>
-      <p begin="2097.359s" xml:id="p721" end="2099.92s">contained AED well the final orders were</p>
-      <p begin="2099.92s" xml:id="p722" end="2101.96s">lifted at 10:00 a.m. local time for the</p>
-      <p begin="2101.96s" xml:id="p723" end="2105.4s">entire San rucho rori district and three</p>
-      <p begin="2105.4s" xml:id="p724" end="2108.56s">areas in aisai Kito are those affected</p>
-      <p begin="2108.56s" xml:id="p725" end="2111.4s">these affected more than 2,400 residents</p>
-      <p begin="2111.4s" xml:id="p726" end="2114.4s">from nearly 980 households authorities</p>
-      <p begin="2114.4s" xml:id="p727" end="2116.64s">had kept these partial orders in place</p>
-      <p begin="2116.64s" xml:id="p728" end="2118.88s">due to water supply disruptions but</p>
-      <p begin="2118.88s" xml:id="p729" end="2121.079s">officials say water services are ready</p>
-      <p begin="2121.079s" xml:id="p730" end="2123.44s">to be restored the city is keeping</p>
-      <p begin="2123.44s" xml:id="p731" end="2125.72s">shelters open for now while plans are</p>
-      <p begin="2125.72s" xml:id="p732" end="2128.359s">underway to set up temporary houses for</p>
-      <p begin="2128.359s" xml:id="p733" end="2130.48s">those whose homes were damaged the</p>
-      <p begin="2130.48s" xml:id="p734" end="2133.16s">wildfires burned through about 9% of</p>
-      <p begin="2133.16s" xml:id="p735" end="2136.119s">ofunato City leaving one resident Dead</p>
-      <p begin="2136.119s" xml:id="p736" end="2139.4s">The Blaze also damaging 210 buildings</p>
-      <p begin="2139.4s" xml:id="p737" end="2142.88s">including 102 houses 76 houses were</p>
-      <p begin="2142.88s" xml:id="p738" end="2145.8s">completely destroyed firefighters remain</p>
-      <p begin="2145.8s" xml:id="p739" end="2149.839s">on patrol to put out any lingering</p>
-      <p begin="2150.0s" xml:id="p740" end="2152.4s">fires coming up next on East Asia</p>
-      <p begin="2152.4s" xml:id="p741" end="2155.119s">tonight why Chinese foreign arms Imports</p>
-      <p begin="2155.119s" xml:id="p742" end="2157.68s">have dropped more than 60% over the past</p>
-      <p begin="2157.68s" xml:id="p743" end="2159.59s">Last 5</p>
-      <p begin="2159.59s" xml:id="p744" end="2170.329s">[Music]</p>
-      <p begin="2171.839s" xml:id="p745" end="2175.04s">Years Japan today marks the 80th</p>
-      <p begin="2175.04s" xml:id="p746" end="2177.72s">anniversary of the US Air Raid of Tokyo</p>
-      <p begin="2177.72s" xml:id="p747" end="2180.2s">during World War II the single most</p>
-      <p begin="2180.2s" xml:id="p748" end="2183.16s">destructive aerial bombing in history</p>
-      <p begin="2183.16s" xml:id="p749" end="2185.52s">the strikes codenamed operation meeting</p>
-      <p begin="2185.52s" xml:id="p750" end="2188.2s">house saw waves of US military aircraft</p>
-      <p begin="2188.2s" xml:id="p751" end="2190.88s">firebombed the Japanese Capital at night</p>
-      <p begin="2190.88s" xml:id="p752" end="2194.44s">in 1945 the attack and result in Blazers</p>
-      <p begin="2194.44s" xml:id="p753" end="2197.8s">killed and estimated 100,000 people and</p>
-      <p begin="2197.8s" xml:id="p754" end="2200.119s">injured tens of thousands more it was</p>
-      <p begin="2200.119s" xml:id="p755" end="2201.96s">the Second World War's deadliest</p>
-      <p begin="2201.96s" xml:id="p756" end="2204.56s">bombardment using Conventional Weapons</p>
-      <p begin="2204.56s" xml:id="p757" end="2206.599s">and comparable in scale to the atomic</p>
-      <p begin="2206.599s" xml:id="p758" end="2208.76s">bomb Devastation of Hiroshima and</p>
-      <p begin="2208.76s" xml:id="p759" end="2211.599s">Nagasaki a few months later but unlike</p>
-      <p begin="2211.599s" xml:id="p760" end="2213.839s">the nuclear attacks the bombing of Tokyo</p>
-      <p begin="2213.839s" xml:id="p761" end="2215.839s">have remained largely ignored or</p>
-      <p begin="2215.839s" xml:id="p762" end="2218.4s">forgotten in modern times elderly</p>
-      <p begin="2218.4s" xml:id="p763" end="2221.28s">survivors such as a 94-year-old shizuo</p>
-      <p begin="2221.28s" xml:id="p764" end="2224.16s">takauchi were making a last ditch effort</p>
-      <p begin="2224.16s" xml:id="p765" end="2226.52s">to keep those memories alive she has</p>
-      <p begin="2226.52s" xml:id="p766" end="2228.319s">spoken to younger generations of her</p>
-      <p begin="2228.319s" xml:id="p767" end="2230.56s">family's experience and the trauma she</p>
-      <p begin="2230.56s" xml:id="p768" end="2233.68s">experiences until now efforts are also</p>
-      <p begin="2233.68s" xml:id="p769" end="2235.88s">being made to preserve memories at the</p>
-      <p begin="2235.88s" xml:id="p770" end="2238.48s">center of the Tokyo raids and War damage</p>
-      <p begin="2238.48s" xml:id="p771" end="2241.04s">a museum dedicated to collecting records</p>
-      <p begin="2241.04s" xml:id="p772" end="2245.16s">and artifacts of the attack</p>
-      <p begin="2272.92s" xml:id="p773" end="2275.16s">Chinese arms Imports have dramatically</p>
-      <p begin="2275.16s" xml:id="p774" end="2278.2s">dropped by nearly 2third over the past 5</p>
-      <p begin="2278.2s" xml:id="p775" end="2280.2s">years that's according to a report by</p>
-      <p begin="2280.2s" xml:id="p776" end="2281.68s">the Stockholm International Peace</p>
-      <p begin="2281.68s" xml:id="p777" end="2285.64s">Research Institute or Si PRI the change</p>
-      <p begin="2285.64s" xml:id="p778" end="2287.4s">was attributed to China's growing</p>
-      <p begin="2287.4s" xml:id="p779" end="2290.04s">domestic weapons industry with locally</p>
-      <p begin="2290.04s" xml:id="p780" end="2292.48s">designed and produced systems replacing</p>
-      <p begin="2292.48s" xml:id="p781" end="2294.52s">equipment that was previously bought</p>
-      <p begin="2294.52s" xml:id="p782" end="2298.24s">mainly from Russia the sipr report added</p>
-      <p begin="2298.24s" xml:id="p783" end="2300.359s">that China now has the capabilities to</p>
-      <p begin="2300.359s" xml:id="p784" end="2303.119s">make its own engines for combat and</p>
-      <p begin="2303.119s" xml:id="p785" end="2305.52s">transport aircraft as well as ships and</p>
-      <p begin="2305.52s" xml:id="p786" end="2307.8s">helicopters and that Beijing IS F raing</p>
-      <p begin="2307.8s" xml:id="p787" end="2310.119s">out Russian arms Imports and military</p>
-      <p begin="2310.119s" xml:id="p788" end="2313.2s">equipment of European</p>
-      <p begin="2313.4s" xml:id="p789" end="2315.8s">design the Chinese have become more</p>
-      <p begin="2315.8s" xml:id="p790" end="2317.88s">sophisticated but they've also been able</p>
-      <p begin="2317.88s" xml:id="p791" end="2320.0s">to get technology transfer from Russia</p>
-      <p begin="2320.0s" xml:id="p792" end="2321.359s">because Russia has been getting more</p>
-      <p begin="2321.359s" xml:id="p793" end="2324.44s">desperate because the Ukraine war has</p>
-      <p begin="2324.44s" xml:id="p794" end="2327.319s">been causing them economic troubles so</p>
-      <p begin="2327.319s" xml:id="p795" end="2329.28s">China has been benefiting in several</p>
-      <p begin="2329.28s" xml:id="p796" end="2332.99s">ways from the Ukraine war</p>
-      <p begin="2332.99s" xml:id="p797" end="2337.03s">[Music]</p>
-      <p begin="2338.56s" xml:id="p798" end="2340.96s">Ukrainian president volodimir zalinski</p>
-      <p begin="2340.96s" xml:id="p799" end="2343.599s">is leading a delegation to Saudi Arabia</p>
-      <p begin="2343.599s" xml:id="p800" end="2345.4s">where he will first meet with Crown</p>
-      <p begin="2345.4s" xml:id="p801" end="2347.319s">Prince Muhammad bin Salman ahead of</p>
-      <p begin="2347.319s" xml:id="p802" end="2350.16s">talks with the US to discuss a framework</p>
-      <p begin="2350.16s" xml:id="p803" end="2352.96s">for ending the war Russian forces</p>
-      <p begin="2352.96s" xml:id="p804" end="2354.72s">meantime claimed to have captured</p>
-      <p begin="2354.72s" xml:id="p805" end="2357.76s">territory in Ukraine's Sumi region and</p>
-      <p begin="2357.76s" xml:id="p806" end="2360.24s">retook multiple settlements in its KK</p>
-      <p begin="2360.24s" xml:id="p807" end="2363.04s">region mosco's Advance amid the</p>
-      <p begin="2363.04s" xml:id="p808" end="2365.2s">withdrawal of us intelligence sharing</p>
-      <p begin="2365.2s" xml:id="p809" end="2367.04s">and Military assistance for keev</p>
-      <p begin="2367.04s" xml:id="p810" end="2369.24s">threaten Ukraine's sole territorial</p>
-      <p begin="2369.24s" xml:id="p811" end="2371.76s">bargaining chip Ross cullin has more</p>
-      <p begin="2371.76s" xml:id="p812" end="2374.04s">from the Ukrainian</p>
-      <p begin="2374.04s" xml:id="p813" end="2376.44s">Capital well there will be a lot of</p>
-      <p begin="2376.44s" xml:id="p814" end="2378.92s">diplomacy in Saudi Arabia over the next</p>
-      <p begin="2378.92s" xml:id="p815" end="2381.2s">couple of days the Ukrainian president</p>
-      <p begin="2381.2s" xml:id="p816" end="2383.28s">will be there on Monday for oneon-one</p>
-      <p begin="2383.28s" xml:id="p817" end="2385.359s">talks with the Saudi Crown Prince</p>
-      <p begin="2385.359s" xml:id="p818" end="2387.64s">Muhammad bin Salan and traveling with</p>
-      <p begin="2387.64s" xml:id="p819" end="2390.359s">vomir zilinski will be a Ukrainian</p>
-      <p begin="2390.359s" xml:id="p820" end="2392.599s">delegation that on Tuesday in Saudi</p>
-      <p begin="2392.599s" xml:id="p821" end="2395.04s">Arabia will be holding crucial talks</p>
-      <p begin="2395.04s" xml:id="p822" end="2397.04s">with an American delegation it's a</p>
-      <p begin="2397.04s" xml:id="p823" end="2399.92s">chance for Ukraine to try to reshape The</p>
-      <p begin="2399.92s" xml:id="p824" end="2402.16s">Narrative because these meetings on</p>
-      <p begin="2402.16s" xml:id="p825" end="2404.079s">Tuesday will be held at ministerial</p>
-      <p begin="2404.079s" xml:id="p826" end="2406.079s">level neither president Trump nor</p>
-      <p begin="2406.079s" xml:id="p827" end="2408.04s">president zilinski will be attending and</p>
-      <p begin="2408.04s" xml:id="p828" end="2409.68s">we know how much tension there is</p>
-      <p begin="2409.68s" xml:id="p829" end="2412.079s">between the two leaders for the</p>
-      <p begin="2412.079s" xml:id="p830" end="2413.96s">Ukrainian side it will be headed up by</p>
-      <p begin="2413.96s" xml:id="p831" end="2416.4s">Andre SAA the foreign minister and the</p>
-      <p begin="2416.4s" xml:id="p832" end="2418.68s">American delegation will be led by Marco</p>
-      <p begin="2418.68s" xml:id="p833" end="2421.24s">Rubio the US Secretary of State we've</p>
-      <p begin="2421.24s" xml:id="p834" end="2423.04s">been speaking to people here in keev</p>
-      <p begin="2423.04s" xml:id="p835" end="2425.28s">about those upcoming talks the continued</p>
-      <p begin="2425.28s" xml:id="p836" end="2427.72s">impact of the war on them personally and</p>
-      <p begin="2427.72s" xml:id="p837" end="2430.2s">also whether they believe that Ukraine</p>
-      <p begin="2430.2s" xml:id="p838" end="2432.44s">can</p>
-      <p begin="2456.24s" xml:id="p839" end="2460.28s">win for</p>
-      <p begin="2503.28s" xml:id="p840" end="2505.16s">for Ukraine these talks on Tuesday will</p>
-      <p begin="2505.16s" xml:id="p841" end="2507.4s">be an opportunity to put forward ideas</p>
-      <p begin="2507.4s" xml:id="p842" end="2510.44s">on a possible truce a possible ceasefire</p>
-      <p begin="2510.44s" xml:id="p843" end="2512.4s">also what conditions Ukraine would like</p>
-      <p begin="2512.4s" xml:id="p844" end="2514.56s">to see fulfilled in order to be able to</p>
-      <p begin="2514.56s" xml:id="p845" end="2517.24s">create acceptable circumstances for</p>
-      <p begin="2517.24s" xml:id="p846" end="2519.319s">future negotiations with Russia to take</p>
-      <p begin="2519.319s" xml:id="p847" end="2521.92s">place and for the US they will want to</p>
-      <p begin="2521.92s" xml:id="p848" end="2524.079s">hear any possible concessions that ke</p>
-      <p begin="2524.079s" xml:id="p849" end="2526.44s">will be willing to make and also if</p>
-      <p begin="2526.44s" xml:id="p850" end="2528.359s">Ukraine would be willing to sign this</p>
-      <p begin="2528.359s" xml:id="p851" end="2530.68s">proposed minerals deal between the two</p>
-      <p begin="2530.68s" xml:id="p852" end="2534.16s">countries Ross Cullen CNA</p>
-      <p begin="2534.16s" xml:id="p853" end="2537.079s">ke well earlier we spoke with Dr Peter</p>
-      <p begin="2537.079s" xml:id="p854" end="2539.4s">Leighton a visiting fellow of Griffith</p>
-      <p begin="2539.4s" xml:id="p855" end="2541.76s">Asia Institute at Griffith University</p>
-      <p begin="2541.76s" xml:id="p856" end="2543.72s">and he shares his views on Europe's</p>
-      <p begin="2543.72s" xml:id="p857" end="2545.88s">military Readiness the shifting arms</p>
-      <p begin="2545.88s" xml:id="p858" end="2548.4s">trade and the impact of global tensions</p>
-      <p begin="2548.4s" xml:id="p859" end="2550.319s">on defense</p>
-      <p begin="2550.319s" xml:id="p860" end="2554.96s">strategies the Ukrainian War has has I</p>
-      <p begin="2554.96s" xml:id="p861" end="2557.119s">IED Russian forces particularly their</p>
-      <p begin="2557.119s" xml:id="p862" end="2559.68s">mechanized forces and their army their</p>
-      <p begin="2559.68s" xml:id="p863" end="2561.76s">Air Force is sort of 10% lower now</p>
-      <p begin="2561.76s" xml:id="p864" end="2563.839s">because they've lost 10% of their</p>
-      <p begin="2563.839s" xml:id="p865" end="2566.16s">aircraft the problem that the Europeans</p>
-      <p begin="2566.16s" xml:id="p866" end="2568.2s">have though is that if you want to ramp</p>
-      <p begin="2568.2s" xml:id="p867" end="2570.76s">up your Defense Forces quickly that is</p>
-      <p begin="2570.76s" xml:id="p868" end="2572.76s">extremely difficult there's normally a</p>
-      <p begin="2572.76s" xml:id="p869" end="2575.16s">lead time of 3 to 5 years and the</p>
-      <p begin="2575.16s" xml:id="p870" end="2577.68s">Americans can be can be quite slow about</p>
-      <p begin="2577.68s" xml:id="p871" end="2579.76s">delivering weapons you have ordered the</p>
-      <p begin="2579.76s" xml:id="p872" end="2581.64s">Americans only have one production line</p>
-      <p begin="2581.64s" xml:id="p873" end="2584.52s">for for for or most of their kit and</p>
-      <p begin="2584.52s" xml:id="p874" end="2587.28s">they have large orders so ramping up</p>
-      <p begin="2587.28s" xml:id="p875" end="2590.319s">quickly is a big ask Europeans are now</p>
-      <p begin="2590.319s" xml:id="p876" end="2591.96s">shopping around the world and South</p>
-      <p begin="2591.96s" xml:id="p877" end="2593.839s">Korea and various countries of that are</p>
-      <p begin="2593.839s" xml:id="p878" end="2596.599s">the benefits of this all right I'd love</p>
-      <p begin="2596.599s" xml:id="p879" end="2598.2s">to talk about the trickle down effects</p>
-      <p begin="2598.2s" xml:id="p880" end="2600.319s">in a moment but first I just want to ask</p>
-      <p begin="2600.319s" xml:id="p881" end="2602.64s">you about another report that came out a</p>
-      <p begin="2602.64s" xml:id="p882" end="2604.52s">few weeks ago the military balance</p>
-      <p begin="2604.52s" xml:id="p883" end="2606.48s">report it says that Russia's military</p>
-      <p begin="2606.48s" xml:id="p884" end="2608.44s">expenditure is is rising outperforming</p>
-      <p begin="2608.44s" xml:id="p885" end="2611.119s">All European countries combined at this</p>
-      <p begin="2611.119s" xml:id="p886" end="2613.96s">rate how soon can Europe realistically</p>
-      <p begin="2613.96s" xml:id="p887" end="2616.44s">arm itself sufficiently if they are to</p>
-      <p begin="2616.44s" xml:id="p888" end="2619.8s">be concerned with the Russian</p>
-      <p begin="2620.079s" xml:id="p889" end="2623.96s">threat yes so so the Russians are reing</p>
-      <p begin="2623.96s" xml:id="p890" end="2626.079s">but but lots of it tends to be</p>
-      <p begin="2626.079s" xml:id="p891" end="2627.72s">relatively simple equipment for the</p>
-      <p begin="2627.72s" xml:id="p892" end="2629.76s">ground offensive like if you like the</p>
-      <p begin="2629.76s" xml:id="p893" end="2632.0s">artillery shells um and the cost of</p>
-      <p begin="2632.0s" xml:id="p894" end="2634.44s">raising the size of their army is is</p>
-      <p begin="2634.44s" xml:id="p895" end="2636.44s">significant the Europeans certainly have</p>
-      <p begin="2636.44s" xml:id="p896" end="2638.64s">the potential of fing a much larger</p>
-      <p begin="2638.64s" xml:id="p897" end="2640.839s">military and of course the Russians the</p>
-      <p begin="2640.839s" xml:id="p898" end="2642.839s">moment are trying to rebuild their their</p>
-      <p begin="2642.839s" xml:id="p899" end="2645.16s">their military as well having having</p>
-      <p begin="2645.16s" xml:id="p900" end="2647.2s">having suffered losses over the last</p>
-      <p begin="2647.2s" xml:id="p901" end="2648.52s">three</p>
-      <p begin="2648.52s" xml:id="p902" end="2650.76s">years can you talk to us about the</p>
-      <p begin="2650.76s" xml:id="p903" end="2652.88s">opportunities then back to your first</p>
-      <p begin="2652.88s" xml:id="p904" end="2656.48s">point for other arms um makers like</p>
-      <p begin="2656.48s" xml:id="p905" end="2660.92s">India China or even Russia in this</p>
-      <p begin="2661.64s" xml:id="p906" end="2663.599s">juncture I don't think there's much</p>
-      <p begin="2663.599s" xml:id="p907" end="2665.599s">chance of the Russians and it's not just</p>
-      <p begin="2665.599s" xml:id="p908" end="2667.599s">because they're fighting the Russians</p>
-      <p begin="2667.599s" xml:id="p909" end="2669.119s">are having a lot of trouble building</p>
-      <p begin="2669.119s" xml:id="p910" end="2671.559s">sophisticated arms uh the Indians for</p>
-      <p begin="2671.559s" xml:id="p911" end="2673.599s">instance have been uh over the last four</p>
-      <p begin="2673.599s" xml:id="p912" end="2675.839s">or five years have been ordering many</p>
-      <p begin="2675.839s" xml:id="p913" end="2677.04s">arms from</p>
-      <p begin="2677.04s" xml:id="p914" end="2679.92s">Russia uh but but most of the arms that</p>
-      <p begin="2679.92s" xml:id="p915" end="2681.76s">they' have ordered have not turned up</p>
-      <p begin="2681.76s" xml:id="p916" end="2683.24s">they're they're either being used in the</p>
-      <p begin="2683.24s" xml:id="p917" end="2687.079s">war or to rebuild Russian forces so</p>
-      <p begin="2687.079s" xml:id="p918" end="2689.68s">Russia as a as a as a supplier is rather</p>
-      <p begin="2689.68s" xml:id="p919" end="2691.44s">doubtful at the moment it's probably and</p>
-      <p begin="2691.44s" xml:id="p920" end="2693.76s">unreliable while looking forward I think</p>
-      <p begin="2693.76s" xml:id="p921" end="2695.8s">there's sort of options for say South</p>
-      <p begin="2695.8s" xml:id="p922" end="2699.24s">Korea Japan maybe um there there's a</p>
-      <p begin="2699.24s" xml:id="p923" end="2701.8s">range of countries I mean um the the the</p>
-      <p begin="2701.8s" xml:id="p924" end="2703.72s">Europeans as you said France is the</p>
-      <p begin="2703.72s" xml:id="p925" end="2705.839s">France is the second largest</p>
-      <p begin="2705.839s" xml:id="p926" end="2708.16s">exporter so other countries around the</p>
-      <p begin="2708.16s" xml:id="p927" end="2710.48s">world uh May benefit Australia for</p>
-      <p begin="2710.48s" xml:id="p928" end="2712.24s">instance there there's there's a few</p>
-      <p begin="2712.24s" xml:id="p929" end="2714.88s">arms manufactors here who are exporting</p>
-      <p begin="2714.88s" xml:id="p930" end="2719.16s">artillery shells Etc into into Germany</p>
-      <p begin="2719.16s" xml:id="p931" end="2722.0s">all right U well the war in Ukraine Dr</p>
-      <p begin="2722.0s" xml:id="p932" end="2724.359s">Leighton has played a major role in</p>
-      <p begin="2724.359s" xml:id="p933" end="2727.079s">improving us dominance in the arms trade</p>
-      <p begin="2727.079s" xml:id="p934" end="2729.92s">so how will a potential ceasefire that's</p>
-      <p begin="2729.92s" xml:id="p935" end="2733.0s">currently being worked on in Kev affect</p>
-      <p begin="2733.0s" xml:id="p936" end="2736.64s">defense firms in the United</p>
-      <p begin="2736.92s" xml:id="p937" end="2739.359s">States uh this is this is this is an</p>
-      <p begin="2739.359s" xml:id="p938" end="2740.599s">interesting question because a couple of</p>
-      <p begin="2740.599s" xml:id="p939" end="2744.4s">tensions here um so at the present time</p>
-      <p begin="2744.4s" xml:id="p940" end="2747.72s">the the uh Europeans are principally</p>
-      <p begin="2747.72s" xml:id="p941" end="2750.28s">buying as you said sort of American Arms</p>
-      <p begin="2750.28s" xml:id="p942" end="2752.72s">because in the age of globalization that</p>
-      <p begin="2752.72s" xml:id="p943" end="2754.96s">we've just left the the Americans were</p>
-      <p begin="2754.96s" xml:id="p944" end="2757.16s">pretty much a Sal sour supplier and the</p>
-      <p begin="2757.16s" xml:id="p945" end="2758.8s">competitive advantage that that that the</p>
-      <p begin="2758.8s" xml:id="p946" end="2761.119s">Americans held was very high the</p>
-      <p begin="2761.119s" xml:id="p947" end="2763.96s">Europeans were unconcerned about any um</p>
-      <p begin="2763.96s" xml:id="p948" end="2766.44s">American dominance to sort of to a point</p>
-      <p begin="2766.44s" xml:id="p949" end="2768.28s">because they they had strong confidence</p>
-      <p begin="2768.28s" xml:id="p950" end="2771.76s">they could rely upon the Americans that</p>
-      <p begin="2771.76s" xml:id="p951" end="2773.599s">uh that confidence about relying on the</p>
-      <p begin="2773.599s" xml:id="p952" end="2776.24s">Americans is now Vanishing daily and the</p>
-      <p begin="2776.24s" xml:id="p953" end="2778.4s">and the Americans uh cutting off the</p>
-      <p begin="2778.4s" xml:id="p954" end="2782.04s">intelligence data has really dealt at a</p>
-      <p begin="2782.04s" xml:id="p955" end="2785.359s">are are a big blow so the Europeans for</p>
-      <p begin="2785.359s" xml:id="p956" end="2787.079s">their more sophisticated equipment such</p>
-      <p begin="2787.079s" xml:id="p957" end="2790.359s">as the F35 fighter are now are getting</p>
-      <p begin="2790.359s" xml:id="p958" end="2793.0s">concerned about well the Americans have</p>
-      <p begin="2793.0s" xml:id="p959" end="2794.4s">the ability with their software and</p>
-      <p begin="2794.4s" xml:id="p960" end="2796.0s">their various means that they could</p>
-      <p begin="2796.0s" xml:id="p961" end="2798.24s">actually stop European fighter fleets</p>
-      <p begin="2798.24s" xml:id="p962" end="2799.96s">from operating that there's a kill</p>
-      <p begin="2799.96s" xml:id="p963" end="2802.28s">switch there so the Europeans think at</p>
-      <p begin="2802.28s" xml:id="p964" end="2805.16s">least with that idea in their mind if</p>
-      <p begin="2805.16s" xml:id="p965" end="2807.44s">there is peace in the Ukraine and it</p>
-      <p begin="2807.44s" xml:id="p966" end="2809.319s">gives them a breathing space the</p>
-      <p begin="2809.319s" xml:id="p967" end="2811.44s">Europeans will probably be be more</p>
-      <p begin="2811.44s" xml:id="p968" end="2813.079s">inclined to build up their own arms</p>
-      <p begin="2813.079s" xml:id="p969" end="2814.8s">industry and move away from the</p>
-      <p begin="2814.8s" xml:id="p970" end="2818.079s">Americans as fast as they can</p>
-      <p begin="2818.079s" xml:id="p971" end="2821.0s">and about the NATO countries involved in</p>
-      <p begin="2821.0s" xml:id="p972" end="2823.559s">this whole discussion of the war are</p>
-      <p begin="2823.559s" xml:id="p973" end="2825.76s">they likely to give in to president</p>
-      <p begin="2825.76s" xml:id="p974" end="2828.52s">Trump's call of buying even more arms</p>
-      <p begin="2828.52s" xml:id="p975" end="2831.24s">from Washington what's your take on this</p>
-      <p begin="2831.24s" xml:id="p976" end="2833.119s">especially in the face of you know</p>
-      <p begin="2833.119s" xml:id="p977" end="2836.64s">tariffs and and discussions like</p>
-      <p begin="2836.64s" xml:id="p978" end="2840.0s">that it does seem unlikely and I suppose</p>
-      <p begin="2840.0s" xml:id="p979" end="2841.839s">you can see that in the share market in</p>
-      <p begin="2841.839s" xml:id="p980" end="2843.52s">that European Defense stocks have risen</p>
-      <p begin="2843.52s" xml:id="p981" end="2845.88s">sharply and American defense stocks are</p>
-      <p begin="2845.88s" xml:id="p982" end="2850.2s">falling so I think so I think the idea</p>
-      <p begin="2850.2s" xml:id="p983" end="2852.76s">it's the old story of of the Trump ad</p>
-      <p begin="2852.76s" xml:id="p984" end="2854.599s">Administration there's a lot of tensions</p>
-      <p begin="2854.599s" xml:id="p985" end="2856.4s">and conflicts there that the left hand</p>
-      <p begin="2856.4s" xml:id="p986" end="2859.0s">doesn't necessarily support the the the</p>
-      <p begin="2859.0s" xml:id="p987" end="2860.96s">right hand so I don't think that the</p>
-      <p begin="2860.96s" xml:id="p988" end="2861.96s">Europeans will be looking to the</p>
-      <p begin="2861.96s" xml:id="p989" end="2864.48s">Americans to buy arms first unless the</p>
-      <p begin="2864.48s" xml:id="p990" end="2866.48s">Americans can reassure them and that</p>
-      <p begin="2866.48s" xml:id="p991" end="2868.04s">would require a fair bit of doing but</p>
-      <p begin="2868.04s" xml:id="p992" end="2869.8s">could be done and unless they can</p>
-      <p begin="2869.8s" xml:id="p993" end="2872.839s">expedite de expedite the deliveries to</p>
-      <p begin="2872.839s" xml:id="p994" end="2875.559s">them for instance the estonians wanted</p>
-      <p begin="2875.559s" xml:id="p995" end="2877.0s">to buy want to buy some of the these</p>
-      <p begin="2877.0s" xml:id="p996" end="2880.119s">high Mars rocket uh rocket systems and</p>
-      <p begin="2880.119s" xml:id="p997" end="2881.28s">they've been having a lot of trouble</p>
-      <p begin="2881.28s" xml:id="p998" end="2884.04s">getting good de good delivery dates from</p>
-      <p begin="2884.04s" xml:id="p999" end="2885.4s">the Americans and now talking about</p>
-      <p begin="2885.4s" xml:id="p1000" end="2887.16s">buying them from the south Koreans I</p>
-      <p begin="2887.16s" xml:id="p1001" end="2888.16s">think that they're doing a bit of a</p>
-      <p begin="2888.16s" xml:id="p1002" end="2889.76s">bargaining approach there but</p>
-      <p begin="2889.76s" xml:id="p1003" end="2891.8s">nonetheless it does show there are some</p>
-      <p begin="2891.8s" xml:id="p1004" end="2893.76s">options out there and countries like</p>
-      <p begin="2893.76s" xml:id="p1005" end="2895.8s">Poland have certainly moved to buy South</p>
-      <p begin="2895.8s" xml:id="p1006" end="2899.0s">Korean gear as well so I think that the</p>
-      <p begin="2899.0s" xml:id="p1007" end="2902.119s">American Arms networks into uh arm sales</p>
-      <p begin="2902.119s" xml:id="p1008" end="2904.24s">into Europe have reached a high point</p>
-      <p begin="2904.24s" xml:id="p1009" end="2905.88s">and they'll probably probably declin</p>
-      <p begin="2905.88s" xml:id="p1010" end="2908.04s">from here</p>
-      <p begin="2908.04s" xml:id="p1011" end="2909.96s">and the wraps up East Asia tonight this</p>
-      <p begin="2909.96s" xml:id="p1012" end="2911.559s">Monday don't forget your headlines</p>
-      <p begin="2911.559s" xml:id="p1013" end="2914.24s">anytime at cna. Asia and look us up on</p>
-      <p begin="2914.24s" xml:id="p1014" end="2915.88s">Facebook and on YouTube thanks for</p>
-      <p begin="2915.88s" xml:id="p1015" end="2918.88s">watching</p>
-      <p begin="2919.16s" xml:id="p1016" end="2933.31s">[Music]</p>
+      <p begin="5.106s" xml:id="p0" end="6.33s" region="between_m3_m2_1">LARRY: WE WELCOME TO THE SHOW</p>
+      <p begin="6.341s" xml:id="p1" end="7.641s" region="between_m3_m2_1">LARRY: WE WELCOME TO THE SHOW<br />AND SPECIAL INTERVIEW WITH</p>
+      <p begin="7.675s" xml:id="p2" end="9.199s" region="middle3">AND SPECIAL INTERVIEW WITH<br />MR. ELON MUSK WHO OF COURSE IS</p>
+      <p begin="9.21s" xml:id="p3" end="12.936s" region="middle3">MR. ELON MUSK WHO OF COURSE IS<br />FAMED TRUMP ADVISER AND CEO OF</p>
+      <p begin="12.947s" xml:id="p4" end="16.116s" region="between_m3_m2_1">FAMED TRUMP ADVISER AND CEO OF<br />TESLA AND SPACEX, CHAIR OF X</p>
+      <p begin="16.117s" xml:id="p5" end="17.25s" region="between_m3_m2_1">TESLA AND SPACEX, CHAIR OF X<br />CORP. AND THANK YOU FOR BEING</p>
+      <p begin="17.285s" xml:id="p6" end="17.908s" region="between_m3_m2_1">CORP. AND THANK YOU FOR BEING<br />HERE.</p>
+      <p begin="17.919s" xml:id="p7" end="18.942s" region="between_m3_m2_1">HERE.<br />&gt;&gt; THANKS FOR HAVING ME.</p>
+      <p begin="18.953s" xml:id="p8" end="20.154s" region="between_m3_m2_1">&gt;&gt; THANKS FOR HAVING ME.<br />LARRY: I WANT TO BEGIN AMONG</p>
+      <p begin="20.188s" xml:id="p9" end="22.322s" region="between_m3_m2_1">LARRY: I WANT TO BEGIN AMONG<br />OTHER THINGS AND EVERYONE IS</p>
+      <p begin="22.323s" xml:id="p10" end="23.446s" region="middle3">OTHER THINGS AND EVERYONE IS<br />ATTACKING YOU FOR YOUR POSITION</p>
+      <p begin="23.457s" xml:id="p11" end="24.214s" region="middle3">ATTACKING YOU FOR YOUR POSITION<br />IN THE GOVERNMENT.</p>
+      <p begin="24.225s" xml:id="p12" end="26.093s" region="middle3">IN THE GOVERNMENT.<br />THERE WAS A CYBER ATTACK ON X</p>
+      <p begin="26.127s" xml:id="p13" end="28.619s" region="middle3">THERE WAS A CYBER ATTACK ON X<br />LARRY, WHICH SHUT IT DOWN AND</p>
+      <p begin="28.63s" xml:id="p14" end="30.153s" region="middle3">LARRY, WHICH SHUT IT DOWN AND<br />MAY HAVE BEEN FOREIGN SOURCED.</p>
+      <p begin="30.164s" xml:id="p15" end="31.198s" region="between_m3_m2_1">MAY HAVE BEEN FOREIGN SOURCED.<br />THAT’S A BIG STORY.</p>
+      <p begin="31.232s" xml:id="p16" end="32.656s" region="between_m3_m2_1">THAT’S A BIG STORY.<br />YOU WANT TO GIVE US A MOMENT ON</p>
+      <p begin="32.667s" xml:id="p17" end="33.733s" region="middle2">YOU WANT TO GIVE US A MOMENT ON<br />THAT?</p>
+      <p begin="33.735s" xml:id="p18" end="35.502s" region="middle2">THAT?<br />&gt;&gt; WELL, WE DON’T -- WE’RE NOT</p>
+      <p begin="35.536s" xml:id="p19" end="37.427s" region="between_m3_m2_2">&gt;&gt; WELL, WE DON’T -- WE’RE NOT<br />SURE WHAT HAPPENED BUT THERE WAS</p>
+      <p begin="37.438s" xml:id="p20" end="39.663s" region="middle2">SURE WHAT HAPPENED BUT THERE WAS<br />A MASSIVE CYBER ATTACK TO TRY</p>
+      <p begin="39.674s" xml:id="p21" end="40.273s" region="middle2">A MASSIVE CYBER ATTACK TO TRY<br />AND BRING DOWN.</p>
+      <p begin="40.308s" xml:id="p22" end="43.2s" region="middle2">AND BRING DOWN.<br />X SYSTEM WITH IP ADDRESSES</p>
+      <p begin="43.211s" xml:id="p23" end="44.735s" region="middle2">X SYSTEM WITH IP ADDRESSES<br />ORIGINATING IN THE UKRAINE</p>
+      <p begin="44.746s" xml:id="p24" end="45.112s" region="middle2">ORIGINATING IN THE UKRAINE<br />AREA.</p>
+      <p begin="45.113s" xml:id="p25" end="46.77s" region="middle2">AREA.<br />LARRY: OH, THAT’S YOUR</p>
+      <p begin="46.781s" xml:id="p26" end="47.114s" region="middle2">LARRY: OH, THAT’S YOUR<br />SUSPICION.</p>
+      <p begin="47.148s" xml:id="p27" end="48.715s" region="middle2">SUSPICION.<br />IS THE WEBSITE -- IS THE</p>
+      <p begin="48.716s" xml:id="p28" end="50.407s" region="middle2">IS THE WEBSITE -- IS THE<br />INTERNET UP AND UP YET?</p>
+      <p begin="50.418s" xml:id="p29" end="50.874s" region="between_m3_m2_2">INTERNET UP AND UP YET?<br />&gt;&gt; IT’S UP.</p>
+      <p begin="50.885s" xml:id="p30" end="51.785s" region="between_m3_m2_2">&gt;&gt; IT’S UP.<br />LARRY: OKAY, GOOD.</p>
+      <p begin="51.819s" xml:id="p31" end="53.143s" region="between_m3_m2_2">LARRY: OKAY, GOOD.<br />I WAS JUST LOOKING BACK.</p>
+      <p begin="53.154s" xml:id="p32" end="57.047s" region="middle2">I WAS JUST LOOKING BACK.<br />LET ME SEE IF I GET THIS RIGHT,</p>
+      <p begin="57.058s" xml:id="p33" end="59.082s" region="middle2">LET ME SEE IF I GET THIS RIGHT,<br />THEY’RE SETTING FIRE TO VARIOUS</p>
+      <p begin="59.093s" xml:id="p34" end="60.527s" region="middle2">THEY’RE SETTING FIRE TO VARIOUS<br />TESLA CHARGING STATIONS NEAR</p>
+      <p begin="60.562s" xml:id="p35" end="61.052s" region="middle2">TESLA CHARGING STATIONS NEAR<br />BOSTON.</p>
+      <p begin="61.063s" xml:id="p36" end="65.732s" region="between_m3_m2_2">BOSTON.<br />SHOTS WERE FIRED AT A TESLA</p>
+      <p begin="65.733s" xml:id="p37" end="67.767s" region="middle2">SHOTS WERE FIRED AT A TESLA<br />DEALERSHIP IN OREGON.</p>
+      <p begin="67.769s" xml:id="p38" end="69.293s" region="middle2">DEALERSHIP IN OREGON.<br />VARIOUS NONVIOLENT --</p>
+      <p begin="69.304s" xml:id="p39" end="70.003s" region="middle2">VARIOUS NONVIOLENT --<br />&gt;&gt; SHOTS FIRED.</p>
+      <p begin="70.038s" xml:id="p40" end="71.462s" region="middle2">&gt;&gt; SHOTS FIRED.<br />NOT A METAPHOR.</p>
+      <p begin="71.473s" xml:id="p41" end="74.732s" region="middle2">NOT A METAPHOR.<br />LARRY: SHOTS FIRES, YES.</p>
+      <p begin="74.743s" xml:id="p42" end="75.7s" region="middle2">LARRY: SHOTS FIRES, YES.<br />DOWNTOWN NEW YORK MARCHING</p>
+      <p begin="75.711s" xml:id="p43" end="78.746s" region="middle2">DOWNTOWN NEW YORK MARCHING<br />AGAINST THE TESLA SHOWROOM.</p>
+      <p begin="78.78s" xml:id="p44" end="80.371s" region="middle2">AGAINST THE TESLA SHOWROOM.<br />YOUR STOCK IS WAY DOWN, YOU’VE</p>
+      <p begin="80.382s" xml:id="p45" end="82.383s" region="middle2">YOUR STOCK IS WAY DOWN, YOU’VE<br />BEEN CRITICIZED LEFT AND RIGHT.</p>
+      <p begin="82.384s" xml:id="p46" end="84.385s" region="middle2">BEEN CRITICIZED LEFT AND RIGHT.<br />&gt;&gt; LOOK ON THE BRIGHT SIDE --</p>
+      <p begin="84.386s" xml:id="p47" end="92.316s" region="middle2">&gt;&gt; LOOK ON THE BRIGHT SIDE --<br />LARRY: WHY ARE YOU DOING THIS</p>
+      <p begin="92.327s" xml:id="p48" end="94.428s" region="middle2">LARRY: WHY ARE YOU DOING THIS<br />&gt;&gt; ALWAYS LOOK ON THE BRIGHT</p>
+      <p begin="94.462s" xml:id="p49" end="96.787s" region="middle2">&gt;&gt; ALWAYS LOOK ON THE BRIGHT<br />SIDES OF LIFE.</p>
+      <p begin="96.798s" xml:id="p50" end="99.823s" region="middle2">SIDES OF LIFE.<br />BESIDES THAT, HOW’SY DAY?</p>
+      <p begin="99.834s" xml:id="p51" end="102.693s" region="middle2">BESIDES THAT, HOW’SY DAY?<br />LARRY: WHAT MOTIVATES YOU TO DO</p>
+      <p begin="102.704s" xml:id="p52" end="103.194s" region="between_m3_m2_2">LARRY: WHAT MOTIVATES YOU TO DO<br />THIS?</p>
+      <p begin="103.205s" xml:id="p53" end="103.995s" region="between_m3_m2_2">THIS?<br />IT’S TOUGH STUFF.</p>
+      <p begin="104.006s" xml:id="p54" end="105.696s" region="between_m3_m2_2">IT’S TOUGH STUFF.<br />&gt;&gt; YEAH, BUT I THINK WE’RE DOING</p>
+      <p begin="105.707s" xml:id="p55" end="106.44s" region="between_m3_m2_2">&gt;&gt; YEAH, BUT I THINK WE’RE DOING<br />THE RIGHT THING HERE.</p>
+      <p begin="106.475s" xml:id="p56" end="108.8s" region="between_m3_m2_2">THE RIGHT THING HERE.<br />THERE’S BEEN A TREMENDOUS AMOUNT</p>
+      <p begin="108.811s" xml:id="p57" end="113.037s" region="between_m3_m2_2">THERE’S BEEN A TREMENDOUS AMOUNT<br />OF WASTE AND FRAUD IN THE</p>
+      <p begin="113.048s" xml:id="p58" end="113.414s" region="between_m3_m2_2">OF WASTE AND FRAUD IN THE<br />GOVERNMENT.</p>
+      <p begin="113.415s" xml:id="p59" end="114.048s" region="between_m3_m2_2">GOVERNMENT.<br />WHEN YOU WERE PART OF THE</p>
+      <p begin="114.082s" xml:id="p60" end="116.54s" region="between_m3_m2_2">WHEN YOU WERE PART OF THE<br />GOVERNMENT, YOU SAW A LOT OF</p>
+      <p begin="116.551s" xml:id="p61" end="116.884s" region="between_m3_m2_2">GOVERNMENT, YOU SAW A LOT OF<br />THAT.</p>
+      <p begin="116.918s" xml:id="p62" end="118.842s" region="between_m3_m2_2">THAT.<br />THERE’S BEEN -- IF YOU LOOK AT</p>
+      <p begin="118.853s" xml:id="p63" end="119.787s" region="between_m3_m2_2">THERE’S BEEN -- IF YOU LOOK AT<br />INSPECTOR GENERAL REPORTS AND</p>
+      <p begin="119.821s" xml:id="p64" end="127.594s" region="between_m3_m2_2">INSPECTOR GENERAL REPORTS AND<br />THE GOVERNMENT ACCOUNTABILITY</p>
+      <p begin="127.596s" xml:id="p65" end="129.897s" region="middle2">THE GOVERNMENT ACCOUNTABILITY<br />OFFICE, THERE’S BEEN MANY AUDITS</p>
+      <p begin="129.898s" xml:id="p66" end="131.455s" region="middle2">OFFICE, THERE’S BEEN MANY AUDITS<br />POINTED OUT WITH WASTE AND FRAUD</p>
+      <p begin="131.466s" xml:id="p67" end="134.602s" region="middle2">POINTED OUT WITH WASTE AND FRAUD<br />AND REPORT BY THE GAO,</p>
+      <p begin="134.636s" xml:id="p68" end="135.493s" region="middle2">AND REPORT BY THE GAO,<br />GOVERNMENT ACTABILITY OFFICE</p>
+      <p begin="135.504s" xml:id="p69" end="136.761s" region="middle2">GOVERNMENT ACTABILITY OFFICE<br />LAST YEAR.</p>
+      <p begin="136.772s" xml:id="p70" end="138.005s" region="middle2">LAST YEAR.<br />ACCOUNTABILITY OFFICE, DURING</p>
+      <p begin="138.04s" xml:id="p71" end="140.832s" region="middle2">ACCOUNTABILITY OFFICE, DURING<br />THE BIDEN ADMINISTRATION</p>
+      <p begin="140.843s" xml:id="p72" end="141.866s" region="between_m3_m2_2">THE BIDEN ADMINISTRATION<br />ESTIMATED GOVERNMENT FRAUD TO BE</p>
+      <p begin="141.877s" xml:id="p73" end="144.536s" region="middle2">ESTIMATED GOVERNMENT FRAUD TO BE<br />HALF A TRILLION.</p>
+      <p begin="144.547s" xml:id="p74" end="146.48s" region="middle2">HALF A TRILLION.<br />SO JUST BECAUSE IT’S NOT A TRUMP</p>
+      <p begin="146.515s" xml:id="p75" end="147.772s" region="between_m3_m2_2">SO JUST BECAUSE IT’S NOT A TRUMP<br />ADMINISTRATION, THAT’S A BIDEN</p>
+      <p begin="147.783s" xml:id="p76" end="148.683s" region="middle2">ADMINISTRATION, THAT’S A BIDEN<br />ADMINISTRATION THING.</p>
+      <p begin="148.717s" xml:id="p77" end="151.375s" region="middle2">ADMINISTRATION THING.<br />SO ALL WE’RE TRYING TO DO IS GET</p>
+      <p begin="151.386s" xml:id="p78" end="154.555s" region="middle2">SO ALL WE’RE TRYING TO DO IS GET<br />THAT NUMBER DOWN TO MUCH SMALLER</p>
+      <p begin="154.556s" xml:id="p79" end="156.69s" region="between_m3_m2_2">THAT NUMBER DOWN TO MUCH SMALLER<br />FIGURE, SAVE MONEY FOR THE</p>
+      <p begin="156.725s" xml:id="p80" end="158.182s" region="between_m3_m2_2">FIGURE, SAVE MONEY FOR THE<br />AMERICAN TAXPAYER AND STOP MONEY</p>
+      <p begin="158.193s" xml:id="p81" end="161.295s" region="middle2">AMERICAN TAXPAYER AND STOP MONEY<br />BEING SPENT ON THINGS THAT ARE</p>
+      <p begin="161.33s" xml:id="p82" end="163.788s" region="middle2">BEING SPENT ON THINGS THAT ARE<br />VERY FEW TAXPAYERS WOULD AGREE</p>
+      <p begin="163.799s" xml:id="p83" end="165.233s" region="middle2">VERY FEW TAXPAYERS WOULD AGREE<br />MAKE SENSE AND TRANSGENDER</p>
+      <p begin="165.267s" xml:id="p84" end="169.694s" region="middle2">MAKE SENSE AND TRANSGENDER<br />ANIMAL SURGERIES.</p>
+      <p begin="169.705s" xml:id="p85" end="171.139s" region="between_m3_m2_2">ANIMAL SURGERIES.<br />WHY ARE AMERICAN TAX DOLLARS</p>
+      <p begin="171.173s" xml:id="p86" end="176.401s" region="between_m3_m2_2">WHY ARE AMERICAN TAX DOLLARS<br />BEING SPENT ON THOSE?</p>
+      <p begin="176.412s" xml:id="p87" end="178.846s" region="between_m3_m2_2">BEING SPENT ON THOSE?<br />AND L PRESIDENT HAS DONE THROUGH</p>
+      <p begin="178.881s" xml:id="p88" end="181.706s" region="between_m3_m2_2">AND L PRESIDENT HAS DONE THROUGH<br />A LONG LIST OF ABSURD THINGS AND</p>
+      <p begin="181.717s" xml:id="p89" end="183.752s" region="middle2">A LONG LIST OF ABSURD THINGS AND<br />20 MILLION PEOPLE DEAD MARKED AS</p>
+      <p begin="183.786s" xml:id="p90" end="186.521s" region="middle2">20 MILLION PEOPLE DEAD MARKED AS<br />ALIVE IN SOCIAL SECURITY DATA</p>
+      <p begin="186.522s" xml:id="p91" end="198.099s" region="middle2">ALIVE IN SOCIAL SECURITY DATA<br />BASE.</p>
+      <p begin="198.1s" xml:id="p92" end="199.958s" region="middle2">BASE.<br />100MILLION IN LOANS GIVEN TO</p>
+      <p begin="199.969s" xml:id="p93" end="201.169s" region="middle2">100MILLION IN LOANS GIVEN TO<br />PEOPLE 11 AND UNDER.</p>
+      <p begin="201.17s" xml:id="p94" end="207.699s" region="middle2">PEOPLE 11 AND UNDER.<br />THESE MUST BE VERY SURPRISING</p>
+      <p begin="207.71s" xml:id="p95" end="209.734s" region="middle2">THESE MUST BE VERY SURPRISING<br />ENTREPRENEURIAL 8 YEAR-OLDS.</p>
+      <p begin="209.745s" xml:id="p96" end="211.203s" region="between_m3_m2_2">ENTREPRENEURIAL 8 YEAR-OLDS.<br />LARRY: VERY SMART ONES.</p>
+      <p begin="211.214s" xml:id="p97" end="212.681s" region="between_m3_m2_2">LARRY: VERY SMART ONES.<br />&gt;&gt; YES, ENORMOUS NUMBER OF</p>
+      <p begin="212.715s" xml:id="p98" end="214.306s" region="middle2">&gt;&gt; YES, ENORMOUS NUMBER OF<br />PEOPLE MARKED ALIVE THAT ARE</p>
+      <p begin="214.317s" xml:id="p99" end="214.683s" region="middle2">PEOPLE MARKED ALIVE THAT ARE<br />160.</p>
+      <p begin="214.684s" xml:id="p100" end="215.941s" region="middle2">160.<br />HE DIDN’T KNOW THE COUNTRY WAS</p>
+      <p begin="215.952s" xml:id="p101" end="216.351s" region="middle2">HE DIDN’T KNOW THE COUNTRY WAS<br />THAT HEALTHY.</p>
+      <p begin="216.385s" xml:id="p102" end="216.941s" region="middle2">THAT HEALTHY.<br />LARRY: YES.</p>
+      <p begin="216.952s" xml:id="p103" end="217.952s" region="between_m3_m2_2">LARRY: YES.<br />&gt;&gt; YOU KNOW.</p>
+      <p begin="217.987s" xml:id="p104" end="219.144s" region="middle2">&gt;&gt; YOU KNOW.<br />LARRY: SO DEMYSTIFY THIS.</p>
+      <p begin="219.155s" xml:id="p105" end="220.389s" region="middle2">LARRY: SO DEMYSTIFY THIS.<br />HOW DO YOU DO THIS?</p>
+      <p begin="220.423s" xml:id="p106" end="224.149s" region="middle2">HOW DO YOU DO THIS?<br />HOW BIG IS YOUR TEAM?</p>
+      <p begin="224.16s" xml:id="p107" end="225.718s" region="middle2">HOW BIG IS YOUR TEAM?<br />WHERE DID YOU RECRUIT MOST OF</p>
+      <p begin="225.729s" xml:id="p108" end="226.261s" region="between_m3_m2_2">WHERE DID YOU RECRUIT MOST OF<br />THEM FROM?</p>
+      <p begin="226.295s" xml:id="p109" end="228.353s" region="middle2">THEM FROM?<br />WHAT IS IT THAT MAKES YOU CHOOSE</p>
+      <p begin="228.364s" xml:id="p110" end="229.798s" region="middle2">WHAT IS IT THAT MAKES YOU CHOOSE<br />THE TREASURY OR SOCIAL SECURITY</p>
+      <p begin="229.832s" xml:id="p111" end="231.256s" region="middle2">THE TREASURY OR SOCIAL SECURITY<br />OR USAID?</p>
+      <p begin="231.267s" xml:id="p112" end="232.201s" region="middle2">OR USAID?<br />HOW DOES IT WORK?</p>
+      <p begin="232.235s" xml:id="p113" end="242.067s" region="between_m3_m2_2">HOW DOES IT WORK?<br />LET THE PUBLIC KNOW, PLEASE.</p>
+      <p begin="242.078s" xml:id="p114" end="243.479s" region="between_m3_m2_2">LET THE PUBLIC KNOW, PLEASE.<br />&gt;&gt; WELL, WE JUST LOOK AT</p>
+      <p begin="243.513s" xml:id="p115" end="245.037s" region="between_m3_m2_2">&gt;&gt; WELL, WE JUST LOOK AT<br />EXECUTIVE ORDERS AND FOLLOWING</p>
+      <p begin="245.048s" xml:id="p116" end="247.172s" region="between_m3_m2_2">EXECUTIVE ORDERS AND FOLLOWING<br />THE MONEY AND LOOKING CLOSELY AT</p>
+      <p begin="247.183s" xml:id="p117" end="248.15s" region="between_m3_m2_2">THE MONEY AND LOOKING CLOSELY AT<br />USAID AND VIOLATING THE</p>
+      <p begin="248.151s" xml:id="p118" end="252.521s" region="between_m3_m2_2">USAID AND VIOLATING THE<br />PRESIDENT’S EXECUTIVE ORDERS TO</p>
+      <p begin="252.555s" xml:id="p119" end="254.446s" region="between_m3_m2_2">PRESIDENT’S EXECUTIVE ORDERS TO<br />SUSPEND FOREIGN AID -- WHAT’S</p>
+      <p begin="254.457s" xml:id="p120" end="255.714s" region="between_m3_m2_2">SUSPEND FOREIGN AID -- WHAT’S<br />CALLED FOREIGN AID IN OUR VIEW</p>
+      <p begin="255.725s" xml:id="p121" end="259.318s" region="between_m3_m2_2">CALLED FOREIGN AID IN OUR VIEW<br />IS A LOT OF CORRUPTION.</p>
+      <p begin="259.329s" xml:id="p122" end="261.587s" region="between_m3_m2_2">IS A LOT OF CORRUPTION.<br />SO WHAT WE SAW WAS A LARGE</p>
+      <p begin="261.598s" xml:id="p123" end="265.133s" region="between_m3_m2_2">SO WHAT WE SAW WAS A LARGE<br />AMOUNT OF MONEY BEING SENT TO</p>
+      <p begin="265.168s" xml:id="p124" end="265.858s" region="between_m3_m2_2">AMOUNT OF MONEY BEING SENT TO<br />NONGOVERNMENTAL ORGANIZATIONS</p>
+      <p begin="265.869s" xml:id="p125" end="267.493s" region="between_m3_m2_2">NONGOVERNMENTAL ORGANIZATIONS<br />BUT IT’S A -- THIS BY THE WAY IS</p>
+      <p begin="267.504s" xml:id="p126" end="268.937s" region="middle2">BUT IT’S A -- THIS BY THE WAY IS<br />ONE OF THE BIGGEST SOURCES OF</p>
+      <p begin="268.972s" xml:id="p127" end="271.864s" region="middle2">ONE OF THE BIGGEST SOURCES OF<br />FRAUD IN THE WORLD IS GOVERNMENT</p>
+      <p begin="271.875s" xml:id="p128" end="272.698s" region="middle2">FRAUD IN THE WORLD IS GOVERNMENT<br />FUNDED, NONGOVERNMENTAL</p>
+      <p begin="272.709s" xml:id="p129" end="273.109s" region="middle2">FUNDED, NONGOVERNMENTAL<br />ORGANIZATIONS.</p>
+      <p begin="273.143s" xml:id="p130" end="275.735s" region="middle2">ORGANIZATIONS.<br />THIS IS A GIGANTIC FRAUD</p>
+      <p begin="275.746s" xml:id="p131" end="277.97s" region="middle2">THIS IS A GIGANTIC FRAUD<br />LOOPHOLE WHERE THE GOVERNMENT</p>
+      <p begin="277.981s" xml:id="p132" end="282.107s" region="middle2">LOOPHOLE WHERE THE GOVERNMENT<br />CAN GIVE MONEY TO AN NGO AND</p>
+      <p begin="282.118s" xml:id="p133" end="283.185s" region="middle2">CAN GIVE MONEY TO AN NGO AND<br />THEN THERE’S NO CONTROLS OVER</p>
+      <p begin="283.186s" xml:id="p134" end="285.487s" region="between_m3_m2_2">THEN THERE’S NO CONTROLS OVER<br />THE NGO AND THEY’VE GIVEN</p>
+      <p begin="285.489s" xml:id="p135" end="286.98s" region="middle2">THE NGO AND THEY’VE GIVEN<br />BILLIONS AND WE ESTIMATE TENS OF</p>
+      <p begin="286.991s" xml:id="p136" end="288.581s" region="between_m3_m2_2">BILLIONS AND WE ESTIMATE TENS OF<br />BILLIONS TO NGOS THAT ARE</p>
+      <p begin="288.592s" xml:id="p137" end="293.796s" region="between_m3_m2_2">BILLIONS TO NGOS THAT ARE<br />ESSENTIALLY SCAMS.</p>
+      <p begin="293.797s" xml:id="p138" end="295.765s" region="between_m3_m2_2">ESSENTIALLY SCAMS.<br />AND WE’RE TRYING TO PUT A STOP</p>
+      <p begin="295.799s" xml:id="p139" end="296.222s" region="between_m3_m2_2">AND WE’RE TRYING TO PUT A STOP<br />TO THAT.</p>
+      <p begin="296.233s" xml:id="p140" end="298.067s" region="between_m3_m2_2">TO THAT.<br />LARRY: I DON’T WANT TO INTERRUPT</p>
+      <p begin="298.101s" xml:id="p141" end="299.525s" region="middle2">LARRY: I DON’T WANT TO INTERRUPT<br />BUT SECRETARY OF STATE RUBIO</p>
+      <p begin="299.536s" xml:id="p142" end="302.605s" region="middle2">BUT SECRETARY OF STATE RUBIO<br />CAME OUT AND TWEETED LARRY: THAT</p>
+      <p begin="302.606s" xml:id="p143" end="304.774s" region="between_m3_m2_2">CAME OUT AND TWEETED LARRY: THAT<br />HE’S ACCEPTED OVER 80% OF YOUR</p>
+      <p begin="304.808s" xml:id="p144" end="305.765s" region="between_m3_m2_2">HE’S ACCEPTED OVER 80% OF YOUR<br />RECOMMENDATIONS TO SCHULTZ DOWN</p>
+      <p begin="305.776s" xml:id="p145" end="308.611s" region="middle2">RECOMMENDATIONS TO SCHULTZ DOWN<br />IN USAID SO YOUR REVIEW AND</p>
+      <p begin="308.612s" xml:id="p146" end="311.637s" region="middle2">IN USAID SO YOUR REVIEW AND<br />ANALYSIS WAS SPOT ON.</p>
+      <p begin="311.648s" xml:id="p147" end="317.987s" region="between_m3_m2_2">ANALYSIS WAS SPOT ON.<br />&gt;&gt; YES.</p>
+      <p begin="318.021s" xml:id="p148" end="319.421s" region="between_m3_m2_2">&gt;&gt; YES.<br />SO WHEN PEOPLE CRITICIZE WHAT</p>
+      <p begin="319.423s" xml:id="p149" end="321.424s" region="between_m3_m2_2">SO WHEN PEOPLE CRITICIZE WHAT<br />DOGE IS DOING, WE SAY WHICH PART</p>
+      <p begin="321.425s" xml:id="p150" end="322.382s" region="between_m3_m2_2">DOGE IS DOING, WE SAY WHICH PART<br />SPECIFICALLY BECAUSE WE PUT ALL</p>
+      <p begin="322.393s" xml:id="p151" end="323.849s" region="between_m3_m2_2">SPECIFICALLY BECAUSE WE PUT ALL<br />THE ACTIONS OF THE DOGE TEAM ON</p>
+      <p begin="323.86s" xml:id="p152" end="326.319s" region="between_m3_m2_2">THE ACTIONS OF THE DOGE TEAM ON<br />THE DOGE.GOV WEBSITE AND ON THE</p>
+      <p begin="326.33s" xml:id="p153" end="330.123s" region="between_m3_m2_2">THE DOGE.GOV WEBSITE AND ON THE<br />DOGE HANDLE ON X.</p>
+      <p begin="330.134s" xml:id="p154" end="332.826s" region="between_m3_m2_2">DOGE HANDLE ON X.<br />SO WE POST THE RECEIPTS AND THIS</p>
+      <p begin="332.837s" xml:id="p155" end="334.103s" region="between_m3_m2_2">SO WE POST THE RECEIPTS AND THIS<br />ACTION HAS BEEN TAKEN AND THIS</p>
+      <p begin="334.138s" xml:id="p156" end="334.828s" region="middle2">ACTION HAS BEEN TAKEN AND THIS<br />ACTION WAS TAKEN.</p>
+      <p begin="334.839s" xml:id="p157" end="337.506s" region="middle2">ACTION WAS TAKEN.<br />WHEN WE GET CRITICISM ASK WE SAY</p>
+      <p begin="337.508s" xml:id="p158" end="338.264s" region="between_m3_m2_2">WHEN WE GET CRITICISM ASK WE SAY<br />OF WHAT?</p>
+      <p begin="338.275s" xml:id="p159" end="341.678s" region="middle2">OF WHAT?<br />WHICH LINE DO YOU DISAGREE WITH?</p>
+      <p begin="341.712s" xml:id="p160" end="343.546s" region="middle2">WHICH LINE DO YOU DISAGREE WITH?<br />WHICH CUT, WHICH COST SAVING DO</p>
+      <p begin="343.547s" xml:id="p161" end="344.67s" region="middle2">WHICH CUT, WHICH COST SAVING DO<br />YOU DISAGREE WITH?</p>
+      <p begin="344.681s" xml:id="p162" end="347.44s" region="between_m3_m2_2">YOU DISAGREE WITH?<br />PEOPLE USUALLY CAN’T THINK OF</p>
+      <p begin="347.451s" xml:id="p163" end="348.384s" region="middle2">PEOPLE USUALLY CAN’T THINK OF<br />ANY.</p>
+      <p begin="348.419s" xml:id="p164" end="349.619s" region="middle2">ANY.<br />LARRY: YEAH.</p>
+      <p begin="349.62s" xml:id="p165" end="351.721s" region="middle2">LARRY: YEAH.<br />IT’S TRANSPARENT LINE BY LINE.</p>
+      <p begin="351.722s" xml:id="p166" end="352.779s" region="middle2">IT’S TRANSPARENT LINE BY LINE.<br />&gt;&gt; TRANSPARENT LINE BY LINE.</p>
+      <p begin="352.79s" xml:id="p167" end="353.756s" region="middle2">&gt;&gt; TRANSPARENT LINE BY LINE.<br />LARRY: WHEN IS QUITE</p>
+      <p begin="353.757s" xml:id="p168" end="356.325s" region="middle2">LARRY: WHEN IS QUITE<br />REMARKABLE.</p>
+      <p begin="356.36s" xml:id="p169" end="358.618s" region="middle2">REMARKABLE.<br />&gt;&gt; RIGHT.</p>
+      <p begin="358.629s" xml:id="p170" end="363.089s" region="middle2">&gt;&gt; RIGHT.<br />SO WITH RESPECT TO THE TREASURY,</p>
+      <p begin="363.1s" xml:id="p171" end="365.959s" region="middle2">SO WITH RESPECT TO THE TREASURY,<br />FOR EXAMPLE, WITH THE TWO MAIN</p>
+      <p begin="365.97s" xml:id="p172" end="366.937s" region="between_m3_m2_2">FOR EXAMPLE, WITH THE TWO MAIN<br />RECOMMENDATIONS THAT WE</p>
+      <p begin="366.971s" xml:id="p173" end="368.562s" region="middle2">RECOMMENDATIONS THAT WE<br />SUGGESTED, WHICH HAVE NOW BEEN</p>
+      <p begin="368.573s" xml:id="p174" end="369.896s" region="between_m3_m2_2">SUGGESTED, WHICH HAVE NOW BEEN<br />IMPLEMENTED WAS THAT ANY</p>
+      <p begin="369.907s" xml:id="p175" end="371.665s" region="middle2">IMPLEMENTED WAS THAT ANY<br />PAYMENTS GOING OUT OF THE</p>
+      <p begin="371.676s" xml:id="p176" end="375.045s" region="middle2">PAYMENTS GOING OUT OF THE<br />TREASURY, ESPECIALLY THE</p>
+      <p begin="375.079s" xml:id="p177" end="376.87s" region="middle2">TREASURY, ESPECIALLY THE<br />TREASURY’S MAIN PAYMENT COMPUTER</p>
+      <p begin="376.881s" xml:id="p178" end="379.906s" region="middle2">TREASURY’S MAIN PAYMENT COMPUTER<br />CALLED PAM, THINGS LIKE AMOUNTS</p>
+      <p begin="379.917s" xml:id="p179" end="382.119s" region="middle2">CALLED PAM, THINGS LIKE AMOUNTS<br />ACT MANAGER OR SOMETHING LIKE</p>
+      <p begin="382.153s" xml:id="p180" end="384.411s" region="middle2">ACT MANAGER OR SOMETHING LIKE<br />THAT, IT’S $5 TRILLION A YEAR</p>
+      <p begin="384.422s" xml:id="p181" end="391.127s" region="middle2">THAT, IT’S $5 TRILLION A YEAR<br />AND THE PAYMENTS BE CODED WE</p>
+      <p begin="391.162s" xml:id="p182" end="393.854s" region="middle2">AND THE PAYMENTS BE CODED WE<br />APPROPRIATION AND EXPLANATION OF</p>
+      <p begin="393.865s" xml:id="p183" end="394.922s" region="middle2">APPROPRIATION AND EXPLANATION OF<br />PAYMENT.</p>
+      <p begin="394.933s" xml:id="p184" end="397.467s" region="middle2">PAYMENT.<br />VERY BASIC STUFF AND JUST THAT</p>
+      <p begin="397.502s" xml:id="p185" end="398.969s" region="middle2">VERY BASIC STUFF AND JUST THAT<br />ESTIMATING TO SAVE $100 BILLION</p>
+      <p begin="398.97s" xml:id="p186" end="399.526s" region="middle2">ESTIMATING TO SAVE $100 BILLION<br />A YEAR.</p>
+      <p begin="399.537s" xml:id="p187" end="401.872s" region="middle2">A YEAR.<br />LARRY: LET ME SEE IF I GOT THIS</p>
+      <p begin="401.906s" xml:id="p188" end="402.272s" region="between_m3_m2_2">LARRY: LET ME SEE IF I GOT THIS<br />RIGHT.</p>
+      <p begin="402.273s" xml:id="p189" end="403.273s" region="middle2">RIGHT.<br />YOU’RE NOT REALLY CHANGING</p>
+      <p begin="403.274s" xml:id="p190" end="403.697s" region="middle2">YOU’RE NOT REALLY CHANGING<br />POLICY.</p>
+      <p begin="403.708s" xml:id="p191" end="407.077s" region="between_m3_m2_2">POLICY.<br />YOU’RE AUDITING THE FISCAL</p>
+      <p begin="407.078s" xml:id="p192" end="409.212s" region="middle2">YOU’RE AUDITING THE FISCAL<br />MECHANISMS TO MAKE SURE THAT</p>
+      <p begin="409.213s" xml:id="p193" end="411.004s" region="middle2">MECHANISMS TO MAKE SURE THAT<br />FROM POINT A GETS TO POINT B AND</p>
+      <p begin="411.015s" xml:id="p194" end="412.582s" region="middle2">FROM POINT A GETS TO POINT B AND<br />THAT’S WHERE IT’S SUPPOSED TO</p>
+      <p begin="412.583s" xml:id="p195" end="414.517s" region="middle2">THAT’S WHERE IT’S SUPPOSED TO<br />GET TO, IN SOME CASE IT IS</p>
+      <p begin="414.519s" xml:id="p196" end="415.452s" region="middle2">GET TO, IN SOME CASE IT IS<br />DOESN’T GET THERE OR SOME CASE</p>
+      <p begin="415.453s" xml:id="p197" end="426.83s" region="middle2">DOESN’T GET THERE OR SOME CASE<br />IT IS MAY GO OVER THERE. YOU’RE</p>
+      <p begin="426.831s" xml:id="p198" end="428.422s" region="between_m3_m2_2">IT IS MAY GO OVER THERE. YOU’RE<br />NOT CHANGE LAWS BUT DOING WHAT</p>
+      <p begin="428.433s" xml:id="p199" end="429.857s" region="between_m3_m2_2">NOT CHANGE LAWS BUT DOING WHAT<br />ANY BUSINESS WOULD DO IN A</p>
+      <p begin="429.868s" xml:id="p200" end="433.47s" region="between_m3_m2_2">ANY BUSINESS WOULD DO IN A<br />PROFIT LOSS AUDIT.</p>
+      <p begin="433.505s" xml:id="p201" end="434.862s" region="between_m3_m2_2">PROFIT LOSS AUDIT.<br />&gt;&gt; WHAT WE’RE ADDING HERE IS</p>
+      <p begin="434.873s" xml:id="p202" end="441.678s" region="between_m3_m2_2">&gt;&gt; WHAT WE’RE ADDING HERE IS<br />CARING AND COMPETENCE.</p>
+      <p begin="441.713s" xml:id="p203" end="443.304s" region="between_m3_m2_2">CARING AND COMPETENCE.<br />AND THERE’S A MASSIVE AMOUNT OF</p>
+      <p begin="443.315s" xml:id="p204" end="444.414s" region="between_m3_m2_2">AND THERE’S A MASSIVE AMOUNT OF<br />FRAUD OF PEOPLE SUBMITTING</p>
+      <p begin="444.416s" xml:id="p205" end="452.623s" region="between_m3_m2_2">FRAUD OF PEOPLE SUBMITTING<br />SOCIAL SECURITY NUMBERS FOR</p>
+      <p begin="452.624s" xml:id="p206" end="453.481s" region="between_m3_m2_2">SOCIAL SECURITY NUMBERS FOR<br />UNLIMIT AND SOCIAL SECURITY</p>
+      <p begin="453.492s" xml:id="p207" end="456.393s" region="middle2">UNLIMIT AND SOCIAL SECURITY<br />LOANS AND MEDICAL.</p>
+      <p begin="456.428s" xml:id="p208" end="460.655s" region="middle2">LOANS AND MEDICAL.<br />WHERE THOSE ARE FAKE SOCIAL</p>
+      <p begin="460.666s" xml:id="p209" end="462.489s" region="middle2">WHERE THOSE ARE FAKE SOCIAL<br />SECURITY NUMBERS OR THEY’RE</p>
+      <p begin="462.5s" xml:id="p210" end="463.734s" region="middle2">SECURITY NUMBERS OR THEY’RE<br />STOLE AND WE’RE TRYING TO PUT A</p>
+      <p begin="463.768s" xml:id="p211" end="464.591s" region="middle2">STOLE AND WE’RE TRYING TO PUT A<br />STOP THAT THAT.</p>
+      <p begin="464.602s" xml:id="p212" end="465.869s" region="between_m3_m2_2">STOP THAT THAT.<br />THAT’S A NUMBER THAT’S ESTIMATED</p>
+      <p begin="465.871s" xml:id="p213" end="468.172s" region="between_m3_m2_2">THAT’S A NUMBER THAT’S ESTIMATED<br />ON THE ORDER OF 10% OF FEDERAL</p>
+      <p begin="468.173s" xml:id="p214" end="472.967s" region="between_m3_m2_2">ON THE ORDER OF 10% OF FEDERAL<br />EXPENDITURES AND THAT IS HALF A</p>
+      <p begin="472.978s" xml:id="p215" end="473.344s" region="middle2">EXPENDITURES AND THAT IS HALF A<br />TRILLION.</p>
+      <p begin="473.378s" xml:id="p216" end="474.501s" region="middle2">TRILLION.<br />LARRY: IT’S A HUGE NUMBER.</p>
+      <p begin="474.512s" xml:id="p217" end="476.947s" region="middle2">LARRY: IT’S A HUGE NUMBER.<br />YOU’RE WORKING WITH THE AGENCY</p>
+      <p begin="476.982s" xml:id="p218" end="477.872s" region="middle2">YOU’RE WORKING WITH THE AGENCY<br />HEADS AND WORKING WITH THE</p>
+      <p begin="477.883s" xml:id="p219" end="479.65s" region="middle2">HEADS AND WORKING WITH THE<br />CABINET SECRETARIES.</p>
+      <p begin="479.651s" xml:id="p220" end="481.485s" region="middle2">CABINET SECRETARIES.<br />I SAW HOWARD LUTNICK WAS ON TV</p>
+      <p begin="481.486s" xml:id="p221" end="482.91s" region="between_m3_m2_2">I SAW HOWARD LUTNICK WAS ON TV<br />YESTERDAY SAYING YOU WERE</p>
+      <p begin="482.921s" xml:id="p222" end="483.654s" region="middle2">YESTERDAY SAYING YOU WERE<br />PARTNERING WITH THEM.</p>
+      <p begin="483.689s" xml:id="p223" end="492.754s" region="middle2">PARTNERING WITH THEM.<br />IS THAT FAIR?</p>
+      <p begin="492.765s" xml:id="p224" end="494.765s" region="middle2">IS THAT FAIR?<br />&gt;&gt; WE CONSULT WITH THE CABINET</p>
+      <p begin="494.766s" xml:id="p225" end="495.799s" region="middle2">&gt;&gt; WE CONSULT WITH THE CABINET<br />SECRETARIES AND HEADS AND WE’RE</p>
+      <p begin="495.801s" xml:id="p226" end="502.297s" region="middle2">SECRETARIES AND HEADS AND WE’RE<br />TRYING TO BE SORT OF REFERRING</p>
+      <p begin="502.308s" xml:id="p227" end="503.998s" region="middle2">TRYING TO BE SORT OF REFERRING<br />TO OURSELVES AZTEC SUPPORT AND</p>
+      <p begin="504.009s" xml:id="p228" end="506.267s" region="middle2">TO OURSELVES AZTEC SUPPORT AND<br />HELPING THE -- AS TECH SUPPORT</p>
+      <p begin="506.278s" xml:id="p229" end="507.502s" region="between_m3_m2_2">HELPING THE -- AS TECH SUPPORT<br />AND HELPING THE DEPARTMENT GET A</p>
+      <p begin="507.513s" xml:id="p230" end="509.237s" region="middle2">AND HELPING THE DEPARTMENT GET A<br />HANDLE ON THINGS.</p>
+      <p begin="509.248s" xml:id="p231" end="511.415s" region="middle2">HANDLE ON THINGS.<br />WHAT ACTUALLY HAPPENS HERE IS</p>
+      <p begin="511.417s" xml:id="p232" end="512.851s" region="between_m3_m2_2">WHAT ACTUALLY HAPPENS HERE IS<br />THERE’S THIS VAST FEDERAL</p>
+      <p begin="512.885s" xml:id="p233" end="514.042s" region="middle2">THERE’S THIS VAST FEDERAL<br />BUREAUCRACY AND THEN YOU’VE GOT</p>
+      <p begin="514.053s" xml:id="p234" end="518.613s" region="between_m3_m2_2">BUREAUCRACY AND THEN YOU’VE GOT<br />A VERY THIN LAYER ON TOP OF THE</p>
+      <p begin="518.624s" xml:id="p235" end="521.292s" region="middle2">A VERY THIN LAYER ON TOP OF THE<br />POLITICALLY APPOINTED</p>
+      <p begin="521.327s" xml:id="p236" end="524.753s" region="middle2">POLITICALLY APPOINTED<br />OFFICIALS.</p>
+      <p begin="524.764s" xml:id="p237" end="527.198s" region="middle2">OFFICIALS.<br />THE BUREAUCRACY IS IN CONTROL</p>
+      <p begin="527.232s" xml:id="p238" end="528.723s" region="middle2">THE BUREAUCRACY IS IN CONTROL<br />AND THEY’VE LARGELY IGNORED THE</p>
+      <p begin="528.734s" xml:id="p239" end="530.325s" region="middle2">AND THEY’VE LARGELY IGNORED THE<br />POLITICALLY APPOINTED PEOPLE.</p>
+      <p begin="530.336s" xml:id="p240" end="537.132s" region="middle2">POLITICALLY APPOINTED PEOPLE.<br />LARRY: WHY SHOULD THE</p>
+      <p begin="537.143s" xml:id="p241" end="538.566s" region="middle2">LARRY: WHY SHOULD THE<br />BUREAUCRACY -- I WORKED FOR</p>
+      <p begin="538.577s" xml:id="p242" end="539.911s" region="middle2">BUREAUCRACY -- I WORKED FOR<br />REAGAN MANY YEARS AGO AND TRUMP</p>
+      <p begin="539.945s" xml:id="p243" end="540.868s" region="middle2">REAGAN MANY YEARS AGO AND TRUMP<br />IN THE FIRST TERM.</p>
+      <p begin="540.879s" xml:id="p244" end="546.541s" region="middle2">IN THE FIRST TERM.<br />IT’S A PERMANENT BUREAUCRACY AND</p>
+      <p begin="546.552s" xml:id="p245" end="548.086s" region="middle2">IT’S A PERMANENT BUREAUCRACY AND<br />LIBERAL BUREAUCRACY AND NOT ONE</p>
+      <p begin="548.12s" xml:id="p246" end="550.254s" region="middle2">LIBERAL BUREAUCRACY AND NOT ONE<br />THAT NECESSARILY ENFORCES OR</p>
+      <p begin="550.256s" xml:id="p247" end="551.48s" region="between_m3_m2_2">THAT NECESSARILY ENFORCES OR<br />IMPLEMENTS PRESIDENTIAL POLICY.</p>
+      <p begin="551.491s" xml:id="p248" end="552.29s" region="between_m3_m2_2">IMPLEMENTS PRESIDENTIAL POLICY.<br />&gt;&gt; THEY DON’T.</p>
+      <p begin="552.324s" xml:id="p249" end="555.65s" region="middle2">&gt;&gt; THEY DON’T.<br />THEY TRY THEIR BEST TO THWART</p>
+      <p begin="555.661s" xml:id="p250" end="556.327s" region="between_m3_m2_2">THEY TRY THEIR BEST TO THWART<br />PRESIDENTIAL POLICY AND THE</p>
+      <p begin="556.328s" xml:id="p251" end="558.019s" region="middle2">PRESIDENTIAL POLICY AND THE<br />PRESIDENT IS THE ELECTED</p>
+      <p begin="558.03s" xml:id="p252" end="562.667s" region="middle2">PRESIDENT IS THE ELECTED<br />REPRESENTATIVE OF THE PEOPLE AND</p>
+      <p begin="562.668s" xml:id="p253" end="565.236s" region="between_m3_m2_2">REPRESENTATIVE OF THE PEOPLE AND<br />IF THE PRESIDENT CANNOT GET</p>
+      <p begin="565.237s" xml:id="p254" end="566.928s" region="between_m3_m2_2">IF THE PRESIDENT CANNOT GET<br />THINGS IMPLEMENTED WITH THE</p>
+      <p begin="566.939s" xml:id="p255" end="568.263s" region="between_m3_m2_2">THINGS IMPLEMENTED WITH THE<br />REFLECTION OF THE WILL OF THE</p>
+      <p begin="568.274s" xml:id="p256" end="569.765s" region="between_m3_m2_2">REFLECTION OF THE WILL OF THE<br />PEOPLE, THERE’S NOT A DEMOCRACY,</p>
+      <p begin="569.776s" xml:id="p257" end="571.366s" region="between_m3_m2_2">PEOPLE, THERE’S NOT A DEMOCRACY,<br />THERE’S A BUREAUCRACY.</p>
+      <p begin="571.377s" xml:id="p258" end="572.844s" region="between_m3_m2_2">THERE’S A BUREAUCRACY.<br />IT’S RULE OF THE BUREAU AND NOT</p>
+      <p begin="572.845s" xml:id="p259" end="573.435s" region="between_m3_m2_2">IT’S RULE OF THE BUREAU AND NOT<br />RULE OF THE PEOPLE.</p>
+      <p begin="573.446s" xml:id="p260" end="576.338s" region="between_m3_m2_2">RULE OF THE PEOPLE.<br />THAT’S WHAT WE’RE TRYING TO</p>
+      <p begin="576.349s" xml:id="p261" end="583.488s" region="middle2">THAT’S WHAT WE’RE TRYING TO<br />DEFEAT HERE IS THE RULE OF THE</p>
+      <p begin="583.489s" xml:id="p262" end="589.284s" region="middle2">DEFEAT HERE IS THE RULE OF THE<br />BREWER BUREAUCRACY AND BACK TO</p>
+      <p begin="589.295s" xml:id="p263" end="590.552s" region="between_m3_m2_2">BREWER BUREAUCRACY AND BACK TO<br />WILL OF THE PEOPLE.</p>
+      <p begin="590.563s" xml:id="p264" end="592.32s" region="middle2">WILL OF THE PEOPLE.<br />THE BUREAUCRACY IS</p>
+      <p begin="592.331s" xml:id="p265" end="592.888s" region="middle2">THE BUREAUCRACY IS<br />OVERWHELMINGLY DEMOCRAT.</p>
+      <p begin="592.899s" xml:id="p266" end="595.491s" region="middle2">OVERWHELMINGLY DEMOCRAT.<br />WASHINGTON DC WAS 92.5% VOTED</p>
+      <p begin="595.502s" xml:id="p267" end="597.936s" region="middle2">WASHINGTON DC WAS 92.5% VOTED<br />FOR KAMALA.</p>
+      <p begin="597.971s" xml:id="p268" end="601.397s" region="between_m3_m2_2">FOR KAMALA.<br />SO THERE’S OVERWHELMINGLY A DEEP</p>
+      <p begin="601.408s" xml:id="p269" end="602.073s" region="between_m3_m2_2">SO THERE’S OVERWHELMINGLY A DEEP<br />BLUE SITUATION.</p>
+      <p begin="602.075s" xml:id="p270" end="605.234s" region="middle2">BLUE SITUATION.<br />LARRY: HOW DO YOU PICK YOUR NEXT</p>
+      <p begin="605.245s" xml:id="p271" end="613.418s" region="middle2">LARRY: HOW DO YOU PICK YOUR NEXT<br />TARGETED AGENCY OR DEPARTMENT?</p>
+      <p begin="613.419s" xml:id="p272" end="616.354s" region="middle2">TARGETED AGENCY OR DEPARTMENT?<br />&gt;&gt; WELL, WE’RE TRYING TO ACT</p>
+      <p begin="616.389s" xml:id="p273" end="617.246s" region="middle2">&gt;&gt; WELL, WE’RE TRYING TO ACT<br />BROADLY ACROSS ALL DEPARTMENTS</p>
+      <p begin="617.257s" xml:id="p274" end="620.692s" region="dynamic_position">BROADLY ACROSS ALL DEPARTMENTS<br />AND NOT JUST ONE AT A TIME.</p>
+      <p begin="620.727s" xml:id="p275" end="621.617s" region="middle2">AND NOT JUST ONE AT A TIME.<br />BUT --</p>
+      <p begin="621.628s" xml:id="p276" end="623.319s" region="between_m3_m2_2">BUT --<br />LARRY: HAVE YOU BEEN IN ALL OF</p>
+      <p begin="623.33s" xml:id="p277" end="623.895s" region="between_m3_m2_2">LARRY: HAVE YOU BEEN IN ALL OF<br />THEM NOW?</p>
+      <p begin="623.897s" xml:id="p278" end="624.487s" region="middle2">THEM NOW?<br />&gt;&gt; PRETTY MUCH.</p>
+      <p begin="624.498s" xml:id="p279" end="625.23s" region="between_m3_m2_2">&gt;&gt; PRETTY MUCH.<br />LARRY: OH.</p>
+      <p begin="625.231s" xml:id="p280" end="630.001s" region="middle2">LARRY: OH.<br />&gt;&gt; WE’RE TRYING TO MAKE THE</p>
+      <p begin="630.003s" xml:id="p281" end="630.736s" region="middle2">&gt;&gt; WE’RE TRYING TO MAKE THE<br />GOVERNMENT MORE EFFICIENT ACROSS</p>
+      <p begin="630.737s" xml:id="p282" end="631.26s" region="middle2">GOVERNMENT MORE EFFICIENT ACROSS<br />THE BOARD.</p>
+      <p begin="631.271s" xml:id="p283" end="633.438s" region="between_m3_m2_2">THE BOARD.<br />LARRY: HOW BIG IS YOUR TEAM?</p>
+      <p begin="633.44s" xml:id="p284" end="635.508s" region="between_m3_m2_2">LARRY: HOW BIG IS YOUR TEAM?<br />&gt;&gt; LITTLE OVER 100 AT THIS</p>
+      <p begin="635.542s" xml:id="p285" end="635.941s" region="middle2">&gt;&gt; LITTLE OVER 100 AT THIS<br />POINT.</p>
+      <p begin="635.942s" xml:id="p286" end="637.099s" region="middle2">POINT.<br />HOPING TO GET TO 200.</p>
+      <p begin="637.11s" xml:id="p287" end="639.435s" region="middle2">HOPING TO GET TO 200.<br />LARRY: YOU’RE GOING TO GET TO</p>
+      <p begin="639.446s" xml:id="p288" end="640.403s" region="middle2">LARRY: YOU’RE GOING TO GET TO<br />200?</p>
+      <p begin="640.414s" xml:id="p289" end="640.769s" region="between_m3_m2_2">200?<br />&gt;&gt; YEAH.</p>
+      <p begin="640.78s" xml:id="p290" end="642.881s" region="middle2">&gt;&gt; YEAH.<br />LARRY: AND YOU’RE RECRUITING</p>
+      <p begin="642.916s" xml:id="p291" end="644.216s" region="middle2">LARRY: AND YOU’RE RECRUITING<br />FROM WHERE MORE OR LESS?</p>
+      <p begin="644.217s" xml:id="p292" end="647.619s" region="between_m3_m2_2">FROM WHERE MORE OR LESS?<br />&gt;&gt; BASICALLY IT’S A SOFTWARE</p>
+      <p begin="647.621s" xml:id="p293" end="653.259s" region="middle2">&gt;&gt; BASICALLY IT’S A SOFTWARE<br />PEOPLE AND INFORMS SECURITY</p>
+      <p begin="653.26s" xml:id="p294" end="655.418s" region="middle2">PEOPLE AND INFORMS SECURITY<br />SOFTWARE PEOPLE GOING TO FINANCE</p>
+      <p begin="655.429s" xml:id="p295" end="657.529s" region="middle2">SOFTWARE PEOPLE GOING TO FINANCE<br />AND GOING FOR THEM AND FINANCE</p>
+      <p begin="657.531s" xml:id="p296" end="667.373s" region="between_m3_m2_2">AND GOING FOR THEM AND FINANCE<br />AND TECHNOLOGY.</p>
+      <p begin="667.374s" xml:id="p297" end="671.5s" region="middle2">AND TECHNOLOGY.<br />AND IT WAS A BIT BIZARRE AND</p>
+      <p begin="671.511s" xml:id="p298" end="674.647s" region="middle2">AND IT WAS A BIT BIZARRE AND<br />GOING TO HAVE THIS ENORMOUS</p>
+      <p begin="674.681s" xml:id="p299" end="677.983s" region="middle2">GOING TO HAVE THIS ENORMOUS<br />FEDERAL BUDGET DEFICIT AND IT’S</p>
+      <p begin="677.985s" xml:id="p300" end="681.11s" region="middle2">FEDERAL BUDGET DEFICIT AND IT’S<br />A $2 TRILLION DEFICIT AND KEEPS</p>
+      <p begin="681.121s" xml:id="p301" end="687.961s" region="between_m3_m2_2">A $2 TRILLION DEFICIT AND KEEPS<br />GROWING AND PAYMENTS HAVE THAT</p>
+      <p begin="687.995s" xml:id="p302" end="689.252s" region="middle2">GROWING AND PAYMENTS HAVE THAT<br />AND THANKSGIVING THE REAL WAKEUP</p>
+      <p begin="689.263s" xml:id="p303" end="690.997s" region="middle2">AND THANKSGIVING THE REAL WAKEUP<br />CALL FOR ME LOOKING AND SEEING</p>
+      <p begin="690.998s" xml:id="p304" end="692.465s" region="middle2">CALL FOR ME LOOKING AND SEEING<br />THAT INTEREST PAYMENTS AND THE</p>
+      <p begin="692.466s" xml:id="p305" end="694.5s" region="between_m3_m2_2">THAT INTEREST PAYMENTS AND THE<br />NATIONAL DEBT CONCEDED THE</p>
+      <p begin="694.501s" xml:id="p306" end="706.335s" region="middle2">NATIONAL DEBT CONCEDED THE<br />DEFENSE DEPARTMENT BUDGET.</p>
+      <p begin="706.346s" xml:id="p307" end="708.08s" region="middle2">DEFENSE DEPARTMENT BUDGET.<br />LARRY: YOU KNOW HOW TO READ THEM</p>
+      <p begin="708.115s" xml:id="p308" end="711.341s" region="middle2">LARRY: YOU KNOW HOW TO READ THEM<br />AND BALANCE SHEET.</p>
+      <p begin="711.352s" xml:id="p309" end="723.653s" region="middle2">AND BALANCE SHEET.<br />YOU’VE HAD SOME YOU FEEL LIKE</p>
+      <p begin="723.664s" xml:id="p310" end="724.03s" region="middle2">YOU’VE HAD SOME YOU FEEL LIKE<br />THAT?</p>
+      <p begin="724.031s" xml:id="p311" end="725.031s" region="middle2">THAT?<br />LARRY: GIVEN UP YOUR OTHER</p>
+      <p begin="725.032s" xml:id="p312" end="725.965s" region="between_m3_m2_2">LARRY: GIVEN UP YOUR OTHER<br />STUFF.</p>
+      <p begin="726.0s" xml:id="p313" end="738.168s" region="middle2">STUFF.<br />WHERE IS THAT POWER AND MORE.</p>
+      <p begin="738.179s" xml:id="p314" end="749.246s" region="middle2">WHERE IS THAT POWER AND MORE.<br />LARRY: THERE’S NO TURNING BACK.</p>
+      <p begin="749.257s" xml:id="p315" end="751.657s" region="between_m3_m2_2">LARRY: THERE’S NO TURNING BACK.<br />&gt;&gt; I’M HERE TRYING TO ELIMINATE</p>
+      <p begin="751.659s" xml:id="p316" end="755.719s" region="between_m3_m2_2">&gt;&gt; I’M HERE TRYING TO ELIMINATE<br />WASTE AND FRAUD AND WE’RE MAKING</p>
+      <p begin="755.73s" xml:id="p317" end="762.292s" region="between_m3_m2_2">WASTE AND FRAUD AND WE’RE MAKING<br />GOOD PROGRESS AND OUR SAVINGS</p>
+      <p begin="762.303s" xml:id="p318" end="764.061s" region="middle2">GOOD PROGRESS AND OUR SAVINGS<br />EXCEED $4 BILLION IN DEBT.</p>
+      <p begin="764.072s" xml:id="p319" end="765.805s" region="between_m3_m2_2">EXCEED $4 BILLION IN DEBT.<br />LARRY: WIND UP GETTING TO A</p>
+      <p begin="765.84s" xml:id="p320" end="768.575s" region="between_m3_m2_2">LARRY: WIND UP GETTING TO A<br />TRILLION IN SAVINGS?</p>
+      <p begin="768.576s" xml:id="p321" end="769.533s" region="between_m3_m2_2">TRILLION IN SAVINGS?<br />&gt;&gt; YEAH, UNLESS WE’RE STAFFED,</p>
+      <p begin="769.544s" xml:id="p322" end="771.435s" region="middle2">&gt;&gt; YEAH, UNLESS WE’RE STAFFED,<br />WE’LL GET TO $1 TRILLION IN</p>
+      <p begin="771.446s" xml:id="p323" end="771.936s" region="middle2">WE’LL GET TO $1 TRILLION IN<br />SAVINGS.</p>
+      <p begin="771.947s" xml:id="p324" end="773.403s" region="middle2">SAVINGS.<br />LARRY: THAT STUFF CAN BE</p>
+      <p begin="773.414s" xml:id="p325" end="774.815s" region="middle2">LARRY: THAT STUFF CAN BE<br />TRANSLATED AND WE’VE BEEN</p>
+      <p begin="774.849s" xml:id="p326" end="777.15s" region="middle2">TRANSLATED AND WE’VE BEEN<br />TALKING AND HAD RUSSELL VOUGHT,</p>
+      <p begin="777.151s" xml:id="p327" end="780.453s" region="between_m3_m2_2">TALKING AND HAD RUSSELL VOUGHT,<br />OMB DIRECTOR ON EARLIER AND</p>
+      <p begin="780.455s" xml:id="p328" end="782.68s" region="middle2">OMB DIRECTOR ON EARLIER AND<br />REASSERTION SESSION AUTHORITY</p>
+      <p begin="782.691s" xml:id="p329" end="783.613s" region="between_m3_m2_2">REASSERTION SESSION AUTHORITY<br />AND IMPOUNDMENT AUTHORITY AND</p>
+      <p begin="783.624s" xml:id="p330" end="785.482s" region="middle2">AND IMPOUNDMENT AUTHORITY AND<br />IT’S AN AUDIT THAT WILL NOT</p>
+      <p begin="785.493s" xml:id="p331" end="786.493s" region="middle2">IT’S AN AUDIT THAT WILL NOT<br />GATHER DUST ON SHELVES.</p>
+      <p begin="786.494s" xml:id="p332" end="790.464s" region="middle2">GATHER DUST ON SHELVES.<br />THIS WILL WIND UP WITH REAL</p>
+      <p begin="790.498s" xml:id="p333" end="793.623s" region="between_m3_m2_2">THIS WILL WIND UP WITH REAL<br />SAVINGS, BEND THE SPENDING</p>
+      <p begin="793.634s" xml:id="p334" end="797.537s" region="middle2">SAVINGS, BEND THE SPENDING<br />BASELINE DOWN.</p>
+      <p begin="797.572s" xml:id="p335" end="799.363s" region="middle2">BASELINE DOWN.<br />&gt;&gt; THERE’S BEEN MANY GOOD AUDITS</p>
+      <p begin="799.374s" xml:id="p336" end="802.266s" region="middle2">&gt;&gt; THERE’S BEEN MANY GOOD AUDITS<br />WITH INSPECTOR GENERAL AND</p>
+      <p begin="802.277s" xml:id="p337" end="803.734s" region="middle2">WITH INSPECTOR GENERAL AND<br />GOVERNMENT ACCOUNTABILITY OFFICE</p>
+      <p begin="803.745s" xml:id="p338" end="807.38s" region="middle2">GOVERNMENT ACCOUNTABILITY OFFICE<br />AND NOTHING HAS BEEN DONE.</p>
+      <p begin="807.415s" xml:id="p339" end="810.784s" region="middle2">AND NOTHING HAS BEEN DONE.<br />THE GAO IDENTIFIED 17 MILLION</p>
+      <p begin="810.785s" xml:id="p340" end="811.575s" region="middle2">THE GAO IDENTIFIED 17 MILLION<br />DEAD PEOPLE IN THE SOCIAL</p>
+      <p begin="811.586s" xml:id="p341" end="812.786s" region="middle2">DEAD PEOPLE IN THE SOCIAL<br />SECURITY DATA BASE SEVERAL YEARS</p>
+      <p begin="812.787s" xml:id="p342" end="814.845s" region="middle2">SECURITY DATA BASE SEVERAL YEARS<br />AGO AND NOW 20 MILLION.</p>
+      <p begin="814.856s" xml:id="p343" end="816.457s" region="middle2">AGO AND NOW 20 MILLION.<br />BUT WE’RE NOT DOING ANYTHING</p>
+      <p begin="816.491s" xml:id="p344" end="821.552s" region="middle2">BUT WE’RE NOT DOING ANYTHING<br />ABOUT IT.</p>
+      <p begin="821.563s" xml:id="p345" end="823.497s" region="middle2">ABOUT IT.<br />AND I THINK YOU CAN SORT OF LOOK</p>
+      <p begin="823.531s" xml:id="p346" end="829.326s" region="middle2">AND I THINK YOU CAN SORT OF LOOK<br />AT THIS AS COMPLAINT MIN</p>
+      <p begin="829.337s" xml:id="p347" end="831.161s" region="between_m3_m2_2">AT THIS AS COMPLAINT MIN<br />MINIMIZIZATION OPTIMIZATION AND</p>
+      <p begin="831.172s" xml:id="p348" end="832.439s" region="between_m3_m2_2">MINIMIZIZATION OPTIMIZATION AND<br />PUTTING MONEY OUT AND NOBODY</p>
+      <p begin="832.44s" xml:id="p349" end="834.274s" region="between_m3_m2_2">PUTTING MONEY OUT AND NOBODY<br />COMPLAIN IFS THEY RECEIVE MONEY</p>
+      <p begin="834.309s" xml:id="p350" end="835.9s" region="middle2">COMPLAIN IFS THEY RECEIVE MONEY<br />BUT THEY DO COMPLAIN IF THEY</p>
+      <p begin="835.911s" xml:id="p351" end="837.502s" region="between_m3_m2_2">BUT THEY DO COMPLAIN IF THEY<br />DON’T RECEIVE MONEY.</p>
+      <p begin="837.513s" xml:id="p352" end="838.936s" region="between_m3_m2_2">DON’T RECEIVE MONEY.<br />AND THE PEOPLE THAT COMPLAIN THE</p>
+      <p begin="838.947s" xml:id="p353" end="840.638s" region="middle2">AND THE PEOPLE THAT COMPLAIN THE<br />LOUDEST ARE THE ONES THAT</p>
+      <p begin="840.649s" xml:id="p354" end="842.874s" region="middle2">LOUDEST ARE THE ONES THAT<br />RECEIVE THE FRAUDULENT MONEY.</p>
+      <p begin="842.885s" xml:id="p355" end="846.22s" region="middle2">RECEIVE THE FRAUDULENT MONEY.<br />LARRY: YOU’RE ON IT.</p>
+      <p begin="846.254s" xml:id="p356" end="857.788s" region="middle2">LARRY: YOU’RE ON IT.<br />&gt;&gt; YEAH.</p>
+      <p begin="857.799s" xml:id="p357" end="860.134s" region="between_m3_m2_2">&gt;&gt; YEAH.<br />WE’RE ELIMINATING WASTE AND</p>
+      <p begin="860.168s" xml:id="p358" end="861.959s" region="middle2">WE’RE ELIMINATING WASTE AND<br />FRAUD AND THAT’S WHAT I’M HERE</p>
+      <p begin="861.97s" xml:id="p359" end="863.194s" region="middle2">FRAUD AND THAT’S WHAT I’M HERE<br />FOR AND MAKING GOOD PROGRESS.</p>
+      <p begin="863.205s" xml:id="p360" end="864.405s" region="middle2">FOR AND MAKING GOOD PROGRESS.<br />LARRY: ARE YOU GOING TO GO</p>
+      <p begin="864.439s" xml:id="p361" end="865.095s" region="between_m3_m2_2">LARRY: ARE YOU GOING TO GO<br />ANOTHER YEAR?</p>
+      <p begin="865.106s" xml:id="p362" end="867.207s" region="middle2">ANOTHER YEAR?<br />&gt;&gt; YEAH, I THINK SO.</p>
+      <p begin="867.242s" xml:id="p363" end="868.399s" region="between_m3_m2_2">&gt;&gt; YEAH, I THINK SO.<br />LARRY: FINAL REPORT MIDDLE OF</p>
+      <p begin="868.41s" xml:id="p364" end="869.21s" region="between_m3_m2_2">LARRY: FINAL REPORT MIDDLE OF<br />NEXT YEAR?</p>
+      <p begin="869.244s" xml:id="p365" end="870.201s" region="middle2">NEXT YEAR?<br />&gt;&gt; WELL, WE’RE JUST GETTING</p>
+      <p begin="870.212s" xml:id="p366" end="872.246s" region="between_m3_m2_2">&gt;&gt; WELL, WE’RE JUST GETTING<br />THINGS DONE AS OPPOSED TO</p>
+      <p begin="872.281s" xml:id="p367" end="874.139s" region="between_m3_m2_2">THINGS DONE AS OPPOSED TO<br />WRITING A REPORT AND SAYING</p>
+      <p begin="874.15s" xml:id="p368" end="875.106s" region="between_m3_m2_2">WRITING A REPORT AND SAYING<br />REPORTS DON’T MEAN ANYTHING AND</p>
+      <p begin="875.117s" xml:id="p369" end="891.389s" region="between_m3_m2_2">REPORTS DON’T MEAN ANYTHING AND<br />YOU’VE GOT TO TAKE ACTION.</p>
+      <p begin="891.4s" xml:id="p370" end="892.924s" region="between_m3_m2_2">YOU’VE GOT TO TAKE ACTION.<br />THAT TITLEMENT SPENDING IS THE</p>
+      <p begin="892.935s" xml:id="p371" end="896.237s" region="middle2">THAT TITLEMENT SPENDING IS THE<br />BIG ONE TO ELIMINATE AND THAT’S</p>
+      <p begin="896.271s" xml:id="p372" end="902.066s" region="middle2">BIG ONE TO ELIMINATE AND THAT’S<br />A HALF TRILLION.</p>
+      <p begin="902.077s" xml:id="p373" end="904.111s" region="middle2">A HALF TRILLION.<br />AND THAT’S A MECHANISM BY WHICH</p>
+      <p begin="904.113s" xml:id="p374" end="905.58s" region="middle2">AND THAT’S A MECHANISM BY WHICH<br />THE DEMOCRATS ATTRACTION AND</p>
+      <p begin="905.581s" xml:id="p375" end="906.905s" region="between_m3_m2_2">THE DEMOCRATS ATTRACTION AND<br />OBTAIN ILLEGAL IMMIGRANTS BY</p>
+      <p begin="906.916s" xml:id="p376" end="908.24s" region="between_m3_m2_2">OBTAIN ILLEGAL IMMIGRANTS BY<br />ESSENTIALLY PAYING THEM TO COME</p>
+      <p begin="908.251s" xml:id="p377" end="909.317s" region="middle2">ESSENTIALLY PAYING THEM TO COME<br />HERE AND FELT THEY’RE TURNING</p>
+      <p begin="909.318s" xml:id="p378" end="912.01s" region="between_m3_m2_2">HERE AND FELT THEY’RE TURNING<br />THEM INTO VOTERS.</p>
+      <p begin="912.021s" xml:id="p379" end="915.156s" region="middle2">THEM INTO VOTERS.<br />THIS IS WHY THE DEPUTIES ARE SO</p>
+      <p begin="915.191s" xml:id="p380" end="916.982s" region="middle2">THIS IS WHY THE DEPUTIES ARE SO<br />UPSET ABOUT THE SITUATION AND</p>
+      <p begin="916.993s" xml:id="p381" end="919.784s" region="middle2">UPSET ABOUT THE SITUATION AND<br />LOSING, YOU KNOW, IF WE TURN OFF</p>
+      <p begin="919.795s" xml:id="p382" end="930.538s" region="middle2">LOSING, YOU KNOW, IF WE TURN OFF<br />THIS GIGANTIC MONEY MAGNET FOR</p>
+      <p begin="930.539s" xml:id="p383" end="932.03s" region="middle2">THIS GIGANTIC MONEY MAGNET FOR<br />THEM LOSING VOTERS.</p>
+      <p begin="932.041s" xml:id="p384" end="933.832s" region="middle2">THEM LOSING VOTERS.<br />LARRY: THE PRESIDENT COMPLETELY</p>
+      <p begin="933.843s" xml:id="p385" end="937.002s" region="between_m3_m2_2">LARRY: THE PRESIDENT COMPLETELY<br />SUPPORTS YOUR OPERATION..</p>
+      <p begin="937.013s" xml:id="p386" end="937.946s" region="between_m3_m2_2">SUPPORTS YOUR OPERATION..<br />&gt;&gt; YEAH, THANK YOUS.</p>
+      <p begin="937.947s" xml:id="p387" end="939.204s" region="middle2">&gt;&gt; YEAH, THANK YOUS.<br />WITHOUT THE PRESIDENT’S SUPPORT</p>
+      <p begin="939.215s" xml:id="p388" end="942.774s" region="middle2">WITHOUT THE PRESIDENT’S SUPPORT<br />WE COULDN’T MAKE PROGRESS HERE.</p>
+      <p begin="942.785s" xml:id="p389" end="944.219s" region="middle2">WE COULDN’T MAKE PROGRESS HERE.<br />BUT, YEAH, WHERE YOU’LL SEE THE</p>
+      <p begin="944.253s" xml:id="p390" end="948.623s" region="between_m3_m2_2">BUT, YEAH, WHERE YOU’LL SEE THE<br />BIGGEST OUTCRY IS FROM THE</p>
+      <p begin="948.624s" xml:id="p391" end="953.761s" region="between_m3_m2_2">BIGGEST OUTCRY IS FROM THE<br />DEMOCRATS WHO ARE NOT WANTING</p>
+      <p begin="953.763s" xml:id="p392" end="954.763s" region="middle2">DEMOCRATS WHO ARE NOT WANTING<br />WASTE AND FRAUD TURNED OFF</p>
+      <p begin="954.764s" xml:id="p393" end="957.132s" region="middle2">WASTE AND FRAUD TURNED OFF<br />BECAUSE IT’S A GIGANTIC MAGNET</p>
+      <p begin="957.133s" xml:id="p394" end="958.533s" region="middle2">BECAUSE IT’S A GIGANTIC MAGNET<br />TO ATTRACT ILLEGAL IMMIGRANTS</p>
+      <p begin="958.534s" xml:id="p395" end="960.535s" region="middle2">TO ATTRACT ILLEGAL IMMIGRANTS<br />AND HAVE THEM STAY IN THE</p>
+      <p begin="960.536s" xml:id="p396" end="960.892s" region="middle2">AND HAVE THEM STAY IN THE<br />COUNTRY.</p>
+      <p begin="960.903s" xml:id="p397" end="962.904s" region="middle2">COUNTRY.<br />AND YOU SEE SOME OF THE CRAZE</p>
+      <p begin="962.939s" xml:id="p398" end="966.532s" region="between_m3_m2_2">AND YOU SEE SOME OF THE CRAZE<br />YAY STUFF WHERE MONEY FROM FEMA,</p>
+      <p begin="966.543s" xml:id="p399" end="969.501s" region="middle2">YAY STUFF WHERE MONEY FROM FEMA,<br />FEMA IS MEANT TO TAKE CARE OF</p>
+      <p begin="969.512s" xml:id="p400" end="971.17s" region="middle2">FEMA IS MEANT TO TAKE CARE OF<br />AMERICANS IN DISTRESS AND A</p>
+      <p begin="971.181s" xml:id="p401" end="972.48s" region="middle2">AMERICANS IN DISTRESS AND A<br />BUNCH OF THEIR MONEY SENT TO PAY</p>
+      <p begin="972.482s" xml:id="p402" end="975.05s" region="middle2">BUNCH OF THEIR MONEY SENT TO PAY<br />FOR LUXURY HOTELS IN NEW YORK</p>
+      <p begin="975.085s" xml:id="p403" end="1002.735s" region="middle2">FOR LUXURY HOTELS IN NEW YORK<br />FOR ILLEGAL IMMIGRANTS.</p>
+      <p begin="1002.746s" xml:id="p404" end="1006.605s" region="middle2">FOR ILLEGAL IMMIGRANTS.<br />THERE’S NO VOTER ID NEEDED.</p>
+      <p begin="1006.616s" xml:id="p405" end="1013.555s" region="middle2">THERE’S NO VOTER ID NEEDED.<br />IN CALIFORNIA, AND NEW YORK</p>
+      <p begin="1013.59s" xml:id="p406" end="1015.147s" region="middle2">IN CALIFORNIA, AND NEW YORK<br />STATE, YOU’RE NOT ALLOWED TO</p>
+      <p begin="1015.158s" xml:id="p407" end="1016.258s" region="middle2">STATE, YOU’RE NOT ALLOWED TO<br />SHOW VOTER ID.</p>
+      <p begin="1016.293s" xml:id="p408" end="1018.127s" region="middle2">SHOW VOTER ID.<br />ISN’T THAT INSANE?</p>
+      <p begin="1018.128s" xml:id="p409" end="1018.594s" region="between_m3_m2_2">ISN’T THAT INSANE?<br />LARRY: INSANE.</p>
+      <p begin="1018.595s" xml:id="p410" end="1020.429s" region="middle2">LARRY: INSANE.<br />THAT AS A NEW YORKER, INSANE.</p>
+      <p begin="1020.43s" xml:id="p411" end="1021.12s" region="middle2">THAT AS A NEW YORKER, INSANE.<br />&gt;&gt; YEAH.</p>
+      <p begin="1021.131s" xml:id="p412" end="1021.854s" region="middle2">&gt;&gt; YEAH.<br />IT IS.</p>
+      <p begin="1021.865s" xml:id="p413" end="1023.866s" region="middle2">IT IS.<br />LARRY: IT VIOLATES THE ENTIRE</p>
+      <p begin="1023.9s" xml:id="p414" end="1024.323s" region="middle2">LARRY: IT VIOLATES THE ENTIRE<br />CONSTITUTION.</p>
+      <p begin="1024.334s" xml:id="p415" end="1026.225s" region="middle2">CONSTITUTION.<br />AND THE PRINCIPLES BEHIND THEM.</p>
+      <p begin="1026.236s" xml:id="p416" end="1026.559s" region="between_m3_m2_2">AND THE PRINCIPLES BEHIND THEM.<br />&gt;&gt; YES.</p>
+      <p begin="1026.57s" xml:id="p417" end="1027.836s" region="middle2">&gt;&gt; YES.<br />LARRY: PRODUCERS ARE YELLING AT</p>
+      <p begin="1027.838s" xml:id="p418" end="1028.571s" region="between_m3_m2_2">LARRY: PRODUCERS ARE YELLING AT<br />ME TO GET OUT.</p>
+      <p begin="1028.605s" xml:id="p419" end="1030.196s" region="middle2">ME TO GET OUT.<br />I DON’T WANT TO END THIS</p>
+      <p begin="1030.207s" xml:id="p420" end="1031.097s" region="middle2">I DON’T WANT TO END THIS<br />INTERVIEW BECAUSE IT’S TOO MUCH</p>
+      <p begin="1031.108s" xml:id="p421" end="1031.698s" region="middle2">INTERVIEW BECAUSE IT’S TOO MUCH<br />FUN.</p>
+      <p begin="1031.709s" xml:id="p422" end="1033.966s" region="middle2">FUN.<br />CAN I ASK YOU ONE THING, 20</p>
+      <p begin="1033.977s" xml:id="p423" end="1034.377s" region="between_m3_m2_2">CAN I ASK YOU ONE THING, 20<br />SECONDS?</p>
+      <p begin="1034.411s" xml:id="p424" end="1037.77s" region="middle2">SECONDS?<br />NOTHING TO DO WITH DOGE.</p>
+      <p begin="1037.781s" xml:id="p425" end="1040.24s" region="between_m3_m2_2">NOTHING TO DO WITH DOGE.<br />CAN YOU RESCUE THE ASTRONAUTS?</p>
+      <p begin="1040.251s" xml:id="p426" end="1041.383s" region="middle3">CAN YOU RESCUE THE ASTRONAUTS?<br />&gt;&gt; YES, WE’RE BRINGING THEM BACK</p>
+      <p begin="1041.418s" xml:id="p427" end="1042.909s" region="between_m3_m2_1">&gt;&gt; YES, WE’RE BRINGING THEM BACK<br />IN A FEW WEEKS.</p>
+      <p begin="1042.92s" xml:id="p428" end="1044.61s" region="between_m3_m2_1">IN A FEW WEEKS.<br />LARRY: NOT NEAR ENOUGH ATTENTION</p>
+      <p begin="1044.621s" xml:id="p429" end="1045.511s" region="middle3">LARRY: NOT NEAR ENOUGH ATTENTION<br />BEING PAID TO THIS.</p>
+      <p begin="1045.522s" xml:id="p430" end="1047.113s" region="middle3">BEING PAID TO THIS.<br />YOU’RE GOING TO GET THEM BACK?</p>
+      <p begin="1047.124s" xml:id="p431" end="1048.391s" region="middle3">YOU’RE GOING TO GET THEM BACK?<br />&gt;&gt; WE’RE GOING TO GET THEM</p>
     </div>
   </body>
 </tt>

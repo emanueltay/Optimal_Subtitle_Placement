@@ -1,10 +1,9 @@
-
 PROFILING SUMMARY
 Video Duration: 17m 28s
-Load Time: 0.10s
-Run Time: 5m 28s
-Video Read Time: 26.98s
-YOLO Detection Time: 261.56s
+Load Time: 0.11s
+Run Time: 6m 54s
+Video Read Time: 28.50s
+YOLO Detection Time: 344.73s
 Region Assignment Time: 0.0002s
-TTML Generation Time: 0.0637s
+TTML Generation Time: 0.0133s
 Output TTML saved to: output.ttml
