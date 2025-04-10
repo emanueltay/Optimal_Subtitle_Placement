@@ -11,7 +11,6 @@ Optimal Subtitle Placement is a project designed to **intelligently overlay subt
 - ⚡ **Batch frame processing** for improved efficiency.
 - 🎯 **Ensures subtitle clarity** by avoiding cluttered regions in video frames.
 
----
 
 ## 🛠 Installation Instructions
 

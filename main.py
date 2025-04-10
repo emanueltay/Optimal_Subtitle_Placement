@@ -575,6 +575,36 @@ class Main:
             log_path=log_path
         )
 
+    def run_subtitle_pipeline(frame, start_time, end_time):
+        frame_height, frame_width = frame.shape[:2]
+
+        # Object Detection
+        detections = SubtitlePlacement.detect_objects([frame])[0]
+
+        # Load predefined safe zones in pixel format
+        pre_positions = SubtitlePlacement.get_pixel_pre_positions_from_json(region_json_path, frame_width, frame_height)
+
+        # Dynamically compute subtitle height and margin
+        subtitle_height, margin = SubtitlePlacement.get_subtitle_size(frame_height)
+
+        # Safe zone calculation
+        region_name, coords = SubtitlePlacement.calculate_safe_zone_with_prepositions(
+            frame_width, frame_height, detections, pre_positions, subtitle_height, margin
+        )
+
+        x1, y1, x2, y2 = coords
+        origin_x = round((x1 / frame_width) * 100)
+        origin_y = round((y1 / frame_height) * 100)
+        extent_x = round(((x2 - x1) / frame_width) * 100)
+        extent_y = round(((y2 - y1) / frame_height) * 100)
+
+        return {
+            "region": region_name,
+            "coordinates": coords,
+            "origin": f"{origin_x}% {origin_y}%",
+            "extent": f"{extent_x}% {extent_y}%"
+        }
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Auto Subtitle Placement")
 
