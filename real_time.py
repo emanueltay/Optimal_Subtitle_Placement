@@ -10,8 +10,8 @@ app = FastAPI()
 class SubtitleRequest(BaseModel):
     frame_base64: str
     # text: str
-    start: float
-    end: float
+    # start: float
+    # end: float
 
 @app.post("/assign-subtitle-region")
 def assign_subtitle_region(data: SubtitleRequest):
@@ -19,5 +19,5 @@ def assign_subtitle_region(data: SubtitleRequest):
     np_img = np.frombuffer(frame_data, np.uint8)
     frame = cv2.imdecode(np_img, cv2.IMREAD_COLOR)
 
-    result = Main.run_subtitle_pipeline(frame, data.start, data.end)
+    result = Main.run_subtitle_pipeline(frame)
     return result

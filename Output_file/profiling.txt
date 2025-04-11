@@ -1,0 +1,9 @@
+PROFILING SUMMARY
+Video Duration: 3m 11s
+Load Time: 0.24s
+Run Time: 0m 53s
+Video Read Time: 5.61s
+YOLO Detection Time: 48.20s
+Region Assignment Time: 0.0000s
+TTML Generation Time: 0.0017s
+Output TTML saved to: Output_file/output.ttml

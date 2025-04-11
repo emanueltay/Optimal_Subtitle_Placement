@@ -575,7 +575,7 @@ class Main:
             log_path=log_path
         )
 
-    def run_subtitle_pipeline(frame, start_time, end_time):
+    def run_subtitle_pipeline(frame):
         frame_height, frame_width = frame.shape[:2]
 
         # Object Detection
